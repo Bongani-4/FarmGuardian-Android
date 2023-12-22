@@ -8,6 +8,30 @@
     android:background="@drawable/FIRSTPAGE">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="103dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/FGLogo"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FarmGuardian"
+        android:textColor="#16871A"
+        android:textColorLink="#151313"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
     <Button
         android:id="@+id/Hirecaretaker"
         android:layout_width="253dp"
@@ -31,6 +55,7 @@
         android:layout_width="253dp"
         android:layout_height="41dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="284dp"
         android:background="#006400"
         android:text="Become animal caretaker"
         android:textAllCaps="false"
@@ -41,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textViewHeading"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -50,8 +75,10 @@
         android:layout_height="55dp"
         android:layout_marginTop="324dp"
         android:text="Farm Guardian services"
+        android:textColor="#0F6813"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BeCaretaker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
