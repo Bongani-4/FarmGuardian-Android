@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FarmGuardian"
         tools:targetApi="31">
         <activity
+            android:name=".ACaretakerProfile2"
+            android:exported="false" />
+        <activity
             android:name=".HomeACActivity"
             android:exported="false" />
         <activity
