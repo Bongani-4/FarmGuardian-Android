@@ -52,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
                     {
                         if(Isvalid(password)) {
 
-                               db.register(username,email,password);
+                               db.register(username,email,password,null);
                                 Toast.makeText(getApplicationContext(), "Registration success", Toast.LENGTH_SHORT).show();
                                  startActivity( new Intent( RegisterActivity.this,LoginActivity.class));
                         }
