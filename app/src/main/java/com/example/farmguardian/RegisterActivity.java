@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.Patterns;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -47,33 +48,39 @@ public class RegisterActivity extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"All details should be filled!", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    if(password.compareTo(confirmpass)==0)
+                else {
+                    if (isValidEmail(email))
                     {
-                        if(Isvalid(password)) {
 
-                               db.register(username,email,password,null);
-                                Toast.makeText(getApplicationContext(), "Registration success", Toast.LENGTH_SHORT).show();
-                                 startActivity( new Intent( RegisterActivity.this,LoginActivity.class));
-                        }
-                        else{
+                    if (password.compareTo(confirmpass) == 0) {
+                        if (Isvalid(password)) {
+
+                            db.register(username, email, password, null);
+                            Toast.makeText(getApplicationContext(), "Registration success", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                        } else {
                             Toast.makeText(getApplicationContext(), "Passwords must contain  at least 8 characters,having letter,digit & special character", Toast.LENGTH_SHORT).show();
                         }
 
 
-                    }else{
+                    } else {
                         Toast.makeText(getApplicationContext(), "Passwords don't match", Toast.LENGTH_SHORT).show();
                     }
+                }
 
 
                 }
-                startActivity(new Intent(RegisterActivity.this,HomeActivity.class));
+
 
             }
         });
 
 
     }
+    private boolean isValidEmail(String email) {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
     public static boolean Isvalid(String password) {
         int F1 = 0, F2 = 0, F3 = 0;
 
@@ -106,12 +113,9 @@ public class RegisterActivity extends AppCompatActivity {
 
 
             }
-            if(F1==1 && F2==2 && F3==1) {
-                return true;
-            }
+            return F1 == 1 && F2 == 1 && F3 == 1;
 
 
         }
-        return false;
     }
 }

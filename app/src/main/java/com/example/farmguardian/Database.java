@@ -15,23 +15,23 @@ public class Database  extends SQLiteOpenHelper{
          @Override
          public  void onCreate(SQLiteDatabase sqLiteDatabase)
          {
-             String qry = "create table users(username text, email text , password text,response text)";
-             String qryAC = "create  table usersAC(username text,email text, password text, request text)";  //AC = Animal Caretaker
+             String qry = "create table users(username text, email text , password text,request text)";
+              //AC means Animal Caretaker
              sqLiteDatabase.execSQL(qry);
-             sqLiteDatabase.execSQL(qryAC);
-         }
+                      }
     @Override
     public  void onUpgrade(SQLiteDatabase sqLiteDatabase,int i, int i1)
     {
 
     }
-    public  void register(String username,String email,String password, String response )
+    public  void register(String username,String email,String password, String request )
     {
 
         ContentValues cv = new ContentValues();
         cv.put("username", username);
         cv.put("email", email);
         cv.put("password", password);
+        cv.put("request", request);
         SQLiteDatabase db = getWritableDatabase();
 
         db.insert("users",null,cv);
