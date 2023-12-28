@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity
 {
 
+    private  String currentUsername;
    EditText edusername, edpassword ;
     Button btn;
     TextView tv;
@@ -55,6 +56,7 @@ public class LoginActivity extends AppCompatActivity
                         editor.apply();  //save data with key and value.
 
                         if (isButtonClicked) {
+                             currentUsername = username;
                             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
 
                         } else {
@@ -71,6 +73,7 @@ public class LoginActivity extends AppCompatActivity
                 }
             }
         });
+
          tv.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -78,7 +81,13 @@ public class LoginActivity extends AppCompatActivity
 
              }
          });
+
         }
+    public String  getUsername()
+    {
+
+        return currentUsername;
+    }
 
 
 }
