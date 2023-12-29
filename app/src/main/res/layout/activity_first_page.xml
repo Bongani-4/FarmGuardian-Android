@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/Hirecaretaker"
         android:layout_width="253dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:background="#006400"
         android:text="Hire animal caretaker"
@@ -57,7 +57,7 @@
     <Button
         android:id="@+id/BeCaretaker"
         android:layout_width="253dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="284dp"
         android:background="#006400"

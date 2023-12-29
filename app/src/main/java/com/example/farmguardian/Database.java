@@ -1,10 +1,13 @@
 package com.example.farmguardian;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import java.util.List;
+import java.util.ArrayList;
 
 import androidx.annotation.Nullable;
 
@@ -19,8 +22,8 @@ public class Database  extends SQLiteOpenHelper{
              String qry = "create table users(username text, email text , password text,request text)";
               //AC means Animal Caretaker
              sqLiteDatabase.execSQL(qry);
-             String qry2 = "create table ACprofile(username text,contacts text,location text, fullnames text ,experience, text, CBavailable INTEGER)";
-             sqLiteDatabase.execSQL(qry2);
+
+
                       }
     @Override
     public  void onUpgrade(SQLiteDatabase sqLiteDatabase,int i, int i1)
@@ -33,9 +36,9 @@ public class Database  extends SQLiteOpenHelper{
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("username",username);
+        values.put("fullnames", fullnames);
         values.put("contacts", contacts);
         values.put("location", location);
-        values.put("fullnames", fullnames);
         values.put("experience", experience);
         values.put("isAvailable", CBavailable);
 
@@ -73,6 +76,33 @@ public class Database  extends SQLiteOpenHelper{
         return result;
 
     }
+    // fetch ACprofile data
+    public List<AcaretakerModel> getAcaretakerList() {
+        List<AcaretakerModel> caretakerList = new ArrayList<>();
+
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM ACprofile", null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") AcaretakerModel caretaker = new AcaretakerModel(
+                        cursor.getString(cursor.getColumnIndex("fullnames")),
+                        cursor.getString(cursor.getColumnIndex("location")),
+                        cursor.getString(cursor.getColumnIndex("contacts")),
+                        cursor.getString(cursor.getColumnIndex("experience")),
+                        cursor.getInt(cursor.getColumnIndex("CBavailable"))
+                );
+
+                caretakerList.add(caretaker);
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        db.close();
+
+        return caretakerList;
+    }
+
 
 
 

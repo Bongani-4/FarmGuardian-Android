@@ -13,6 +13,13 @@
         android:theme="@style/Theme.FarmGuardian"
         tools:targetApi="31">
         <activity
+            android:name=".ViewAcaretakersactivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FindACaretaker"
+            android:exported="false" />
+        <activity
             android:name=".ACaretakerProfile2"
             android:exported="false" />
         <activity
