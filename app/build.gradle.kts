@@ -4,11 +4,6 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        getByName("debug") {
-            keyAlias = "FG"
-        }
-    }
     namespace = "com.example.farmguardian"
     compileSdk = 34
 
