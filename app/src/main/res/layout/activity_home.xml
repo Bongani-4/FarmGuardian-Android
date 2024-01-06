@@ -55,16 +55,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/chat"/>
+                    android:layout_width="147dp"
+                    android:layout_height="62dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Find Animal caretaker"
+                    android:text="Animal caretaker"
                     android:textAlignment="center"
                     android:textColor="@color/black"
+                    android:textSize="18dp"
                     android:textStyle="bold"/>
 
 
@@ -96,13 +98,15 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/info"/>
+                    android:src="@drawable/info"
+                    app:tint="#ADE6DBDB" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Log out"
                     android:textAlignment="center"
+                    android:textSize="18dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
 
@@ -135,13 +139,15 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/language"/>
+                    android:src="@drawable/language"
+                    app:tint="#C4D5C3C3" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="News"
                     android:textAlignment="center"
+                    android:textSize="18dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
 
@@ -172,14 +178,15 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/widgets"/>
+                    android:layout_width="154dp"
+                    android:layout_height="63dp"
+                    android:src="@android:drawable/ic_menu_preferences" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Request Details"
+                    android:text="Equipment Sharing"
+                    android:textSize="17dp"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>

@@ -35,7 +35,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".FirstPageActivity"
+            android:name=".animalCaretaker"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

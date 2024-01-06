@@ -31,8 +31,8 @@ public class LoginActivity extends AppCompatActivity
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);
 
-        FirstPageActivity firstPageActivity = new FirstPageActivity();
-        boolean isButtonClicked = firstPageActivity.isHireCaretakerButtonClicked();
+        animalCaretaker animalCaretaker = new animalCaretaker();
+        boolean isButtonClicked = animalCaretaker.isHireCaretakerButtonClicked();
 
 
 

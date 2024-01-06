@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class FirstPageActivity extends AppCompatActivity {
+public class animalCaretaker extends AppCompatActivity {
 
     private boolean isHireCaretakerButtonClicked = false;
     @Override
@@ -24,7 +24,7 @@ public class FirstPageActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 isHireCaretakerButtonClicked = true;
-                startActivity(new Intent(FirstPageActivity.this, LoginActivity.class));
+                startActivity(new Intent(animalCaretaker.this, LoginActivity.class));
             }
         });
     }

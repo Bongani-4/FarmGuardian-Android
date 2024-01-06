@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomeACActivity extends AppCompatActivity {
+public class  HomeACActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class HomeACActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeACActivity.this,FirstPageActivity.class));
+                startActivity(new Intent(HomeACActivity.this, animalCaretaker.class));
             }
         });
     }
