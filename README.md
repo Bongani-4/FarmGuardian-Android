@@ -21,6 +21,14 @@ Example: Marketplace feature connecting farmers with buyers, eliminating middlem
 Get help:
 
 Idea:  Hire  new animal caretakers 
+
 Example:  Hire someone professional to come and take care of your livestock anywhere,anytime
+
+News:
+
+Idea: Get up to date with the world's or local current agriculture news.
+
+Example: See trending news, tips, cautious weather updates, market & currency .
+
 
 Further Application and development details soon to be posted 
