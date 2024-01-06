@@ -14,7 +14,7 @@ public class FirstPageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_page);
+        setContentView(R.layout.aniamal_caretaker);
 
         Button hireButton = findViewById(R.id.Hirecaretaker);
         hireButton.setBackgroundColor(ContextCompat.getColor(this, R.color.DarkGreen));
