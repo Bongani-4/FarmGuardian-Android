@@ -14,11 +14,34 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        CardView exit = findViewById(R.id.Logout);
-        exit.setOnClickListener(new View.OnClickListener() {
+        CardView logOff = findViewById(R.id.Logout);
+        CardView  animalcaretaker = findViewById(R.id.animalcaretaker);
+        CardView news = findViewById(R.id.News);
+        CardView EquipmentSharing = findViewById(R.id.EquipmentSharing);
+
+        EquipmentSharing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, EquipmentSharingActivity.class));
+            }
+        });
+        animalcaretaker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, animalCaretaker.class));
+            }
+        });
+        news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this,NewsActivity.class));
+            }
+        });
+
+        logOff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
             }
         });
     }

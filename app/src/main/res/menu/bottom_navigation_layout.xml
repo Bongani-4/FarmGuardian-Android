@@ -9,10 +9,7 @@
         android:id="@+id/menu_becomeAnimalCaretaker"
         android:icon="@android:drawable/ic_media_play"
         android:title="Become Caretaker"/>
-    <item
-        android:id="@+id/menu_backtomenu"
-        android:icon="@drawable/home"
-        android:title="Back Home" />
-    />
+
+
 
 </menu>

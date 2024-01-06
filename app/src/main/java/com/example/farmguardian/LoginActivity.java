@@ -55,14 +55,10 @@ public class LoginActivity extends AppCompatActivity
                         editor.putString("username",username);
                         editor.apply();  //save data with key and value.
 
-                        if (isButtonClicked) {
-                             currentUsername = username;
-                            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
 
-                        } else {
-                            startActivity(new Intent(LoginActivity.this, HomeACActivity.class));
+                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
 
-                        }
+
 
                     }else{
                         Toast.makeText(getApplicationContext(), "Unknown user", Toast.LENGTH_SHORT).show();

@@ -28,7 +28,7 @@ public class Database  extends SQLiteOpenHelper{
     @Override
     public  void onUpgrade(SQLiteDatabase sqLiteDatabase,int i, int i1)
     {
-
+//no implementation for now
     }
     public  void saveProfile(String username,String contacts, String location,String fullnames, String experience,int CBavailable)
     {
