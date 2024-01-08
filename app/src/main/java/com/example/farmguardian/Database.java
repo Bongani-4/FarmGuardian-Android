@@ -6,6 +6,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -13,22 +15,35 @@ import androidx.annotation.Nullable;
 
 public class Database  extends SQLiteOpenHelper{
     LoginActivity login = new LoginActivity();
-    public Database(@Nullable Context context,@Nullable String name,SQLiteDatabase.CursorFactory factory, int version) {
+    public Database(@Nullable Context context, @Nullable String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
-         @Override
+
+    @Override
          public  void onCreate(SQLiteDatabase sqLiteDatabase)
          {
              String qry = "create table users(username text, email text , password text,request text)";
               //AC means Animal Caretaker
              sqLiteDatabase.execSQL(qry);
+             String qryACprofile = "create table ACprofile(username text, contacts text , location text,fullnames text, experience text, CBavailable Int)";
+
+             sqLiteDatabase.execSQL(qryACprofile);
+
+             ///for debugging
+             Toast.makeText(login.getApplicationContext(), "onCreate method invoked", Toast.LENGTH_SHORT).show();
+
 
 
                       }
     @Override
-    public  void onUpgrade(SQLiteDatabase sqLiteDatabase,int i, int i1)
-    {
+
 //no implementation for now
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // Handle schema updates here
+        if (oldVersion < 2) {
+            // Add statements for updating schema from version 1 to version 2
+            db.execSQL("ALTER TABLE ACprofile ADD COLUMN new_column_name TEXT");
+        }
     }
     public  void saveProfile(String username,String contacts, String location,String fullnames, String experience,int CBavailable)
     {
@@ -81,7 +96,7 @@ public class Database  extends SQLiteOpenHelper{
         List<AcaretakerModel> caretakerList = new ArrayList<>();
 
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM ACprofile", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM ACprofile ", null);
 
         if (cursor.moveToFirst()) {
             do {

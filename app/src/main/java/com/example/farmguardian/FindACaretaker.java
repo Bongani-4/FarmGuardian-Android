@@ -9,6 +9,6 @@ public class FindACaretaker extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_acaretaker);
+        setContentView(R.layout.list_item_acaretaker);
     }
 }

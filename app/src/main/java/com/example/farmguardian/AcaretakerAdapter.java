@@ -7,24 +7,24 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.util.List;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
+import java.util.List;
 public class AcaretakerAdapter extends ArrayAdapter<AcaretakerModel> {
 
-    public AcaretakerAdapter(Context context, List<AcaretakerModel> caretakerList) {
-        super(context, 0, caretakerList);
+    public AcaretakerAdapter(Context context, int resource, List<AcaretakerModel> caretakerList) {
+        super(context, resource, caretakerList);
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        // Get the data item for this position
+    public View getView(int position, @Nullable View convertView, @Nullable ViewGroup parent) {
         AcaretakerModel caretaker = getItem(position);
 
-        // inflate the view
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_find_acaretaker, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_acaretaker, parent, false);
         }
-
 
         TextView textViewFullNames = convertView.findViewById(R.id.textViewFullNames);
         TextView textViewLocation = convertView.findViewById(R.id.textViewLocation);
@@ -32,22 +32,14 @@ public class AcaretakerAdapter extends ArrayAdapter<AcaretakerModel> {
         TextView textViewExperience = convertView.findViewById(R.id.textViewExperience);
         TextView textViewAvailable = convertView.findViewById(R.id.textViewAvailable);
 
-        // Populate the data into the template view
-        assert caretaker != null;
-        textViewFullNames.setText(caretaker.getFullNames());
-        textViewLocation.setText(caretaker.getLocation());
-        textViewContact.setText(caretaker.getContact());
-        textViewExperience.setText(caretaker.getExperience());
-        textViewAvailable.setText(caretaker.isAvailable() == 1 ? "Yes" : "No");
-
+        if (caretaker != null) {
+            textViewFullNames.setText(caretaker.getFullNames());
+            textViewLocation.setText(caretaker.getLocation());
+            textViewContact.setText(caretaker.getContact());
+            textViewExperience.setText(caretaker.getExperience());
+            textViewAvailable.setText(caretaker.isAvailable() == 1 ? "Yes" : "No");
+        }
 
         return convertView;
     }
-
-    @Override
-    public AcaretakerModel getItem(int position) {
-        // Override getItem to return the item at the specified position
-        return super.getItem(position);
-    }
-
 }

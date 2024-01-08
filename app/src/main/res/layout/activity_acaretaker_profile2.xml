@@ -10,8 +10,8 @@
 
     <EditText
         android:id="@+id/editTextLocation"
-        android:layout_width="286dp"
-        android:layout_height="50dp"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -32,8 +32,8 @@
 
     <EditText
         android:id="@+id/editTextContacts"
-        android:layout_width="286dp"
-        android:layout_height="50dp"
+        android:layout_width="301dp"
+        android:layout_height="52dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -72,7 +72,7 @@
         android:id="@+id/textViewProfile"
         android:layout_width="368dp"
         android:layout_height="56dp"
-        android:text="Set animal caretaker account for the public"
+        android:text="Update animal caretaker account for the public"
         android:textColor="#000000"
         android:textColorLink="#000000"
         android:textSize="20sp"
@@ -86,8 +86,8 @@
 
     <EditText
         android:id="@+id/editTextProfileNames"
-        android:layout_width="292dp"
-        android:layout_height="41dp"
+        android:layout_width="299dp"
+        android:layout_height="43dp"
 
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
@@ -110,8 +110,8 @@
 
     <EditText
         android:id="@+id/editTextExperiance"
-        android:layout_width="289dp"
-        android:layout_height="50dp"
+        android:layout_width="303dp"
+        android:layout_height="49dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -135,7 +135,7 @@
         android:id="@+id/buttonSetACprofile"
         android:layout_width="361dp"
         android:layout_height="50dp"
-        android:text="Done"
+        android:text="Save"
         android:textColor="#FFFFFF"
         android:textColorLink="#673AB7"
         android:textSize="20sp"
@@ -143,7 +143,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.883" />
+
+    <Button
+        android:id="@+id/buttonViewACprofile"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:text="View Profile"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#673AB7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
 
     <ImageView
         android:id="@+id/imageView"

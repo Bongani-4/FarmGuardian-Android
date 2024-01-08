@@ -1,9 +1,8 @@
-
+<!-- res/layout/list_item_acaretaker.xml -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/black"
     android:padding="16dp">
 
     <TextView
@@ -11,7 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Full Names"
-        android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="italic"/>
 
@@ -21,7 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewFullNames"
         android:text="Location"
-        android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="italic"/>
 
@@ -39,7 +36,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.20"
             android:text="Contact  "
-            android:textColor="#ffff66"
             android:textSize="12sp" />
 
         <TextView
@@ -48,8 +44,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="Experience "
-            android:textColor="#ffff66"
-
             android:textSize="12sp"/>
 
         <TextView
@@ -58,7 +52,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
             android:text="Available"
-            android:textColor="#ffff66"
             android:textSize="12sp"/>
 
     </LinearLayout>

@@ -31,8 +31,6 @@ public class LoginActivity extends AppCompatActivity
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);
 
-        animalCaretaker animalCaretaker = new animalCaretaker();
-        boolean isButtonClicked = animalCaretaker.isHireCaretakerButtonClicked();
 
 
 

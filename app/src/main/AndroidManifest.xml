@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -9,28 +9,29 @@
         android:icon="@drawable/fgslogo"
         android:label="Farm Guardian"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/Theme.FarmGuardian"
         android:supportsRtl="true"
-
-        tools:targetApi="31" >
+        android:theme="@style/Theme.FarmGuardian"
+        tools:targetApi="31">
+        <activity
+            android:name=".HireAnimalCaretakerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAcaretakerDetailsActivity"
+            android:exported="false" />
         <activity
             android:name=".EquipmentSharingActivity"
             android:exported="false" />
         <activity
             android:name=".NewsActivity"
             android:exported="false" />
-        <activity
-            android:name=".ViewAcaretakersactivity"
-            android:exported="false" />
+
         <activity
             android:name=".FindACaretaker"
             android:exported="false" />
         <activity
             android:name=".ACaretakerProfile2"
             android:exported="false" />
-        <activity
-            android:name=".HomeACActivity"
-            android:exported="false" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
@@ -42,7 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
