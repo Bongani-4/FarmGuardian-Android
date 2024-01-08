@@ -24,6 +24,10 @@ Idea:  Hire  new animal caretakers
 
 Example:  Hire someone professional to come and take care of your livestock anywhere,anytime
 
+Idea: find lost livestock
+
+Example:  let other farmers know of your lost livestock and get notified when its seen somewhere
+
 News:
 
 Idea: Get up to date with the world's or local current agriculture news.
