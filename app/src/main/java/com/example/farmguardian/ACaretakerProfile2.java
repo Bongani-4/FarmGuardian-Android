@@ -83,11 +83,6 @@ public class ACaretakerProfile2 extends AppCompatActivity {
             }
         });
     }
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Handle schema updates here
-        if (oldVersion < 2) {
-            //updating schema from version 1 to version 2
-            db.execSQL("ALTER TABLE ACprofile ADD COLUMN new_column_name TEXT");
-        }
-    }
+
+
 }

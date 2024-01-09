@@ -10,7 +10,7 @@ public class HireAnimalCaretakerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hire_animal_caretaker);
+        setContentView(R.layout.aniamal_caretaker);
 
         // Fetch data from the 'ACprofile' table
         Database db = new Database(getApplicationContext(), "FarmGuardian", null, 1);

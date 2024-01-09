@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.List;
@@ -13,112 +14,125 @@ import java.util.ArrayList;
 
 import androidx.annotation.Nullable;
 
-public class Database  extends SQLiteOpenHelper{
+public class Database extends SQLiteOpenHelper {
     LoginActivity login = new LoginActivity();
+    private Context context;
+
     public Database(@Nullable Context context, @Nullable String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
+        this.context = context;
     }
 
     @Override
-         public  void onCreate(SQLiteDatabase sqLiteDatabase)
-         {
-             String qry = "create table users(username text, email text , password text,request text)";
-              //AC means Animal Caretaker
-             sqLiteDatabase.execSQL(qry);
-             String qryACprofile = "create table ACprofile(username text, contacts text , location text,fullnames text, experience text, CBavailable Int)";
-
-             sqLiteDatabase.execSQL(qryACprofile);
-
-             ///for debugging
-             Toast.makeText(login.getApplicationContext(), "onCreate method invoked", Toast.LENGTH_SHORT).show();
-
-
-
-                      }
-    @Override
-
-//no implementation for now
-        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Handle schema updates here
-        if (oldVersion < 2) {
-            // Add statements for updating schema from version 1 to version 2
-            db.execSQL("ALTER TABLE ACprofile ADD COLUMN new_column_name TEXT");
-        }
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        createTables(sqLiteDatabase);
+        // For debugging
+        Toast.makeText(context, "onCreate method invoked", Toast.LENGTH_SHORT).show();
     }
-    public  void saveProfile(String username,String contacts, String location,String fullnames, String experience,int CBavailable)
-    {
+
+    @Override
+    // No implementation for now
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+
+    public void createTables(SQLiteDatabase sqLiteDatabase) {
+        // AC means Animal Caretaker
+        String qry = "CREATE TABLE IF NOT EXISTS user (username TEXT, email TEXT, password TEXT, request INT)";
+        sqLiteDatabase.execSQL(qry);
+
+        String qryACprofile = "CREATE TABLE IF NOT EXISTS ACUser (username TEXT, contacts TEXT, location TEXT, fullnames TEXT, experience TEXT, CBavailable INTEGER)";
+        sqLiteDatabase.execSQL(qryACprofile);
+    }
+
+    public void saveProfile(String username, String contacts, String location, String fullnames, String experience, int CBavailable) {
         username = login.getUsername();
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("username",username);
+        values.put("username", username);
         values.put("fullnames", fullnames);
         values.put("contacts", contacts);
         values.put("location", location);
         values.put("experience", experience);
-        values.put("isAvailable", CBavailable);
+        values.put("CBavailable", CBavailable);
 
-
-        db.insert("ACprofile",null,values);
+        db.insert("ACUser", null, values);
         db.close();
-
     }
-    public  void register(String username,String email,String password, String request )
-    {
 
+    public void register(String username, String email, String password, String request) {
         ContentValues cv = new ContentValues();
         cv.put("username", username);
         cv.put("email", email);
         cv.put("password", password);
         cv.put("request", request);
+
         SQLiteDatabase db = getWritableDatabase();
 
-        db.insert("users",null,cv);
-        db.close();
+        try {
+            long result = db.insertOrThrow("user", null, cv);
 
-    }
-    public  int login(String username,String password)
-    {
-        int result =0;
-         String str[] = new String[2];
-         str[0] = username;
-         str[1] = password;
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor c = db.rawQuery("select * from users where username=?  and password=?",str);
-        if(c.moveToFirst())
-        {
-            result =1;
+            if (result != -1) {
+                // Successful registration
+                Toast.makeText(context, "Registration success", Toast.LENGTH_SHORT).show();
+            } else {
+                // Failed to insert data
+                Toast.makeText(context, "Registration failed", Toast.LENGTH_SHORT).show();
+            }
+        } catch (Exception e) {
+            // Handle SQLiteException
+            Log.e("Database", "Error during registration: " + e.getMessage());
+        } finally {
+            db.close();
         }
-        return result;
-
     }
-    // fetch ACprofile data
+
+    public int login(String username, String password) {
+        int result = 0;
+        String str[] = new String[]{username, password};
+        SQLiteDatabase db = getReadableDatabase();
+
+        try (Cursor c = db.rawQuery("SELECT * FROM user WHERE username=? AND password=?", str)) {
+            if (c.moveToFirst()) {
+                result = 1; // Login successful
+            }
+        } catch (Exception e) {
+            // Handle SQLiteException
+            Log.e("Database", "Error during login: " + e.getMessage());
+        } finally {
+            db.close();
+        }
+
+        return result;
+    }
+
+    // Fetch AC profile data
     public List<AcaretakerModel> getAcaretakerList() {
         List<AcaretakerModel> caretakerList = new ArrayList<>();
 
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM ACprofile ", null);
 
-        if (cursor.moveToFirst()) {
-            do {
-                @SuppressLint("Range") AcaretakerModel caretaker = new AcaretakerModel(
-                        cursor.getString(cursor.getColumnIndex("fullnames")),
-                        cursor.getString(cursor.getColumnIndex("location")),
-                        cursor.getString(cursor.getColumnIndex("contacts")),
-                        cursor.getString(cursor.getColumnIndex("experience")),
-                        cursor.getInt(cursor.getColumnIndex("CBavailable"))
-                );
+        try (Cursor cursor = db.rawQuery("SELECT * FROM ACUser", null)) {
+            if (cursor.moveToFirst()) {
+                do {
+                    @SuppressLint("Range") AcaretakerModel caretaker = new AcaretakerModel(
+                            cursor.getString(cursor.getColumnIndex("fullnames")),
+                            cursor.getString(cursor.getColumnIndex("location")),
+                            cursor.getString(cursor.getColumnIndex("contacts")),
+                            cursor.getString(cursor.getColumnIndex("experience")),
+                            cursor.getInt(cursor.getColumnIndex("CBavailable"))
+                    );
 
-                caretakerList.add(caretaker);
-            } while (cursor.moveToNext());
+                    caretakerList.add(caretaker);
+                } while (cursor.moveToNext());
+            }
+        } catch (Exception e) {
+            // Handle SQLiteException
+            Log.e("Database", "Error fetching AC caretaker list: " + e.getMessage());
+        } finally {
+            db.close();
         }
-
-        cursor.close();
-        db.close();
 
         return caretakerList;
     }
-
-
-
-
 }

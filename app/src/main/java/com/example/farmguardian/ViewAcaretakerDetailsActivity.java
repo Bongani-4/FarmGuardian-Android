@@ -38,12 +38,12 @@ public class ViewAcaretakerDetailsActivity extends AppCompatActivity {
             textViewExperience.setText("Experience: " + experience);
             textViewAvailable.setText("Available: " + (isAvailable == 1 ? "Yes" : "No"));
         }
-      /*  back.setOnClickListener(new View.OnClickListener() {
+       back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ViewAcaretakerDetailsActivity.this, ACaretakerProfile2.class));
             }
-        });*/
+        });
     }
 
 }

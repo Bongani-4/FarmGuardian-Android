@@ -28,7 +28,9 @@ public class HomeActivity extends AppCompatActivity {
         animalcaretaker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, animalCaretaker.class));
+
+                Intent intent = new Intent(HomeActivity.this, HireAnimalCaretakerActivity.class);
+                startActivity(intent);
             }
         });
         news.setOnClickListener(new View.OnClickListener() {

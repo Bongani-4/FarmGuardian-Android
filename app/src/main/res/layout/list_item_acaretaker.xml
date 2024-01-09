@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Full Names"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:textStyle="italic"/>
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewFullNames"
         android:text="Location"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textStyle="italic"/>
 
     <LinearLayout
@@ -32,7 +32,7 @@
 
         <TextView
             android:id="@+id/textViewContact"
-            android:layout_width="87dp"
+            android:layout_width="139dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.20"
             android:text="Contact  "
@@ -40,19 +40,19 @@
 
         <TextView
             android:id="@+id/textViewExperience"
-            android:layout_width="0dp"
+            android:layout_width="86dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="Experience "
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textViewAvailable"
-            android:layout_width="0dp"
+            android:layout_width="102dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
             android:text="Available"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
     </LinearLayout>
 

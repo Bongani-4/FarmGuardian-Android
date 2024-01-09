@@ -34,10 +34,10 @@ public class AcaretakerAdapter extends ArrayAdapter<AcaretakerModel> {
 
         if (caretaker != null) {
             textViewFullNames.setText(caretaker.getFullNames());
-            textViewLocation.setText(caretaker.getLocation());
-            textViewContact.setText(caretaker.getContact());
-            textViewExperience.setText(caretaker.getExperience());
-            textViewAvailable.setText(caretaker.isAvailable() == 1 ? "Yes" : "No");
+            textViewLocation.setText("Location: " + caretaker.getLocation());
+            textViewContact.setText("Contact: " +caretaker.getContact());
+            textViewExperience.setText("Experience: " +caretaker.getExperience()+"yrs");
+            textViewAvailable.setText("Available: " + (caretaker.isAvailable() == 1 ? "Yes" : "No"));
         }
 
         return convertView;
