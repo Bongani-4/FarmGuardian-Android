@@ -28,6 +28,11 @@ Idea: find lost livestock
 
 Example:  let other farmers know of your lost livestock and get notified when its seen somewhere
 
+Idea: AI to help sick livestock and offer other assistant
+
+Example: chat page to communicate with artificial pet
+
+
 News:
 
 Idea: Get up to date with the world's or local current agriculture news.
