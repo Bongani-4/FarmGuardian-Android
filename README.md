@@ -1,5 +1,8 @@
 # FarmGuardian
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 ## Table of Contents
 
 Installation
@@ -88,6 +91,8 @@ Submit a pull request.
 For major changes, please open an issue first to discuss potential changes.
 
 ## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
 Further Application and development details soon to be posted 
