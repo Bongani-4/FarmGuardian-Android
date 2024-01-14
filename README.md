@@ -23,25 +23,29 @@ details soon to be posted
 
 FarmGuardian is a mobile application aiming to implement:
 
-***Equipment Sharing***:
+* ***Equipment Sharing***:
 
 Function: Facilitate sharing of agricultural equipment among farmers.
 
 Example: Farmers can rent or share equipment, reducing costs for individual farmers.
 
-***Community Building***:
+* ***Community Building***:
 
 Function:  community platform for farmers to share experiences and insights.
 
 Example: Farmers can discuss challenges, share tips, and support each other.
 
-***Market Access***:
+* ***Market Access***:
 
 Function: Facilitate direct access to markets for farmers to sell their produce.
 
 Example: Marketplace feature connecting farmers with buyers, eliminating middlemen.
 
-***Get help***:
+* ***Get help***:
+
+Function: AI to help sick livestock and offer other assistant
+
+Example: chat page to communicate with artificial pet
 
 Function:  Hire  new animal caretakers 
 
@@ -51,12 +55,9 @@ Function: find lost livestock
 
 Example:  let other farmers know of your lost livestock and get notified when its seen somewhere
 
-Function: AI to help sick livestock and offer other assistant
-
-Example: chat page to communicate with artificial pet
 
 
-***News***:
+* ***News***:
 
 Function: Get up to date with the world's or local current agriculture news.
 
