@@ -76,7 +76,7 @@ Real-time Notifications: Users receive notifications for new applications and jo
 
 
 ## Contributing
-We welcome contributions from the community to enhance FarmGuardian. To contribute, follow these steps:
+I welcome contributions from the community to enhance FarmGuardian. To contribute, follow these steps:
 
 Fork the repository.
 
