@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Home"
+    android:background="@drawable/homebackground"
     tools:context=".RegisterActivity">
 
 
     <EditText
         android:id="@+id/editTextLocation"
-        android:layout_width="286dp"
-        android:layout_height="50dp"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -32,8 +32,8 @@
 
     <EditText
         android:id="@+id/editTextContacts"
-        android:layout_width="286dp"
-        android:layout_height="50dp"
+        android:layout_width="307dp"
+        android:layout_height="46dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -86,8 +86,8 @@
 
     <EditText
         android:id="@+id/editTextProfileNames"
-        android:layout_width="292dp"
-        android:layout_height="41dp"
+        android:layout_width="307dp"
+        android:layout_height="46dp"
 
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
@@ -110,7 +110,7 @@
 
     <EditText
         android:id="@+id/editTextExperiance"
-        android:layout_width="289dp"
+        android:layout_width="307dp"
         android:layout_height="50dp"
         android:background="@drawable/input_bg"
         android:drawablePadding="10dp"
@@ -155,7 +155,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.087"
-        app:srcCompat="@drawable/FGLogo" />
+        app:srcCompat="@drawable/fgslogo" />
 
     <CheckBox
         android:id="@+id/checkBoxAVailable"

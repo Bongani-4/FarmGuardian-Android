@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "191644480025",
+    "project_id": "android-app-farmguardian",
+    "storage_bucket": "android-app-farmguardian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191644480025:android:3cc06534c780826ca27088",
+        "android_client_info": {
+          "package_name": "com.example.farmguardian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGtxNLHFKG7_gjkQaUHiHh81ou-msZOrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

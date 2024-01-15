@@ -16,15 +16,24 @@ public class FirstPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_page);
 
-        Button hireButton = findViewById(R.id.Hirecaretaker);
-        hireButton.setBackgroundColor(ContextCompat.getColor(this, R.color.DarkGreen));
+        Button becomeButton = findViewById(R.id.BeCaretaker);
+        Button hirebutton = findViewById(R.id.Hirecaretaker);
 
-        hireButton.setOnClickListener(new View.OnClickListener() {
+
+        becomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FirstPageActivity.this, LoginActivity.class));
+
+
+                isHireCaretakerButtonClicked = true;
+                }
+        });
+        hirebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                isHireCaretakerButtonClicked = true;
-                startActivity(new Intent(FirstPageActivity.this, LoginActivity.class));
+                 startActivity(new Intent(FirstPageActivity.this,LoginActivity.class));
             }
         });
     }

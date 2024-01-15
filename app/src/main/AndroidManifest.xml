@@ -13,9 +13,14 @@
         android:theme="@style/Theme.FarmGuardian"
         tools:targetApi="31">
         <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewACSetProfile"
+            android:exported="false" />
+        <activity
             android:name=".ViewAcaretakersactivity"
             android:exported="false" />
-
         <activity
             android:name=".FindACaretaker"
             android:exported="false" />
