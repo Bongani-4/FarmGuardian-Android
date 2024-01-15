@@ -100,7 +100,7 @@ This project is licensed under the [Creative Commons Attribution-NonCommercial-N
 
 ## Attribution
 
-- Project Author: BONGANI NJATHU
+- Current Project Author: BONGANI NJATHU
 - Date: December 24, 2023
 
 Feel free to use and share this project in accordance with the license terms.
