@@ -96,7 +96,12 @@ For major changes, please open an issue first to discuss potential changes.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
 
+## Attribution
 
-Further Application and development details soon to be posted 
+- Project Author: BONGANI NJATHU
+- Date: December 24, 2023
+
+Feel free to use and share this project in accordance with the license terms.
+
