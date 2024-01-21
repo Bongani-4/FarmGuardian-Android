@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstPageActivity"
+    android:background="@drawable/firstpagebackground">
+
+
+    <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="103dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        app:srcCompat="@drawable/fgslogo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FarmGuardian"
+        android:textColor="#16871A"
+        android:textColorLink="#151313"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/Hirecaretaker"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="#006400"
+        android:text="Hire animal caretaker"
+        android:textAllCaps="false"
+        android:textColor="#E3D8D8"
+        android:textColorHighlight="#E4D01F"
+        android:textColorLink="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BeCaretaker"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/BeCaretaker"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="284dp"
+        android:background="#006400"
+        android:text="Become animal caretaker"
+        android:textAllCaps="false"
+        android:textColor="#E3D8D8"
+        android:textColorHighlight="#E4D01F"
+        android:textColorLink="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHeading"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="242dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="324dp"
+        android:text="Farm Guardian services"
+        android:textColor="#0F6813"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BeCaretaker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
