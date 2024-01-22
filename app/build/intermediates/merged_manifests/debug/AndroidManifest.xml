@@ -32,9 +32,6 @@
             android:name="com.example.farmguardian.FindACaretaker"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.ACaretakerProfile2"
-            android:exported="false" />
-        <activity
             android:name="com.example.farmguardian.HomeActivity"
             android:exported="false" />
         <activity
