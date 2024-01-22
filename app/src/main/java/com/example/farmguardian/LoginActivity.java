@@ -1,7 +1,5 @@
 package com.example.farmguardian;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,9 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
-    private String currentUsername;
+    private SharedPreferences sharedPreferences;
+    private Database db;
+
     EditText edusername, edpassword;
     Button btn;
     TextView tv;
@@ -23,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+        db = new Database(getApplicationContext(), "FarmGuardian", null, 1); // Initialize Database with application context
 
         edusername = findViewById(R.id.editTextusername);
         edpassword = findViewById(R.id.editTextTextPassword);
@@ -34,15 +39,18 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String username = edusername.getText().toString();
                 String password = edpassword.getText().toString();
-                Database db = new Database(getApplicationContext(), "FarmGuardian", null, 1);
 
                 if (username.length() == 0 || password.length() == 0) {
                     Toast.makeText(getApplicationContext(), "All details should be filled!", Toast.LENGTH_SHORT).show();
                 } else {
+                    // Pass the username to the login method
                     if (db.login(username, password) == 1) {
-                        Toast.makeText(getApplicationContext(), "Login success", Toast.LENGTH_SHORT).show();
+                        // Save logged-in user in SharedPreferences
                         saveUsernameToSharedPreferences(username);
+
+                        // Navigating to HomeActivity
                         startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                        finish(); // Finish LoginActivity to prevent going back
                     } else {
                         Toast.makeText(getApplicationContext(), "Unknown user", Toast.LENGTH_SHORT).show();
                     }
@@ -58,12 +66,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public String getUsername() {
-        return currentUsername;
-    }
-
     private void saveUsernameToSharedPreferences(String username) {
-        SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("username", username);
         editor.apply();

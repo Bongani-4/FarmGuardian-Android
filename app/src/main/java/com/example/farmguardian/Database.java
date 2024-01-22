@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
 
 public class Database extends SQLiteOpenHelper {
 
-    private Context context;
+    private final Context context;
 
     public Database(@Nullable Context context, @Nullable String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -26,9 +26,10 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         createTables(sqLiteDatabase);
-
         // For debugging
         Toast.makeText(context, "onCreate method invoked", Toast.LENGTH_SHORT).show();
+
+        // add sample data after creating tables
         addAnimalCaretakers(sqLiteDatabase);
     }
 
@@ -45,8 +46,7 @@ public class Database extends SQLiteOpenHelper {
         return exists;
     }
     //Some caretakers to find at first app launch
-    public void addAnimalCaretakers(SQLiteDatabase sqLiteDatabase) {
-        SQLiteDatabase db = getWritableDatabase();
+    private void addAnimalCaretakers(SQLiteDatabase sqLiteDatabase) {
         Faker faker = new Faker();
 
         try {
@@ -59,10 +59,8 @@ public class Database extends SQLiteOpenHelper {
                 values.put("experience", "Experience" + i);
                 values.put("CBavailable", i % 2);
 
-                db.insert("ACUser", null, values);
+                sqLiteDatabase.insert("ACUser", null, values);
             }
-
-
         } catch (Exception e) {
             // Handle SQLiteException
             Log.e("Database", "Error adding First caretakers: " + e.getMessage());
@@ -73,12 +71,13 @@ public class Database extends SQLiteOpenHelper {
 
     public void createTables(SQLiteDatabase sqLiteDatabase) {
         // AC means Animal Caretaker
-        String qry = "CREATE TABLE IF NOT EXISTS user (username TEXT, email TEXT, password TEXT, request INT)";
+        String qry = "CREATE TABLE IF NOT EXISTS user(username TEXT, email TEXT, password TEXT, request INT)";
         sqLiteDatabase.execSQL(qry);
 
         String qryACprofile = "CREATE TABLE IF NOT EXISTS ACUser (username TEXT, contacts TEXT, location TEXT, fullnames TEXT, experience TEXT, CBavailable INTEGER)";
         sqLiteDatabase.execSQL(qryACprofile);
     }
+
 
     public void saveProfile(String username, String contacts, String location, String fullnames, String experience, int CBavailable) {
         SQLiteDatabase db = getWritableDatabase();
