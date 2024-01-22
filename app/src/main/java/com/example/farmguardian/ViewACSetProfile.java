@@ -39,11 +39,6 @@ public class ViewACSetProfile extends AppCompatActivity {
         // Button to navigate back to HomeACActivity
         Button btn = findViewById(R.id.buttonhome);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ViewACSetProfile.this, HomeACActivity.class));
-            }
-        });
+
     }
 }

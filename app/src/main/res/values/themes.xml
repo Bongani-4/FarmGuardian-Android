@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Base.Theme.FarmGuardian" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+
+    <style name="AppTheme" parent="Base.Theme.FarmGuardian">
+
+        <item name="android:statusBarColor">@color/DarkGreen</item>
     </style>
 
     <style name="Theme.FarmGuardian" parent="Base.Theme.FarmGuardian" />

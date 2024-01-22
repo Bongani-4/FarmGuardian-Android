@@ -47,21 +47,6 @@
         app:layout_constraintVertical_bias="0.122" />
 
     <TextView
-        android:id="@+id/textForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="56dp"
-        android:text="Forgot password"
-        android:textColor="#673AB7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRegister"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

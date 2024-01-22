@@ -1,12 +1,10 @@
 plugins {
-       kotlin("android") version "1.6.21"
-        kotlin("kapt") version "1.5.31"
+    id("com.android.application") version "8.2.0"
 
-    id("com.android.application")
-        //id("com.google.gms.google-services")
 }
 
 android {
+    namespace = "com.example.farmguardian"
     compileSdk = 34
 
     defaultConfig {
@@ -36,20 +34,11 @@ android {
     buildFeatures {
         viewBinding = true
     }
-
-
 }
 
 dependencies {
-    // Import the Firebase BoM
-    implementation(enforcedPlatform("com.google.firebase:firebase-bom:32.7.0"))
-
-    implementation("com.google.firebase:firebase-auth:22.3.0")
-
-    // Firebase authentication
-    implementation("com.google.firebase:firebase-auth")
-
     implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation ("com.github.javafaker:javafaker:1.0.2")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.annotation:annotation:1.7.1")

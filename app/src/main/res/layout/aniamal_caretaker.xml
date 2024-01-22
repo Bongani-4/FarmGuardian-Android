@@ -1,53 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- res/layout/aniamal_caretaker.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".animalCaretaker"
-    >
+    android:orientation="vertical"
+    tools:context=".animalCaretaker">
 
-
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_above="@id/bottom_navigation_view"
+        android:layout_weight="1">
 
-        <ListView
-            android:id="@+id/listViewAcaretakers"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
-            android:layout_marginStart="0dp"
-            android:divider="@color/DarkGreen"
-            android:dividerHeight="1dp" />
-    </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <ListView
+        android:id="@+id/listViewAcaretakers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation_view"
+        android:layout_weight="1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:divider="@color/DarkGreen"
+
+        android:dividerHeight="1dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#55088C"
+        android:layout_alignParentBottom="true"
+        android:background="#088C0A"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:layout_insetEdge="bottom"
+        app:itemIconSize="20dp"
         app:menu="@menu/bottom_navigation_layout" />
-
-    <ImageView
-        android:id="@+id/imageVbackHome"
-        android:layout_width="57dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="4dp"
-        android:tintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        app:tint="#EFE6E6" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

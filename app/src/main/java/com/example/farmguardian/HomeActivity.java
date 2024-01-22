@@ -17,21 +17,29 @@ public class HomeActivity extends AppCompatActivity {
         CardView logOff = findViewById(R.id.Logout);
         CardView  animalcaretaker = findViewById(R.id.animalcaretaker);
         CardView news = findViewById(R.id.News);
-        CardView EquipmentSharing = findViewById(R.id.EquipmentSharing);
+        CardView Equipment = findViewById(R.id.Equipment);
 
-        EquipmentSharing.setOnClickListener(new View.OnClickListener() {
+        Equipment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, EquipmentSharingActivity.class));
+                startActivity(new Intent(HomeActivity.this, Equipment.class));
             }
         });
         animalcaretaker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(HomeActivity.this, HireAnimalCaretakerActivity.class);
-                startActivity(intent);
+
+                //  fragment instance
+                HireAnimalCaretakerFragment fragment = new HireAnimalCaretakerFragment();
+
+                // fragment transaction
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, fragment)
+                        .addToBackStack(null)
+                        .commit();
             }
+
         });
         news.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +47,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,NewsActivity.class));
             }
         });
+
 
         logOff.setOnClickListener(new View.OnClickListener() {
             @Override
