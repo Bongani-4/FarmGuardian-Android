@@ -1,0 +1,6 @@
+com.example.farmguardian.test.app-annotation-experimental-1.3.0-0 C:\Users\Bongani\.gradle\caches\transforms-3\56539b8ed9c4d1d2b34f13be9ff6c759\transformed\annotation-experimental-1.3.0\res
+com.example.farmguardian.test.app-core-1.5.0-1 C:\Users\Bongani\.gradle\caches\transforms-3\e61765be147bf0d1fb2ba5da52cc64cc\transformed\core-1.5.0\res
+com.example.farmguardian.test.app-androidTest-2 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian\app\build\generated\res\resValues\androidTest\debug
+com.example.farmguardian.test.app-mergeDebugAndroidTestResources-3 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.farmguardian.test.app-mergeDebugAndroidTestResources-4 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.farmguardian.test.app-merged_res-5 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian\app\build\intermediates\merged_res\debugAndroidTest

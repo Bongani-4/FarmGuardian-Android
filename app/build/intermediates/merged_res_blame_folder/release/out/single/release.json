@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_peakpx.jpg.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/peakpx.jpg"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_info.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/info.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_homebackground.jpg.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/homebackground.jpg"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_green_button_background.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/green_button_background.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_home_acactivity.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_home_acactivity.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_fgslogo.jpg.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/fgslogo.jpg"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_view_acaretaker_details.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_view_acaretaker_details.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_chat.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/chat.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_input_bg.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/input_bg.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/xml_backup_rules.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_hire_animal_caretaker.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_hire_animal_caretaker.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_language.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/language.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_first_page.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_first_page.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_ic_baseline_security_24.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/ic_baseline_security_24.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_calendar.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/calendar.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_home.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/home.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_view_acset_profile.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_view_acset_profile.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_widgets.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/widgets.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_ic_baseline_email_24.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_home.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_ic_baseline_person_24.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_equipment_sharing.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_equipment_sharing.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/menu_bottom_navigation_layout.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/menu/bottom_navigation_layout.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_list_item_acaretaker.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/list_item_acaretaker.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_btn_bg.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/btn_bg.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_forgot_password.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_register.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_aniamal_caretaker.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/aniamal_caretaker.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/drawable_firstpagebackground.jpg.flat",
+        "source": "com.example.farmguardian.app-main-35:/drawable/firstpagebackground.jpg"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_news.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_news.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.farmguardian.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-34:/layout_activity_acaretaker_profile2.xml.flat",
+        "source": "com.example.farmguardian.app-main-35:/layout/activity_acaretaker_profile2.xml"
+    }
+]

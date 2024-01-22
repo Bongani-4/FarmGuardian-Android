@@ -1,3 +1,4 @@
+
 # FarmGuardian
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
@@ -104,4 +105,5 @@ This project is licensed under the [Creative Commons Attribution-NonCommercial-N
 - Date: December 24, 2023
 
 Feel free to use and share this project in accordance with the license terms.
+
 
