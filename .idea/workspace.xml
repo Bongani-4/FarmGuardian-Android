@@ -71,7 +71,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705f37d9-8c35-415b-ac89-5a191855100f" name="Changes" comment="Database tables bug fixed">
+    <list default="true" id="705f37d9-8c35-415b-ac89-5a191855100f" name="Changes" comment="list animal caretakers bug fixed">
       <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/arrow_back.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -638,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705936302166</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="list animal caretakers bug fixed">
+      <option name="closed" value="true" />
+      <created>1706007566209</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1706007566209</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -674,6 +682,7 @@
     <MESSAGE value="bind profiles data to the layout" />
     <MESSAGE value="Version restored" />
     <MESSAGE value="Database tables bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database tables bug fixed" />
+    <MESSAGE value="list animal caretakers bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="list animal caretakers bug fixed" />
   </component>
 </project>
