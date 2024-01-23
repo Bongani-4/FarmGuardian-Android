@@ -3091,6 +3091,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable widgets
 id ALT
+id Animalcaretakerbackhome
 id BOTTOM_END
 id BOTTOM_START
 id CTRL

@@ -3090,6 +3090,7 @@ int drawable tooltip_frame_dark 0x7f0700ed
 int drawable tooltip_frame_light 0x7f0700ee
 int drawable widgets 0x7f0700ef
 int id ALT 0x7f080000
+int id Animalcaretakerbackhome 0x7f080224
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003

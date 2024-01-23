@@ -8,16 +8,16 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\menu\\bottom_navigation_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\drawable_homebackground.jpg.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\drawable\\homebackground.jpg"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\drawable_homebackground.jpg.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\drawable\\homebackground.jpg"
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -72,12 +72,12 @@
         "source": "com.example.farmguardian.app-main-36:/layout/aniamal_caretaker.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\mipmap-anydpi_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\mipmap-anydpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-34:\\drawable_home.xml.flat",

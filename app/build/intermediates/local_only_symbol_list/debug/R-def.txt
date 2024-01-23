@@ -25,6 +25,7 @@ drawable language
 drawable newsicon
 drawable peakpx
 drawable widgets
+id Animalcaretakerbackhome
 id Equipment
 id EquipmentBack
 id EquipmentBuy

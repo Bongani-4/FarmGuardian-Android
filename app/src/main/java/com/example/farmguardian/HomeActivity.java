@@ -2,6 +2,7 @@ package com.example.farmguardian;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,15 +30,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                 startActivity(new Intent(HomeActivity.this,animalCaretaker.class));
-                //  fragment instance
-                HireAnimalCaretakerFragment fragment = new HireAnimalCaretakerFragment();
+              startActivity(new Intent(HomeActivity.this,animalCaretaker.class));
 
-                // fragment transaction
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, fragment)
-                        .addToBackStack(null)
-                        .commit();
             }
 
         });
@@ -60,4 +54,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

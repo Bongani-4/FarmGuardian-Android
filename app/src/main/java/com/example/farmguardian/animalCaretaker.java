@@ -13,11 +13,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import android.content.Intent;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
+    Fragment fragment = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,21 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         FrameLayout fragmentContainer = findViewById(R.id.fragment_container);
 
 
+        openAnimalCaretakerFragment();
+        TextView backhome = findViewById(R.id.Animalcaretakerbackhome);
+
+
+        backhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(animalCaretaker.this,HomeActivity.class));
+            }
+        });
+
+
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,14 +61,9 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        Fragment fragment = null;
+
         if (item.getItemId() == R.id.menu_HireAnimalCareteker) {
-            fragment = new HireAnimalCaretakerFragment();
-            // Replace the fragment in the fragment_container
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
-                    .addToBackStack(null)
-                    .commit();
+            openAnimalCaretakerFragment();
 
             return true;
 
@@ -70,6 +83,13 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
         }
         return false;
+    }
+    private void openAnimalCaretakerFragment() {
+        Fragment fragment = new HireAnimalCaretakerFragment();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .addToBackStack(null)
+                .commit();
     }
 
 }

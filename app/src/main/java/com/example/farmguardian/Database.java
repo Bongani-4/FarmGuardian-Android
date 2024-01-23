@@ -11,6 +11,7 @@ import android.util.Log;
 import android.widget.Toast;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
 
 import androidx.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class Database extends SQLiteOpenHelper {
     //Some caretakers to find at first app launch
     private void addAnimalCaretakers(SQLiteDatabase sqLiteDatabase) {
         Faker faker = new Faker();
+        Random rand = new Random();
 
         try {
             for (int i = 0; i < 20; i++) {
@@ -56,7 +58,7 @@ public class Database extends SQLiteOpenHelper {
                 values.put("contacts", faker.phoneNumber().cellPhone());
                 values.put("location", faker.address().city());
                 values.put("fullnames", faker.name().fullName());
-                values.put("experience", "Experience" + i);
+                values.put("experience",  rand.nextInt(10)+i);
                 values.put("CBavailable", i % 2);
 
                 sqLiteDatabase.insert("ACUser", null, values);

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -22,6 +23,9 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final TextView Animalcaretakerbackhome;
+
+  @NonNull
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
@@ -34,9 +38,11 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   public final ListView listViewAcaretakers;
 
   private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull RelativeLayout containerLayout,
-      @NonNull FrameLayout fragmentContainer, @NonNull ListView listViewAcaretakers) {
+      @NonNull TextView Animalcaretakerbackhome, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull RelativeLayout containerLayout, @NonNull FrameLayout fragmentContainer,
+      @NonNull ListView listViewAcaretakers) {
     this.rootView = rootView;
+    this.Animalcaretakerbackhome = Animalcaretakerbackhome;
     this.bottomNavigationView = bottomNavigationView;
     this.containerLayout = containerLayout;
     this.fragmentContainer = fragmentContainer;
@@ -70,6 +76,12 @@ public final class AniamalCaretakerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Animalcaretakerbackhome;
+      TextView Animalcaretakerbackhome = ViewBindings.findChildViewById(rootView, id);
+      if (Animalcaretakerbackhome == null) {
+        break missingId;
+      }
+
       id = R.id.bottom_navigation_view;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
@@ -90,8 +102,8 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AniamalCaretakerBinding((RelativeLayout) rootView, bottomNavigationView,
-          containerLayout, fragmentContainer, listViewAcaretakers);
+      return new AniamalCaretakerBinding((RelativeLayout) rootView, Animalcaretakerbackhome,
+          bottomNavigationView, containerLayout, fragmentContainer, listViewAcaretakers);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
