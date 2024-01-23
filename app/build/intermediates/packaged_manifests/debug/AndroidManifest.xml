@@ -32,6 +32,9 @@
             android:name="com.example.farmguardian.FindACaretaker"
             android:exported="false" />
         <activity
+            android:name="com.example.farmguardian.animalCaretaker"
+            android:exported="false" />
+        <activity
             android:name="com.example.farmguardian.HomeActivity"
             android:exported="false" />
         <activity

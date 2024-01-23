@@ -2968,6 +2968,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
+int drawable arrow_back 0x7f0700f0
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable btn_bg 0x7f07007a
@@ -3229,6 +3230,7 @@ int id compress 0x7f080089
 int id confirm_button 0x7f08008a
 int id constraint 0x7f08008b
 int id container 0x7f08008c
+int id container_layout 0x7f080223
 int id content 0x7f08008d
 int id contentPanel 0x7f08008e
 int id contiguous 0x7f08008f

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,10 +30,18 @@ public class LoginActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         db = new Database(getApplicationContext(), "FarmGuardian", null, 1); // Initialize Database with application context
 
+
+
         edusername = findViewById(R.id.editTextusername);
         edpassword = findViewById(R.id.editTextTextPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);
+
+        if (isLoggedIn()) {
+            navigateToHome();
+        }
+
+        btn.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen));
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,5 +79,14 @@ public class LoginActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("username", username);
         editor.apply();
+    }
+
+    private boolean isLoggedIn() {
+
+        return sharedPreferences.contains("username");
+    }
+    private void navigateToHome() {
+        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+        finish(); // Finish LoginActivity to prevent going back
     }
 }

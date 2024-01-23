@@ -5,6 +5,7 @@ color black
 color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+drawable arrow_back
 drawable btn_bg
 drawable calendar
 drawable chat
@@ -40,6 +41,7 @@ id buttonRegister
 id buttonSetACprofile
 id buttonhome
 id checkBoxAVailable
+id container_layout
 id editTextContacts
 id editTextEmail
 id editTextExperiance

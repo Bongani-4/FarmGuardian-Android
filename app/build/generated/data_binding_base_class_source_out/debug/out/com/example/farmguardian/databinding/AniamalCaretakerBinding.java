@@ -25,16 +25,20 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
+  public final RelativeLayout containerLayout;
+
+  @NonNull
   public final FrameLayout fragmentContainer;
 
   @NonNull
   public final ListView listViewAcaretakers;
 
   private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout fragmentContainer,
-      @NonNull ListView listViewAcaretakers) {
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull RelativeLayout containerLayout,
+      @NonNull FrameLayout fragmentContainer, @NonNull ListView listViewAcaretakers) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
+    this.containerLayout = containerLayout;
     this.fragmentContainer = fragmentContainer;
     this.listViewAcaretakers = listViewAcaretakers;
   }
@@ -72,6 +76,8 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
+      RelativeLayout containerLayout = (RelativeLayout) rootView;
+
       id = R.id.fragment_container;
       FrameLayout fragmentContainer = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainer == null) {
@@ -85,7 +91,7 @@ public final class AniamalCaretakerBinding implements ViewBinding {
       }
 
       return new AniamalCaretakerBinding((RelativeLayout) rootView, bottomNavigationView,
-          fragmentContainer, listViewAcaretakers);
+          containerLayout, fragmentContainer, listViewAcaretakers);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

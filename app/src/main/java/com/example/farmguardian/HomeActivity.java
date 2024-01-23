@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+                 startActivity(new Intent(HomeActivity.this,animalCaretaker.class));
                 //  fragment instance
                 HireAnimalCaretakerFragment fragment = new HireAnimalCaretakerFragment();
 

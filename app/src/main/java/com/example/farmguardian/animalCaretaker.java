@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.widget.FrameLayout;
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
 
@@ -26,7 +28,9 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.setOnItemSelectedListener(this);
 
+
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.DarkGreen));
+        FrameLayout fragmentContainer = findViewById(R.id.fragment_container);
 
 
     }
@@ -45,7 +49,9 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
             // Replace the fragment in the fragment_container
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
                     .commit();
+
             return true;
 
         }
