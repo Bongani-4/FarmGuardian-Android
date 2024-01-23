@@ -7,11 +7,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.farmguardian.R;
@@ -21,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityAcaretakerProfile2Binding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final Button buttonSetACprofile;
@@ -42,20 +41,16 @@ public final class ActivityAcaretakerProfile2Binding implements ViewBinding {
   public final EditText editTextProfileNames;
 
   @NonNull
-  public final ImageView imageView;
-
-  @NonNull
   public final TextView textView4;
 
   @NonNull
   public final TextView textViewProfile;
 
-  private ActivityAcaretakerProfile2Binding(@NonNull ConstraintLayout rootView,
+  private ActivityAcaretakerProfile2Binding(@NonNull ScrollView rootView,
       @NonNull Button buttonSetACprofile, @NonNull CheckBox checkBoxAVailable,
       @NonNull EditText editTextContacts, @NonNull EditText editTextExperiance,
       @NonNull EditText editTextLocation, @NonNull EditText editTextProfileNames,
-      @NonNull ImageView imageView, @NonNull TextView textView4,
-      @NonNull TextView textViewProfile) {
+      @NonNull TextView textView4, @NonNull TextView textViewProfile) {
     this.rootView = rootView;
     this.buttonSetACprofile = buttonSetACprofile;
     this.checkBoxAVailable = checkBoxAVailable;
@@ -63,14 +58,13 @@ public final class ActivityAcaretakerProfile2Binding implements ViewBinding {
     this.editTextExperiance = editTextExperiance;
     this.editTextLocation = editTextLocation;
     this.editTextProfileNames = editTextProfileNames;
-    this.imageView = imageView;
     this.textView4 = textView4;
     this.textViewProfile = textViewProfile;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -131,12 +125,6 @@ public final class ActivityAcaretakerProfile2Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
-        break missingId;
-      }
-
       id = R.id.textView4;
       TextView textView4 = ViewBindings.findChildViewById(rootView, id);
       if (textView4 == null) {
@@ -149,9 +137,9 @@ public final class ActivityAcaretakerProfile2Binding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAcaretakerProfile2Binding((ConstraintLayout) rootView, buttonSetACprofile,
+      return new ActivityAcaretakerProfile2Binding((ScrollView) rootView, buttonSetACprofile,
           checkBoxAVailable, editTextContacts, editTextExperiance, editTextLocation,
-          editTextProfileNames, imageView, textView4, textViewProfile);
+          editTextProfileNames, textView4, textViewProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

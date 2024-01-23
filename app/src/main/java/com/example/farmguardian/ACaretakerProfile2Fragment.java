@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -30,6 +32,9 @@ public class ACaretakerProfile2Fragment extends Fragment {
         location = view.findViewById(R.id.editTextLocation);
         fullnames = view.findViewById(R.id.editTextProfileNames);
         experience = view.findViewById(R.id.editTextExperiance);
+
+        btnDone.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.DarkGreen));
+
 
         btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
