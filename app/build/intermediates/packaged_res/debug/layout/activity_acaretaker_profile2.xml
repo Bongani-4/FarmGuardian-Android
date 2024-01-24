@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="650dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/homebackground"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         tools:context=".RegisterActivity">
 
         <EditText
@@ -63,7 +61,7 @@
     android:id="@+id/textView4"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="FarmGuardian"
+    android:text="."
     android:textColor="#16871A"
     android:textColorLink="#151313"
     android:textSize="24sp"
@@ -107,7 +105,6 @@
     android:paddingBottom="10dp"
     android:textColor="#E6E2E2"
     android:textColorHint="#F4EFEF"
-    android:textStyle="bold"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.153"
@@ -130,7 +127,6 @@
     android:paddingBottom="10dp"
     android:textColor="#E6E2E2"
     android:textColorHint="#F4EFEF"
-    android:textStyle="bold"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.153"
@@ -138,20 +134,21 @@
     app:layout_constraintTop_toBottomOf="@+id/editTextProfileNames"
     app:layout_constraintVertical_bias="1.0" />
 
-<Button
-    android:id="@+id/buttonSetACprofile"
-    android:layout_width="361dp"
-    android:layout_height="50dp"
-    android:text="Done"
-    android:textColor="#FFFFFF"
-    android:textSize="20sp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.901" />
+        <Button
+            android:id="@+id/buttonSetACprofile"
+            android:layout_width="361dp"
+            android:layout_height="50dp"
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.858" />
 
-<CheckBox
+        <CheckBox
     android:id="@+id/checkBoxAVailable"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

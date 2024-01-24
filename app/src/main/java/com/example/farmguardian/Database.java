@@ -27,8 +27,6 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         createTables(sqLiteDatabase);
-        // For debugging
-        Toast.makeText(context, "onCreate method invoked", Toast.LENGTH_SHORT).show();
 
         // add sample data after creating tables
         addAnimalCaretakers(sqLiteDatabase);

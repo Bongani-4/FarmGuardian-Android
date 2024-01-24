@@ -1,6 +1,8 @@
 package com.example.farmguardian;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -28,6 +30,11 @@ public class RegisterActivity extends AppCompatActivity {
         Edconfirm = findViewById(R.id.editTextTextConfirmPassword);
         btn = findViewById(R.id.buttonRegister);
         tv = findViewById(R.id.textHaveAcc);
+
+
+
+        btn.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen));
+
 
         // Initialize Database instance
         db = new Database(getApplicationContext(), "FarmGuardian", null, 1);
