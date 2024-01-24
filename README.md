@@ -9,6 +9,8 @@
 
 ## Table of Contents
 
+Screeenshots
+
 Installation
 
 Description
@@ -18,6 +20,22 @@ Features
 Contributing
 
 License
+
+## Current Screeenshots
+
+<p align="center">
+<img src="images/screenshots/Screenshot_20240124_231159_One UI Home.jpg" alt="App" width="120">
+<img src="images/screenshots/Screenshot_20240124_132743.jpg" alt="Login" width="120">
+<img src="images/screenshots/Screenshot_20240124_230431.jpg" alt="Registration" width="120">
+<img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App serviices,Home" width="120">
+<img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120">
+<img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120">
+<img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120">
+</p>
+
+
+
+
 
 ## Installation
 
