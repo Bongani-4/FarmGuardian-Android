@@ -86,6 +86,7 @@ layout activity_equipment_sharing
 layout activity_hire_animal_caretaker
 layout activity_home
 layout activity_login
+layout activity_login_firebase
 layout activity_news
 layout activity_register
 layout activity_view_acaretaker_details
@@ -98,9 +99,15 @@ mipmap ic_launcher_round
 string action_sign_in
 string action_sign_in_short
 string app_name
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string invalid_password
 string invalid_username
 string login_failed
+string project_id
 string prompt_email
 string prompt_password
 string title_activity_login

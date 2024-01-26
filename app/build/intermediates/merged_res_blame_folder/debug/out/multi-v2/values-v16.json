@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.farmguardian.app-mergeDebugResources-32:/values-v16/values-v16.xml",
+            "outputFile": "com.example.farmguardian.app-mergeDebugResources-37:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\4b08d23fe814bc8a6335024adc9ae709\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\12c2ec76afe22bb2afb70a6487198fe0\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\a64bef020136acc3d9ae813177c6fb0e\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\303bc5c12b1c1b68fc03e48d8975e4f5\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

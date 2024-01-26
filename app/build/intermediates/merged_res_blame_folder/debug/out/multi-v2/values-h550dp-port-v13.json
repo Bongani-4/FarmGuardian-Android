@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.farmguardian.app-mergeDebugResources-32:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.farmguardian.app-mergeDebugResources-37:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\3238d73e92f899d5ac14072a8b2075dd\\transformed\\material-1.11.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\e645aa1defe2477e2b29a59b43271a9e\\transformed\\material-1.11.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

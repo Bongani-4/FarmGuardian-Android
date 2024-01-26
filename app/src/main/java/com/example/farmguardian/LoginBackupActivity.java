@@ -1,3 +1,5 @@
+//backup login
+
 package com.example.farmguardian;
 
 import android.content.Context;
@@ -13,7 +15,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class LoginActivity extends AppCompatActivity {
+
+public class LoginBackupActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
     private Database db;
@@ -24,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
@@ -58,8 +62,8 @@ public class LoginActivity extends AppCompatActivity {
                         saveUsernameToSharedPreferences(username);
 
                         // Navigating to HomeActivity
-                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
-                        finish(); // Finish LoginActivity to prevent going back
+                        startActivity(new Intent(LoginBackupActivity.this, HomeActivity.class));
+                        finish(); // Finish LoginBackupActivity to prevent going back
                     } else {
                         Toast.makeText(getApplicationContext(), "Unknown user", Toast.LENGTH_SHORT).show();
                     }
@@ -70,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                startActivity(new Intent(LoginBackupActivity.this, RegisterActivity.class));
             }
         });
     }
@@ -86,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
         return sharedPreferences.contains("username");
     }
     private void navigateToHome() {
-        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
-        finish(); // Finish LoginActivity to prevent going back
+        startActivity(new Intent(LoginBackupActivity.this, HomeActivity.class));
+        finish(); // Finish LoginBackupActivity to prevent going back
     }
 }

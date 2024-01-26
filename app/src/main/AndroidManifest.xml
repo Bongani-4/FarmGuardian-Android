@@ -6,12 +6,15 @@
 
     <application
         android:allowBackup="true"
-        android:theme="@style/AppTheme"
         android:icon="@drawable/fgslogo"
         android:label="Farm Guardian"
         android:roundIcon="@drawable/fgslogo"
         android:supportsRtl="true"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".LoginBackupActivity"
+            android:exported="false" />
         <activity
             android:name=".Equipment"
             android:exported="false" />
@@ -21,7 +24,6 @@
         <activity
             android:name=".animalCaretaker"
             android:exported="false" />
-
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
@@ -29,7 +31,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".LoginActivityFirebase"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

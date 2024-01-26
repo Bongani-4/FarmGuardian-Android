@@ -8,9 +8,15 @@
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="app_name">FarmGuardian</string>
+    <string name="gcm_defaultSenderId" translatable="false">191644480025</string>
+    <string name="google_api_key" translatable="false">AIzaSyAGtxNLHFKG7_gjkQaUHiHh81ou-msZOrc</string>
+    <string name="google_app_id" translatable="false">1:191644480025:android:3cc06534c780826ca27088</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAGtxNLHFKG7_gjkQaUHiHh81ou-msZOrc</string>
+    <string name="google_storage_bucket" translatable="false">android-app-farmguardian.appspot.com</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="project_id" translatable="false">android-app-farmguardian</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="title_activity_login">LoginActivity</string>

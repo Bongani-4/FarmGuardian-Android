@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/firstpagebackground"
-    tools:context=".LoginActivity">
+    tools:context=".LoginBackupActivity">
 
     <EditText
         android:id="@+id/editTextTextPassword"
+        android:textColorHint="#676060"
         android:layout_width="262dp"
         android:layout_height="46dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
+        android:drawableTint="#B7575454"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -22,8 +24,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#F1EFEF"
-        android:textColorHint="#E1DEDE"
+        android:textColor="#0E0D0D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.241"
@@ -84,7 +85,6 @@
         android:id="@+id/editTextusername"
         android:layout_width="257dp"
         android:layout_height="45dp"
-
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -95,8 +95,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="#E6E2E2"
-        android:textColorHint="#F4EFEF"
+        android:textColor="#121111"
+        android:textColorHint="#6C6868"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.233"
@@ -125,9 +125,9 @@
         android:layout_height="79dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087"
+        app:layout_constraintVertical_bias="0.077"
         app:srcCompat="@drawable/fgslogo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
