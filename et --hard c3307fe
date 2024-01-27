@@ -1,0 +1,62 @@
+[33m7c55646[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: filter-branch: rewrite
+[33me0a3966[m HEAD@{1}: checkout: moving from DBfeature to master
+[33mae0e039[m HEAD@{2}: commit: GitIgnore update
+[33mc3307fe[m HEAD@{3}: commit: SQLite DB to Firebase Realtime DB
+[33mad1c0b9[m HEAD@{4}: commit: SQLIte DB to Firebase realtime DB
+[33me0a3966[m HEAD@{5}: checkout: moving from master to DBfeature
+[33me0a3966[m HEAD@{6}: commit: Request details updated v2
+[33m8c9d43d[m HEAD@{7}: pull origin master: Fast-forward
+[33m6e0bdeb[m HEAD@{8}: commit: Highlights Images
+[33mcd73952[m HEAD@{9}: commit: Request details updated v1
+[33m56b8526[m HEAD@{10}: commit: Request details
+[33mb53e949[m HEAD@{11}: commit: become animal caretaker
+[33m08ff8df[m HEAD@{12}: commit: better AC list display
+[33mbec5e84[m HEAD@{13}: commit: List animal caretaker bug fixed
+[33m9fff076[m HEAD@{14}: commit: list animal caretakers bug fixed
+[33m91dcb21[m HEAD@{15}: commit: database tables bug fixed
+[33me59da8a[m HEAD@{16}: commit: Database tables bug fixed
+[33m6ff9b09[m HEAD@{17}: commit: Version restored
+[33m03bfb59[m HEAD@{18}: commit: version recovery 22Jan
+[33m1158959[m HEAD@{19}: reset: moving to HEAD
+[33m1158959[m HEAD@{20}: commit: Merge changes from main into master
+[33me1793d2[m HEAD@{21}: commit (merge): C
+[33m32d4c80[m HEAD@{22}: checkout: moving from main to master
+[33m3e20851[m HEAD@{23}: checkout: moving from master to main
+[33m32d4c80[m HEAD@{24}: checkout: moving from main to master
+[33m3e20851[m HEAD@{25}: checkout: moving from master to main
+[33m32d4c80[m HEAD@{26}: checkout: moving from main to master
+[33m3e20851[m HEAD@{27}: commit: commiting new changes in main branch
+[33mbb7f825[m HEAD@{28}: commit: version recovered,bouncing back is part of the script
+[33mff4013e[m HEAD@{29}: checkout: moving from 59e887081fd17dbb15523e662b8359ee9dc73bec to main
+[33m59e8870[m HEAD@{30}: commit: version recovered,bouncing back is part of the script
+[33mb48dbaf[m HEAD@{31}: pull origin master: Merge made by the 'ort' strategy.
+[33m7c1f462[m HEAD@{32}: checkout: moving from Version2 to Version2^0
+[33m7c1f462[m HEAD@{33}: commit: Version restored
+[33m32d4c80[m HEAD@{34}: checkout: moving from master to Version2
+[33m32d4c80[m HEAD@{35}: reset: moving to HEAD@{9}
+[33ma04307d[m HEAD@{36}: reset: moving to HEAD@{4}^
+[33m1365423[m HEAD@{37}: reset: moving to HEAD@{4}
+[33m3623f3d[m HEAD@{38}: reset: moving to HEAD@{4}
+[33m79eacb3[m HEAD@{39}: reset: moving to HEAD@{4}^
+[33m32d4c80[m HEAD@{40}: reset: moving to HEAD@{4}
+[33m1365423[m HEAD@{41}: reset: moving to 1365423154050dd05ee63909ab080f0aa7e64d2a
+[33m1365423[m HEAD@{42}: reset: moving to 1365423154050dd05ee63909ab080f0aa7e64d2a
+[33m3623f3d[m HEAD@{43}: reset: moving to 3623f3d9e6ba7723288659badbd225e1a543892e
+[33m3623f3d[m HEAD@{44}: reset: moving to 3623f3d9e6ba7723288659badbd225e1a543892e
+[33m32d4c80[m HEAD@{45}: commit (merge): Use local changes
+[33m1365423[m HEAD@{46}: commit: Animal caretaker update
+[33ma04307d[m HEAD@{47}: commit: bind profiles data to the layout
+[33m4b57841[m HEAD@{48}: commit: "Done" button , save data
+[33m576280b[m HEAD@{49}: commit: simplify user navigation
+[33m7eece38[m HEAD@{50}: commit: simplify user navigation
+[33mae908ad[m HEAD@{51}: commit: simplify user navigation
+[33ma417b67[m HEAD@{52}: commit: sqlitedatabase database and user validation
+[33m1c909b4[m HEAD@{53}: commit: home page and sqlitedatabase database v2
+[33mcb6b0b1[m HEAD@{54}: commit: home page and sqlitedatabase database v2
+[33m70f258a[m HEAD@{55}: commit: home page and sqlitedatabase database
+[33m21f0f87[m HEAD@{56}: commit: Login and first page v2
+[33m9389d30[m HEAD@{57}: pull origin master: Merge made by the 'ort' strategy.
+[33m785a081[m HEAD@{58}: commit: Login and first page v2
+[33m8baa63e[m HEAD@{59}: commit: Login and first page
+[33m3167ec2[m HEAD@{60}: commit: Login and first page
+[33m9902252[m HEAD@{61}: commit (initial): initial commit

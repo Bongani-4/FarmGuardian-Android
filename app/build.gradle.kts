@@ -40,7 +40,6 @@ android {
 
 dependencies {
     implementation("com.google.firebase:firebase-auth:22.3.1")
-    //implementation("com.google.firebase:firebase-admin:8.2.0")
     implementation("com.google.firebase:firebase-database:20.3.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation ("com.github.javafaker:javafaker:1.0.2")

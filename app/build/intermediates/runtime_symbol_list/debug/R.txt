@@ -3339,7 +3339,7 @@ int id editTextRegusername 0x7f0800ca
 int id editTextTextConfirmPassword 0x7f0800cb
 int id editTextTextPassword 0x7f0800cc
 int id editTextTextRegPassword 0x7f0800cd
-int id editTextusername 0x7f0800ce
+int id editTxtEMAIL 0x7f080230
 int id edit_query 0x7f0800cf
 int id elastic 0x7f0800d0
 int id embed 0x7f0800d1

@@ -36,7 +36,7 @@ public class LoginBackupActivity extends AppCompatActivity {
 
 
 
-        edusername = findViewById(R.id.editTextusername);
+        edusername = findViewById(R.id.editTxtEMAIL);
         edpassword = findViewById(R.id.editTextTextPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);

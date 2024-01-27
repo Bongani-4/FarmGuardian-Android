@@ -46,7 +46,7 @@ public class LoginActivityFirebase extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
 
-        edusername = findViewById(R.id.editTextusername);
+        edusername = findViewById(R.id.editTxtEMAIL);
         edpassword = findViewById(R.id.editTextTextPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);
@@ -68,14 +68,14 @@ public class LoginActivityFirebase extends AppCompatActivity {
                     firebaseAuth.signInWithEmailAndPassword(username, password)
                             .addOnCompleteListener(LoginActivityFirebase.this, task -> {
                                 if (task.isSuccessful()) {
-                                    // Fetch user details from Realtime Database
+                                    // Fetch user details from Realtime DB
                                     FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+
                                     if (currentUser != null) {
-                                        getUserDetails(currentUser.getUid());
+                                        getUserDetails(currentUser);
+
                                     }
                                 } else {
-                                    Log.e("AuthenticationError", "Failed: " + task.getException());
-
                                     Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
                                 }
                             });
@@ -108,23 +108,26 @@ public class LoginActivityFirebase extends AppCompatActivity {
     };
 
 
-    private void getUserDetails(String userId) {
-        databaseReference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
+    private void getUserDetails(FirebaseUser currentUser) {
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot userSnapshot : snapshot.getChildren()) {
+                    String email = userSnapshot.child("email").getValue(String.class);
+                    String username = userSnapshot.child("username").getValue(String.class);
 
 
-                    String username = snapshot.child("username").getValue(String.class);
+                    if (email.equals(currentUser.getEmail()) || username.equals(currentUser.getDisplayName())) {
+                        Toast.makeText(getApplicationContext(), "Welcome, " + username, Toast.LENGTH_SHORT).show();
+
+                        startActivity(new Intent(LoginActivityFirebase.this, HomeActivity.class));
+                        finish();
+                        return;
+                    }
+                }
 
 
-                    Toast.makeText(getApplicationContext(), "Welcome, " + username, Toast.LENGTH_SHORT).show();
-
-                    // Proceed to the next activity
-
-                    // Navigating to HomeActivity
-                    startActivity(new Intent(LoginActivityFirebase.this, HomeActivity.class));
-                    finish(); // Finish LoginBackupActivity to prevent going back
-
+                Toast.makeText(getApplicationContext(), "User not found in the database.", Toast.LENGTH_SHORT).show();
             }
 
             @Override

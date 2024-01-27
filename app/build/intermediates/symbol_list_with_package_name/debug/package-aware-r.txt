@@ -3340,7 +3340,7 @@ id editTextRegusername
 id editTextTextConfirmPassword
 id editTextTextPassword
 id editTextTextRegPassword
-id editTextusername
+id editTxtEMAIL
 id edit_query
 id elastic
 id embed

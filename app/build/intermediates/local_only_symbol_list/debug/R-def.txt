@@ -52,7 +52,7 @@ id editTextRegusername
 id editTextTextConfirmPassword
 id editTextTextPassword
 id editTextTextRegPassword
-id editTextusername
+id editTxtEMAIL
 id fragment_container
 id imageView
 id linearLayout
