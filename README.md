@@ -22,15 +22,27 @@ Contributing
 License
 
 ## Current Screeenshots
+(or view "Highlights.HTML" file)
 
 <p align="center">
-<img src="images/screenshots/Screenshot_20240124_132743.jpg" alt="Login" width="120">
-<img src="images/screenshots/Screenshot_20240124_230431.jpg" alt="Registration" width="120">
-<img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App serviices,Home" width="120">
-<img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120">
-<img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120">
-<img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120">
+  <img src="images/screenshots/Screenshot_20240124_132743.jpg" alt="Login" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_230431.jpg" alt="Registration" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App services, Home" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120" class="zoom">
 </p>
+
+<style>
+  .zoom {
+    transition: transform 0.2s;
+  }
+
+  .zoom:hover {
+    transform: scale(1.2); 
+  }
+</style>
+
 
 
 
