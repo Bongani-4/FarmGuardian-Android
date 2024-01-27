@@ -35,11 +35,13 @@
           <theme>@style/Theme.FarmGuardian</theme>
         </config>
       </layout>
+
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login_firebase.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
+
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
         <config>
           <theme>@style/Theme.FarmGuardian</theme>
@@ -76,8 +78,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="705f37d9-8c35-415b-ac89-5a191855100f" name="Changes" comment="SQLite DB to Firebase Realtime DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="705f37d9-8c35-415b-ac89-5a191855100f" name="Changes" comment="list animal caretakers bug fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/aniamal_caretaker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/aniamal_caretaker.xml" afterDir="false" />
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,9 +142,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="Interface" />
+=======
+        <option value="Class" />
+        <option value="layoutResourceFile" />
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
       </list>
     </option>
   </component>
@@ -209,9 +222,12 @@
     <key name="android.template.-1489152867">
       <recent name="com.example.farmguardian" />
     </key>
+<<<<<<< HEAD
     <key name="android.template.1273300955">
       <recent name="com.example.farmguardian" />
     </key>
+=======
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
     <key name="android.template.-628317748">
       <recent name="com.example.farmguardian" />
     </key>
@@ -441,6 +457,7 @@
       <option name="project" value="LOCAL" />
       <updated>1706007566209</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00018" summary="SQLite DB to Firebase Realtime DB">
       <option name="closed" value="true" />
       <created>1706308315726</created>
@@ -450,6 +467,9 @@
       <updated>1706308315726</updated>
     </task>
     <option name="localTasksCounter" value="19" />
+=======
+    <option name="localTasksCounter" value="18" />
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -486,7 +506,11 @@
     <MESSAGE value="Version restored" />
     <MESSAGE value="Database tables bug fixed" />
     <MESSAGE value="list animal caretakers bug fixed" />
+<<<<<<< HEAD
     <MESSAGE value="SQLite DB to Firebase Realtime DB" />
     <option name="LAST_COMMIT_MESSAGE" value="SQLite DB to Firebase Realtime DB" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="list animal caretakers bug fixed" />
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
   </component>
 </project>

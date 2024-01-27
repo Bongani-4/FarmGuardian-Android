@@ -3,6 +3,8 @@ package com.example.farmguardian;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import androidx.fragment.app.Fragment;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +47,9 @@ public class HomeActivity extends AppCompatActivity {
         logOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, LoginBackupActivity.class);
+
+                Intent intent = new Intent(HomeActivity.this, LoginActivityFirebase.class);
+
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();

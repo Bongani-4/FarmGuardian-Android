@@ -22,6 +22,7 @@ Contributing
 License
 
 ## Current Screeenshots
+<<<<<<< HEAD
 
 <p align="center">
 <img src="images/screenshots/Screenshot_20240124_132743.jpg" alt="Login" width="120">
@@ -30,12 +31,28 @@ License
 <img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120">
 <img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120">
 <img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120">
+=======
+(or view "Highlights.HTML" file)
+
+<p align="center">
+  <img src="images/screenshots/Screenshot_20240124_132743.jpg" alt="Login" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_230431.jpg" alt="Registration" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App services, Home" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120" class="zoom">
+  <img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120" class="zoom">
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
 </p>
 
 
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b751d5256eacee852b65f19edb403789374e2212
 ## Installation
 
 details soon to be posted 

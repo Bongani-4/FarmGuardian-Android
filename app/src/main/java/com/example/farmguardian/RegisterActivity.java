@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +18,9 @@ public class RegisterActivity extends AppCompatActivity {
     EditText edusername, edEmail, edpassword, Edconfirm;
     Button btn;
     TextView tv;
+
     FirebaseDatabaseHelper firebaseDatabaseHelper = new FirebaseDatabaseHelper();
+
 
 
     @Override
@@ -35,8 +38,9 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-        btn.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen));
 
+
+        btn.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen));
 
 
 
@@ -44,7 +48,8 @@ public class RegisterActivity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, LoginBackupActivity.class));
+        startActivity(new Intent(RegisterActivity.this, LoginActivityFirebase.class));
+
             }
         });
 
@@ -56,15 +61,18 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = edEmail.getText().toString();
                 String confirmpass = Edconfirm.getText().toString();
 
-                Log.d("RegisterActivity", "Register button clicked");  //debug
 
                 if (username.length() == 0 || password.length() == 0 || email.length() == 0 || confirmpass.length() == 0) {
                     Toast.makeText(getApplicationContext(), "All details should be filled!", Toast.LENGTH_SHORT).show();
                 } else {
                     if (isValidEmail(email)) {
                         if (password.compareTo(confirmpass) == 0) {
-                            Log.d("RegisterActivity", "Registering user");//debug
-                            registerUser(username, email, password);
+                              registerUser(username, email, password);
+
+
+
+
+                                Toast.makeText(getApplicationContext(), "Passwords must contain at least 8 characters, having a letter, digit & special character", Toast.LENGTH_SHORT).show();
 
 
                         } else {
@@ -74,6 +82,7 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Invalid email format", Toast.LENGTH_SHORT).show();
                     }
                 }
+
             }
         });
     }
@@ -101,7 +110,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
-
 
 
 }
