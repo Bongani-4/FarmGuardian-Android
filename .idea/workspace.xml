@@ -76,7 +76,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705f37d9-8c35-415b-ac89-5a191855100f" name="Changes" comment="list animal caretakers bug fixed" />
+    <list default="true" id="705f37d9-8c35-415b-ac89-5a191855100f" name="Changes" comment="SQLite DB to Firebase Realtime DB" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -439,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706007566209</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="SQLite DB to Firebase Realtime DB">
+      <option name="closed" value="true" />
+      <created>1706308315726</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1706308315726</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -476,6 +484,7 @@
     <MESSAGE value="Version restored" />
     <MESSAGE value="Database tables bug fixed" />
     <MESSAGE value="list animal caretakers bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="list animal caretakers bug fixed" />
+    <MESSAGE value="SQLite DB to Firebase Realtime DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQLite DB to Firebase Realtime DB" />
   </component>
 </project>
