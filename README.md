@@ -33,15 +33,6 @@ License
   <img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120" class="zoom">
 </p>
 
-<style>
-  .zoom {
-    transition: transform 0.2s;
-  }
-
-  .zoom:hover {
-    transform: scale(1.2); 
-  }
-</style>
 
 
 
