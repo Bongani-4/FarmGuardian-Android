@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\activity_acaretaker_profile2.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\layout_activity_view_acaretaker_details.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\activity_view_acaretaker_details.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\layout_activity_view_acaretaker_details.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\activity_view_acaretaker_details.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\drawable_newsicon.png.flat",
