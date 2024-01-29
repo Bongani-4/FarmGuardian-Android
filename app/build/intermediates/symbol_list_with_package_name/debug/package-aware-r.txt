@@ -3004,6 +3004,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable buttondesign
 drawable calendar
 drawable chat
 drawable common_full_open_on_phone
@@ -3144,6 +3145,7 @@ id EquipmentBack
 id EquipmentBuy
 id EquipmentShare
 id FUNCTION
+id Forgotpasword
 id Logout
 id LostLivestock
 id META
@@ -5378,5 +5380,6 @@ styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
 xml backup_rules
+xml buttoncolours
 xml data_extraction_rules
 xml image_share_filepaths

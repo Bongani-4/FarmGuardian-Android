@@ -23,6 +23,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button Forgotpasword;
+
+  @NonNull
   public final Button buttonLogin;
 
   @NonNull
@@ -43,11 +46,12 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView textViewLogin;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonLogin,
-      @NonNull EditText editTextTextPassword, @NonNull EditText editTxtEMAIL,
-      @NonNull ImageView imageView, @NonNull TextView textRegister, @NonNull TextView textView4,
-      @NonNull TextView textViewLogin) {
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button Forgotpasword,
+      @NonNull Button buttonLogin, @NonNull EditText editTextTextPassword,
+      @NonNull EditText editTxtEMAIL, @NonNull ImageView imageView, @NonNull TextView textRegister,
+      @NonNull TextView textView4, @NonNull TextView textViewLogin) {
     this.rootView = rootView;
+    this.Forgotpasword = Forgotpasword;
     this.buttonLogin = buttonLogin;
     this.editTextTextPassword = editTextTextPassword;
     this.editTxtEMAIL = editTxtEMAIL;
@@ -84,6 +88,12 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Forgotpasword;
+      Button Forgotpasword = ViewBindings.findChildViewById(rootView, id);
+      if (Forgotpasword == null) {
+        break missingId;
+      }
+
       id = R.id.buttonLogin;
       Button buttonLogin = ViewBindings.findChildViewById(rootView, id);
       if (buttonLogin == null) {
@@ -126,7 +136,7 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, buttonLogin,
+      return new ActivityLoginBinding((ConstraintLayout) rootView, Forgotpasword, buttonLogin,
           editTextTextPassword, editTxtEMAIL, imageView, textRegister, textView4, textViewLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);

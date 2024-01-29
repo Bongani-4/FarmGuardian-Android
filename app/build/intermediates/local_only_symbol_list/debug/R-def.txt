@@ -7,6 +7,7 @@ dimen activity_horizontal_margin
 dimen activity_vertical_margin
 drawable arrow_back
 drawable btn_bg
+drawable buttondesign
 drawable calendar
 drawable chat
 drawable fgslogo
@@ -30,6 +31,7 @@ id Equipment
 id EquipmentBack
 id EquipmentBuy
 id EquipmentShare
+id Forgotpasword
 id Logout
 id LostLivestock
 id Market
@@ -116,4 +118,5 @@ style AppTheme
 style Base.Theme.FarmGuardian
 style Theme.FarmGuardian
 xml backup_rules
+xml buttoncolours
 xml data_extraction_rules

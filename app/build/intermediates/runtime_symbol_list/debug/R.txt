@@ -3003,6 +3003,7 @@ int drawable btn_radio_off_mtrl 0x7f070080
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070081
 int drawable btn_radio_on_mtrl 0x7f070082
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070083
+int drawable buttondesign 0x7f070106
 int drawable calendar 0x7f070084
 int drawable chat 0x7f070085
 int drawable common_full_open_on_phone 0x7f070086
@@ -3143,6 +3144,7 @@ int id EquipmentBack 0x7f080006
 int id EquipmentBuy 0x7f080007
 int id EquipmentShare 0x7f080008
 int id FUNCTION 0x7f080009
+int id Forgotpasword 0x7f080230
 int id Logout 0x7f08000a
 int id LostLivestock 0x7f08000b
 int id META 0x7f08000c
@@ -7306,5 +7308,6 @@ int styleable ViewTransition_viewTransitionMode 14
 int[] styleable include { 0x7f030135 }
 int styleable include_constraintSet 0
 int xml backup_rules 0x7f140000
+int xml buttoncolours 0x7f140003
 int xml data_extraction_rules 0x7f140001
 int xml image_share_filepaths 0x7f140002

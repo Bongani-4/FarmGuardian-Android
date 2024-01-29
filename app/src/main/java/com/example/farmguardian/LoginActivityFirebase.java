@@ -9,6 +9,7 @@ import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -37,14 +41,13 @@ public class LoginActivityFirebase extends AppCompatActivity {
     private DatabaseReference databaseReference;
 
     private EditText edusername, edpassword;
-    private Button btn;
+    private Button btn, btnforgotpassword;
     TextView tv; //"don't have account yet?"
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
 
 
         super.onCreate(savedInstanceState);
@@ -57,8 +60,12 @@ public class LoginActivityFirebase extends AppCompatActivity {
         edpassword = findViewById(R.id.editTextTextPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);
+        btnforgotpassword = findViewById(R.id.Forgotpasword);
 
         btn.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen));
+        btnforgotpassword.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.white));
+
+
 
 
 
@@ -101,6 +108,62 @@ public class LoginActivityFirebase extends AppCompatActivity {
                 startActivity(new Intent(LoginActivityFirebase.this, RegisterActivity.class));
             }
         });
+
+        //password reset
+
+         btnforgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // reset password logic
+                showForgotPasswordDialog();
+            }
+        });
+    }
+
+    private void showForgotPasswordDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Forgot password");
+        builder.setMessage("\nEnter your email address");
+        final EditText emailEditText = new EditText(this);
+        builder.setView(emailEditText);
+
+        builder.setPositiveButton("Set new Password", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String email = emailEditText.getText().toString().trim();
+                if (!TextUtils.isEmpty(email)) {
+                    sendPasswordResetEmail(email);
+                } else {
+                    Toast.makeText(LoginActivityFirebase.this, "Enter your email", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.create().show();
+    }
+
+    private void sendPasswordResetEmail(String email) {
+        firebaseAuth.sendPasswordResetEmail(email)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivityFirebase.this, "To reset your password. Check your email.", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(LoginActivityFirebase.this, "Failed to send password reset email.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+
+
 
 
 
