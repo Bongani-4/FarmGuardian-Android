@@ -41,8 +41,8 @@ public class LoginActivityFirebase extends AppCompatActivity {
     private DatabaseReference databaseReference;
 
     private EditText edusername, edpassword;
-    private Button btn, btnforgotpassword;
-    TextView tv; //"don't have account yet?"
+    private Button btn;
+    TextView tv, forgotpasswordTV; //"don't have account yet? or password forgotten"
 
 
 
@@ -60,10 +60,9 @@ public class LoginActivityFirebase extends AppCompatActivity {
         edpassword = findViewById(R.id.editTextTextPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textRegister);
-        btnforgotpassword = findViewById(R.id.Forgotpasword);
+        forgotpasswordTV = findViewById(R.id.Forgotpasword);
 
         btn.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen));
-        btnforgotpassword.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.white));
 
 
 
@@ -111,7 +110,7 @@ public class LoginActivityFirebase extends AppCompatActivity {
 
         //password reset
 
-         btnforgotpassword.setOnClickListener(new View.OnClickListener() {
+        forgotpasswordTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // reset password logic

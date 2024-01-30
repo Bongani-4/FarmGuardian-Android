@@ -2,6 +2,7 @@
 <resources>
     <color name="DarkGreen">#006400</color>
     <color name="black">#FF000000</color>
+    <color name="lightgreen">#BF0DF324</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>

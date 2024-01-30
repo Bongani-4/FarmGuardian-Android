@@ -23,7 +23,7 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button Forgotpasword;
+  public final TextView Forgotpasword;
 
   @NonNull
   public final Button buttonLogin;
@@ -46,7 +46,7 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView textViewLogin;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button Forgotpasword,
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Forgotpasword,
       @NonNull Button buttonLogin, @NonNull EditText editTextTextPassword,
       @NonNull EditText editTxtEMAIL, @NonNull ImageView imageView, @NonNull TextView textRegister,
       @NonNull TextView textView4, @NonNull TextView textViewLogin) {
@@ -89,7 +89,7 @@ public final class ActivityLoginBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.Forgotpasword;
-      Button Forgotpasword = ViewBindings.findChildViewById(rootView, id);
+      TextView Forgotpasword = ViewBindings.findChildViewById(rootView, id);
       if (Forgotpasword == null) {
         break missingId;
       }
