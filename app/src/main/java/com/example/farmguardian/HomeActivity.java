@@ -48,6 +48,10 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
+                LoginActivityFirebase.saveLoginStatus(getApplicationContext(), false);
+
+
                 Intent intent = new Intent(HomeActivity.this, LoginActivityFirebase.class);
 
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

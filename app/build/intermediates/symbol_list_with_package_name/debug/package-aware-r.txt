@@ -43,6 +43,7 @@ anim m3_side_sheet_exit_to_right
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim slide_in_bottoml
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3253,6 +3254,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnNo
+id btnYes
 id buttonBack
 id buttonLogin
 id buttonPanel
@@ -3312,6 +3315,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dialogMessage
+id dialogTitle
 id dialog_button
 id dimensions
 id direct
@@ -3842,6 +3847,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_confirmation_hire
 layout list_item_acaretaker
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3983,6 +3989,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string invalid_password

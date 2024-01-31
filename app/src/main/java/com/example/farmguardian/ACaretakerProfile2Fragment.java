@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.content.Context;
+import androidx.fragment.app.Fragment;
 
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -45,13 +47,20 @@ public class ACaretakerProfile2Fragment extends Fragment {
                 String Expirience = experience.getText().toString();
                 int isavailable = CBavailable.isChecked() ? 1 : 0;
 
-                Database db = new Database(requireContext(), "FarmGuardian", null, 1);
-                db.saveProfile(username, Contacts, Location, Fullnames, Expirience, isavailable);
-
-                if (db.isDataExist(username)) {
-                    Toast.makeText(requireContext(), "Data updated", Toast.LENGTH_SHORT).show();
+                if (Expirience.length() == 0 || Fullnames.length() == 0 || Contacts.length() ==0 || Location.length() ==0) {
+                    Toast.makeText(requireContext(), "All details should be filled!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(requireContext(), "Data saved", Toast.LENGTH_SHORT).show();
+                    Database db = new Database(requireContext(), "FarmGuardian", null, 1);
+                    db.saveProfile(username, Contacts, Location, Fullnames, Expirience, isavailable);
+
+
+
+
+                    if (db.isDataExist(username)) {
+                        Toast.makeText(requireContext(), "Data updated", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(requireContext(), "Data saved", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
             }

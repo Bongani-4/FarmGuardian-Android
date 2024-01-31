@@ -36,7 +36,7 @@ public class AcaretakerAdapter extends ArrayAdapter<AcaretakerModel> {
             textViewFullNames.setText(caretaker.getFullNames());
             textViewLocation.setText("Location: " + caretaker.getLocation());
             textViewContact.setText("Contact: " +caretaker.getContact());
-            textViewExperience.setText(caretaker.getExperience()+" years exp");
+            textViewExperience.setText("Experience: "+caretaker.getExperience()+" years");
             textViewAvailable.setText("Available: " + (caretaker.isAvailable() == 1 ? "Yes" : "No"));
         }
 

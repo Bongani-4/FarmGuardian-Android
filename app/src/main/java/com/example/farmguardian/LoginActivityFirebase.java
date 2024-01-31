@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
@@ -45,16 +46,24 @@ public class LoginActivityFirebase extends AppCompatActivity {
     TextView tv, forgotpasswordTV; //"don't have account yet? or password forgotten"
 
 
+    private static SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
+
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_login);
+
 
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
+
+        sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+
 
         edusername = findViewById(R.id.editTxtEMAIL);
         edpassword = findViewById(R.id.editTextTextPassword);
@@ -67,7 +76,11 @@ public class LoginActivityFirebase extends AppCompatActivity {
 
 
 
-
+        if (isLoggedIn()) {
+            startActivity(new Intent(LoginActivityFirebase.this, HomeActivity.class));
+            finish();
+            return;
+        }
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -195,6 +208,8 @@ public class LoginActivityFirebase extends AppCompatActivity {
                     if (email.equals(currentUser.getEmail()) || username.equals(currentUser.getDisplayName())) {
                         Toast.makeText(getApplicationContext(), "Welcome, " + username, Toast.LENGTH_SHORT).show();
 
+                        saveLoginStatus(getApplicationContext(),true);
+
                         startActivity(new Intent(LoginActivityFirebase.this, HomeActivity.class));
                         finish();
                         return;
@@ -211,6 +226,43 @@ public class LoginActivityFirebase extends AppCompatActivity {
             }
         });
     }
+
+
+    public static void saveLoginStatus(Context context, boolean isLoggedIn){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("isLoggedIn", isLoggedIn);
+        if (isLoggedIn) {
+            long currentTimeMillis = System.currentTimeMillis();
+            editor.putLong("loginTime", currentTimeMillis);
+        } else {
+
+            editor.remove("loginTime");
+        }
+        editor.apply();
+    }
+
+
+
+
+    private boolean isLoggedIn() {
+        boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
+
+        if (isLoggedIn) {
+            long loginTime = sharedPreferences.getLong("loginTime", 0);
+            long currentTimeMillis = System.currentTimeMillis();
+
+
+            long sessionDuration = 24 * 60 * 60 * 1000;
+
+            //has session expired?
+            isLoggedIn = (currentTimeMillis - loginTime) < sessionDuration;
+        }
+
+        return isLoggedIn;
+    }
+
+
+
 
     private boolean isInternetConnected() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);

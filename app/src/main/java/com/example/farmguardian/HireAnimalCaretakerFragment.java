@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import androidx.fragment.app.Fragment;
 import java.util.List;
 
-public class HireAnimalCaretakerFragment extends Fragment {
+public class HireAnimalCaretakerFragment extends Fragment implements ConfirmationHireFragment.ConfirmationDialogListener {
+
+    private String selectedCaretakerFullnames;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -27,7 +29,39 @@ public class HireAnimalCaretakerFragment extends Fragment {
         ListView listView = view.findViewById(R.id.listViewAcaretakers2);
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                // Get the selected caretaker's full names
+                selectedCaretakerFullnames = caretakerList.get(position).getFullNames();
+
+                showConfirmationDialog();
+            }
+        });
+
         return view;
     }
 
+    private void showConfirmationDialog() {
+        ConfirmationHireFragment confirmationDialog = new ConfirmationHireFragment();
+
+        // Pass the selected caretaker's full names to the fragment
+        Bundle args = new Bundle();
+        args.putString("selectedCaretakerFullnames", selectedCaretakerFullnames);
+        confirmationDialog.setArguments(args);
+
+
+        confirmationDialog.setConfirmationDialogListener(this);
+
+
+        confirmationDialog.show(getChildFragmentManager(), "ConfirmationDialog");
+    }
+
+    @Override
+    public void onConfirmClick() {
+        // Handle the hiring confirmation
+        // Implement the logic to hire the Animal Caretaker here
+        // Navigate to the hiring process or show a success message
+    }
 }

@@ -1,0 +1,51 @@
+<!-- res/layout/custom_confirmation_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hire Confirmation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to hire this Animal Caretaker?"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="14sp"
+            android:background="@drawable/green_button_background"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="14sp"
+            android:background="@drawable/btn_bg"/>
+    </LinearLayout>
+
+</LinearLayout>

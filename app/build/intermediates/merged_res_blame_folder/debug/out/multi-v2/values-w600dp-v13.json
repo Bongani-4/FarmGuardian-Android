@@ -4,7 +4,7 @@
             "outputFile": "com.example.farmguardian.app-mergeDebugResources-37:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bongani\\AndroidStudioProjects\\FarmGuardian\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "C:\\Users\\Bongani\\AndroidStudioProjects\\FarmGuardianV2\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "1",

@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+anim slide_in_bottoml
 color DarkGreen
 color black
 color lightgreen
@@ -39,6 +40,8 @@ id Market
 id News
 id animalcaretaker
 id bottom_navigation_view
+id btnNo
+id btnYes
 id buttonBack
 id buttonLogin
 id buttonRegister
@@ -46,6 +49,8 @@ id buttonSetACprofile
 id buttonhome
 id checkBoxAVailable
 id container_layout
+id dialogMessage
+id dialogTitle
 id editTextContacts
 id editTextEmail
 id editTextExperiance
@@ -95,6 +100,7 @@ layout activity_register
 layout activity_view_acaretaker_details
 layout activity_view_acset_profile
 layout aniamal_caretaker
+layout fragment_confirmation_hire
 layout list_item_acaretaker
 menu bottom_navigation_layout
 mipmap ic_launcher
@@ -107,6 +113,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string invalid_password
 string invalid_username
 string login_failed
