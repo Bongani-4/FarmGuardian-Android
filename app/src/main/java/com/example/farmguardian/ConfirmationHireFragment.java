@@ -57,6 +57,12 @@ public class ConfirmationHireFragment extends DialogFragment {
                 dismiss();
                 if (listener != null) {
                     listener.onConfirmClick();
+
+                    assert getArguments() != null;
+                    String contacts = getArguments().getString("selectedCaretakerContacts");
+                    String caretakerName = getArguments().getString("selectedCaretakerFullnames");
+                    Database db = new Database(requireContext(), "FarmGuardian", null, 1);
+                    db.saveHiredCaretaker(caretakerName,contacts);
                 }
             }
         });

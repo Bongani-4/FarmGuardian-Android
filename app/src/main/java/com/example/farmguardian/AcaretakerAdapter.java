@@ -32,7 +32,7 @@ public class AcaretakerAdapter extends ArrayAdapter<AcaretakerModel> {
         TextView textViewExperience = convertView.findViewById(R.id.textViewExperience);
         TextView textViewAvailable = convertView.findViewById(R.id.textViewAvailable);
 
-        if (caretaker != null) {
+        if (caretaker != null)  {
             textViewFullNames.setText(caretaker.getFullNames());
             textViewLocation.setText("Location: " + caretaker.getLocation());
             textViewContact.setText("Contact: " +caretaker.getContact());

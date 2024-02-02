@@ -30,6 +30,8 @@ public class Database extends SQLiteOpenHelper {
 
         // add sample data after creating tables
         addAnimalCaretakers(sqLiteDatabase);
+
+
     }
 
     @Override
@@ -67,6 +69,28 @@ public class Database extends SQLiteOpenHelper {
         }
     }
 
+    public void saveHiredCaretaker(String caretakerName, String contacts) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        // Generating a unique username ID
+        String username = generateUniqueUsername();
+
+        ContentValues values = new ContentValues();
+        values.put("username", username);
+        values.put("caretaker_name", caretakerName);
+        values.put("contact", contacts);
+
+        db.insert("HIRED", null, values);
+    }
+
+    public String generateUniqueUsername() {
+        //combining timestamp with random num  to create a user unique ID
+
+        long timestamp = System.currentTimeMillis();
+        int randomValue = new Random().nextInt(1000);
+        return "user_" + timestamp + "_" + randomValue;
+    }
+
 
 
     public void createTables(SQLiteDatabase sqLiteDatabase) {
@@ -76,6 +100,9 @@ public class Database extends SQLiteOpenHelper {
 
         String qryACprofile = "CREATE TABLE IF NOT EXISTS ACUser (username TEXT, contacts TEXT, location TEXT, fullnames TEXT, experience TEXT, CBavailable INTEGER)";
         sqLiteDatabase.execSQL(qryACprofile);
+
+        String qryHireAC = "CREATE TABLE IF NOT EXISTS HIRED  (username TEXT PRIMARY KEY, caretaker_name TEXT,contact TEXT)";
+        sqLiteDatabase.execSQL(qryHireAC);
     }
 
 

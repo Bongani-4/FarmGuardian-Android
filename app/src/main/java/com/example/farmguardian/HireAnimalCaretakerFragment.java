@@ -9,9 +9,10 @@ import android.widget.ListView;
 import androidx.fragment.app.Fragment;
 import java.util.List;
 
-public class HireAnimalCaretakerFragment extends Fragment implements ConfirmationHireFragment.ConfirmationDialogListener {
+public class  HireAnimalCaretakerFragment extends Fragment implements ConfirmationHireFragment.ConfirmationDialogListener {
 
     private String selectedCaretakerFullnames;
+    private String selectedCaretakerContacts;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class HireAnimalCaretakerFragment extends Fragment implements Confirmatio
 
                 // Get the selected caretaker's full names
                 selectedCaretakerFullnames = caretakerList.get(position).getFullNames();
+                selectedCaretakerContacts   = caretakerList.get(position).getContact();
 
                 showConfirmationDialog();
             }
@@ -49,6 +51,7 @@ public class HireAnimalCaretakerFragment extends Fragment implements Confirmatio
         // Pass the selected caretaker's full names to the fragment
         Bundle args = new Bundle();
         args.putString("selectedCaretakerFullnames", selectedCaretakerFullnames);
+        args.putString("selectedCaretakerContacts", selectedCaretakerContacts);
         confirmationDialog.setArguments(args);
 
 
@@ -60,8 +63,6 @@ public class HireAnimalCaretakerFragment extends Fragment implements Confirmatio
 
     @Override
     public void onConfirmClick() {
-        // Handle the hiring confirmation
-        // Implement the logic to hire the Animal Caretaker here
-        // Navigate to the hiring process or show a success message
-    }
+        //  logic applied elsewhere better,follow 'usage' to trace it
+            }
 }

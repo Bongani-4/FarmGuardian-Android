@@ -1,0 +1,112 @@
+<!-- res/layout/aniamal_caretaker.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container_layoutRD"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".animalCaretaker">
+
+    <FrameLayout
+        android:id="@+id/fragment_containerRD"
+        android:layout_width="match_parent"
+        android:layout_height="589dp"
+        android:layout_above="@id/bottom_navigation_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/hiredSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Hired"
+            android:textColor="@color/DarkGreen"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="top"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressBackgroundTint="@color/DarkGreen"
+            android:progressTint="@color/DarkGreen"
+            android:progress="40" />
+
+        <TextView
+            android:id="@+id/hireInProgressSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Hire In Progress"
+            android:textColor="#CA0D50"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listViewAcaretakersRD"
+            android:layout_width="405dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+            android:background="#BDC1BD"
+            android:divider="@color/DarkGreen"
+            android:dividerHeight="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="60dp">
+            <ListView
+                android:id="@+id/listViewAcaretakersHiredRD"
+                android:layout_width="405dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="bottom"
+                android:background="#D2F8C7"
+                android:layout_marginBottom="5dp"
+                android:divider="@color/DarkGreen"
+                android:dividerHeight="1dp" />
+
+        </RelativeLayout>
+
+</FrameLayout>
+
+
+    <TextView
+        android:id="@+id/Animalcaretakerbackhome"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_above="@+id/fragment_containerRD"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="-29dp"
+        android:text="Go Home"
+        android:textColor="@color/DarkGreen"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#088C0A"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:layout_insetEdge="bottom"
+        app:itemIconSize="20dp"
+        app:menu="@menu/bottom_navigation_layout" />
+</RelativeLayout>

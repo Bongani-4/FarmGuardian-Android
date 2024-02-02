@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -37,16 +38,20 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   @NonNull
   public final ListView listViewAcaretakers;
 
+  @NonNull
+  public final ProgressBar loadingProgress;
+
   private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
       @NonNull TextView Animalcaretakerbackhome, @NonNull BottomNavigationView bottomNavigationView,
       @NonNull RelativeLayout containerLayout, @NonNull FrameLayout fragmentContainer,
-      @NonNull ListView listViewAcaretakers) {
+      @NonNull ListView listViewAcaretakers, @NonNull ProgressBar loadingProgress) {
     this.rootView = rootView;
     this.Animalcaretakerbackhome = Animalcaretakerbackhome;
     this.bottomNavigationView = bottomNavigationView;
     this.containerLayout = containerLayout;
     this.fragmentContainer = fragmentContainer;
     this.listViewAcaretakers = listViewAcaretakers;
+    this.loadingProgress = loadingProgress;
   }
 
   @Override
@@ -102,8 +107,15 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loading_progress;
+      ProgressBar loadingProgress = ViewBindings.findChildViewById(rootView, id);
+      if (loadingProgress == null) {
+        break missingId;
+      }
+
       return new AniamalCaretakerBinding((RelativeLayout) rootView, Animalcaretakerbackhome,
-          bottomNavigationView, containerLayout, fragmentContainer, listViewAcaretakers);
+          bottomNavigationView, containerLayout, fragmentContainer, listViewAcaretakers,
+          loadingProgress);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,22 +1,24 @@
 package com.example.farmguardian;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
+
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import android.content.Intent;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import android.widget.FrameLayout;
+
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
@@ -63,13 +65,14 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         if (item.getItemId() == R.id.menu_HireAnimalCareteker) {
-            openAnimalCaretakerFragment();
+            loadingBAR();
 
             return true;
 
         }
         if(item.getItemId() == R.id.menu_becomeAnimalCaretaker)
         {
+            loadingBAR();
             fragment =  new ACaretakerProfile2Fragment();
 
             getSupportFragmentManager().beginTransaction()
@@ -81,15 +84,56 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
         }else if (item.getItemId() == R.id.menu_RequestDetails) {
 
+            loadingBAR();
+            fragment =  new RequestDetailsFragment();
+
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_containerRD, fragment)
+                    .commit();
+            return true;
+
+
         }
         return false;
     }
+
+    public void loadingBAR()
+    {
+        ProgressBar loadingProgress = findViewById(R.id.loading_progress);
+        loadingProgress.setVisibility(View.VISIBLE);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Hide the loading ProgressBar after a delay
+                loadingProgress.setVisibility(View.GONE);
+            }
+        }, 2000);
+
+    }
     private void openAnimalCaretakerFragment() {
+
+
+        
+
+
         Fragment fragment = new HireAnimalCaretakerFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, fragment)
                 .addToBackStack(null)
                 .commit();
+
+
+
+
+
+
+        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+            @Override
+            public void onBackStackChanged() {
+               // findViewById(R.id.loading_animation).setVisibility(View.GONE);
+            }
+        });
+
     }
 
 }

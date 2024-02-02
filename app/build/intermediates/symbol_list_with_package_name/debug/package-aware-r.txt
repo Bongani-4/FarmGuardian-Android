@@ -27,7 +27,9 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
 anim fragment_fast_out_extra_slow_in
+anim line_fill_up_animation
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
 anim linear_indeterminate_line2_head_interpolator
@@ -43,7 +45,6 @@ anim m3_side_sheet_exit_to_right
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
-anim slide_in_bottoml
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3060,6 +3061,8 @@ drawable ic_search_black_24
 drawable info
 drawable input_bg
 drawable language
+drawable line
+drawable line_fill_up
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3290,6 +3293,7 @@ id confirm_button
 id constraint
 id container
 id container_layout
+id container_layoutRD
 id content
 id contentPanel
 id contiguous
@@ -3374,6 +3378,7 @@ id flip
 id floating
 id forever
 id fragment_container
+id fragment_containerRD
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3387,6 +3392,8 @@ id grouping
 id groups
 id header_title
 id hideable
+id hireInProgressSubheading
+id hiredSubheading
 id home
 id homeAsUp
 id honorRequest
@@ -3423,7 +3430,10 @@ id linearLayout2
 id listMode
 id listViewAcaretakers
 id listViewAcaretakers2
+id listViewAcaretakersHiredRD
+id listViewAcaretakersRD
 id list_item
+id loading_progress
 id m3_side_sheet
 id marquee
 id masked
@@ -3906,6 +3916,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout requestdetails
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

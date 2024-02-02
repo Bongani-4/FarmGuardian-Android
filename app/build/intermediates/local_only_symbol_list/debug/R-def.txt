@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
-anim slide_in_bottoml
+anim fade_in
+anim line_fill_up_animation
 color DarkGreen
 color black
 color lightgreen
@@ -25,6 +26,8 @@ drawable ic_launcher_foreground
 drawable info
 drawable input_bg
 drawable language
+drawable line
+drawable line_fill_up
 drawable newsicon
 drawable peakpx
 drawable widgets
@@ -49,6 +52,7 @@ id buttonSetACprofile
 id buttonhome
 id checkBoxAVailable
 id container_layout
+id container_layoutRD
 id dialogMessage
 id dialogTitle
 id editTextContacts
@@ -62,11 +66,17 @@ id editTextTextPassword
 id editTextTextRegPassword
 id editTxtEMAIL
 id fragment_container
+id fragment_containerRD
+id hireInProgressSubheading
+id hiredSubheading
 id imageView
 id linearLayout
 id linearLayout2
 id listViewAcaretakers
 id listViewAcaretakers2
+id listViewAcaretakersHiredRD
+id listViewAcaretakersRD
+id loading_progress
 id menu_HireAnimalCareteker
 id menu_RequestDetails
 id menu_becomeAnimalCaretaker
@@ -102,6 +112,7 @@ layout activity_view_acset_profile
 layout aniamal_caretaker
 layout fragment_confirmation_hire
 layout list_item_acaretaker
+layout requestdetails
 menu bottom_navigation_layout
 mipmap ic_launcher
 mipmap ic_launcher_round
