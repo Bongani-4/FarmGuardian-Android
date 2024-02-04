@@ -25,8 +25,9 @@ License
 
 
 <p align="center">
-<img src="images/screenshots/Screenshot_20240124_132743.jpg" alt="Login" width="120">
-<img src="images/screenshots/Screenshot_20240124_230431.jpg" alt="Registration" width="120">
+
+ <img src="images/screenshots/Screenshot_20240129_154130.jpg" alt="Login" width="120">
+<img src="images/screenshots/Screenshot_20240129_140058.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App serviices,Home" width="120">
 <img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120">
 <img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120">
