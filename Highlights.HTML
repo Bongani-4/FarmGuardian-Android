@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      background: #EFF; 
+      flex-direction: column; 
     }
 
     .image-container {
@@ -25,16 +28,87 @@
     .zoomable:hover {
       transform: scale(1.7);
     }
+
+    
+    .background0::before {
+      content: 'W';
+      font-size: 2rem;
+      color: #3498db;
+    }
+
+    .background1::before {
+      content: 'e';
+      font-size: 2rem;
+      color: #3498db; 
+    }
+
+    .background2::before {
+      content: 'l';
+      font-size: 2rem;
+      color: #f01010; 
+    }
+
+    .background3::before {
+      content: 'c';
+      font-size: 2rem;
+      color: #c50b87; 
+    }
+
+    .background4::before {
+      content: 'o';
+      font-size: 2rem;
+      color: #e6871b; 
+    }
+
+    .background5::before {
+      content: 'm';
+      font-size: 2rem;
+      color: #93db34; 
+    }
+
+    .background6::before {
+      content: 'e';
+      font-size: 2rem;
+      color: #34db95; 
+    }
+
+    .background7::before {
+      content: ':';
+      font-size: 2rem;
+      color: #125785; 
+    }
+
+    .background8::before {
+      content: ')';
+      font-size: 2rem;
+      color: #191b1d; 
+    }
   </style>
 </head>
+
 <body>
-  <div class="image-container"> 
+  <div class="image-container">
+    <span class="background0 zoomable"></span>
+    <span class="background1 zoomable"></span>
+    <span class="background2 zoomable"></span>
+    <span class="background3 zoomable"></span>
+    <span class="background4 zoomable"></span>
+    <span class="background5 zoomable"></span>
+    <span class="background6 zoomable"></span>
+    <span class="background7 zoomable"></span>
+    <span class="background8 zoomable"></span>
+  </div>
+
+  <div class="image-container">
     <img src="images/screenshots/Screenshot_20240129_154130.jpg" alt="Login" width="120" class="zoomable">
     <img src="images/screenshots/Screenshot_20240129_140058.jpg" alt="Registration" width="120" class="zoomable">
     <img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App services, Home" width="120" class="zoomable">
     <img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120" class="zoomable">
-    <img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120" class="zoomable">
+    <img src="images/screenshots/Screenshot_20240124_151338.jpg" alt="Become Animal caretaker" width="120"
+      class="zoomable">
     <img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120" class="zoomable">
   </div>
-</body>
+
+  </body>
+
 </html>
