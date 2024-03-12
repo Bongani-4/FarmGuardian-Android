@@ -4,7 +4,7 @@
             "outputFile": "com.example.farmguardian.app-mergeDebugResources-37:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\12c2ec76afe22bb2afb70a6487198fe0\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\766ac0790f8d6372008b6302371e0f9c\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\e645aa1defe2477e2b29a59b43271a9e\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\7944188f046d1001e715916079ef6c88\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

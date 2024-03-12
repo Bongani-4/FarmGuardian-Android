@@ -67,6 +67,12 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         if (item.getItemId() == R.id.menu_HireAnimalCareteker) {
             loadingBAR();
 
+            Fragment fragment = new hirefrgament();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
+                    .commit();
+
             return true;
 
         }
@@ -116,7 +122,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         
 
 
-        Fragment fragment = new HireAnimalCaretakerFragment();
+        Fragment fragment = new hirefrgament();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, fragment)
                 .addToBackStack(null)

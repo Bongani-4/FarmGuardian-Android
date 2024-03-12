@@ -28,6 +28,9 @@ drawable input_bg
 drawable language
 drawable line
 drawable line_fill_up
+drawable loginback
+drawable loginfg
+drawable loginfgdesign
 drawable newsicon
 drawable peakpx
 drawable widgets
@@ -111,6 +114,7 @@ layout activity_view_acaretaker_details
 layout activity_view_acset_profile
 layout aniamal_caretaker
 layout fragment_confirmation_hire
+layout fragment_hirefragment
 layout list_item_acaretaker
 layout requestdetails
 menu bottom_navigation_layout

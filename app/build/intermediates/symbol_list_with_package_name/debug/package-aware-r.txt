@@ -3063,6 +3063,9 @@ drawable input_bg
 drawable language
 drawable line
 drawable line_fill_up
+drawable loginback
+drawable loginfg
+drawable loginfgdesign
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3858,6 +3861,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_confirmation_hire
+layout fragment_hirefragment
 layout list_item_acaretaker
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

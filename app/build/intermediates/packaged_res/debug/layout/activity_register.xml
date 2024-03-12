@@ -10,9 +10,9 @@
 
     <EditText
         android:id="@+id/editTextTextConfirmPassword"
-        android:layout_width="378dp"
+        android:layout_width="370dp"
         android:layout_height="48dp"
-        android:background="@drawable/input_bg"
+        android:background="@color/white"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:drawableTint="#B7575454"
@@ -34,9 +34,9 @@
 
     <EditText
         android:id="@+id/editTextTextRegPassword"
-        android:layout_width="378dp"
+        android:layout_width="370dp"
         android:layout_height="48dp"
-        android:background="@drawable/input_bg"
+        android:background="@color/white"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:drawableTint="#B7575454"
@@ -104,10 +104,10 @@
 
     <EditText
         android:id="@+id/editTextRegusername"
-        android:layout_width="378dp"
+        android:layout_width="370dp"
         android:layout_height="47dp"
 
-        android:background="@drawable/input_bg"
+        android:background="@color/white"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
         android:drawableTint="#B7575454"
@@ -129,9 +129,9 @@
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="378dp"
+        android:layout_width="370dp"
         android:layout_height="51dp"
-        android:background="@drawable/input_bg"
+        android:background="@color/white"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
         android:drawableTint="#B7575454"
@@ -153,7 +153,7 @@
 
     <Button
         android:id="@+id/buttonRegister"
-        android:layout_width="385dp"
+        android:layout_width="370dp"
         android:layout_height="57dp"
         android:text="Register"
         android:textColor="#FFFFFF"

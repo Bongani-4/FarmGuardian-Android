@@ -9,301 +9,301 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
-11-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:22-64
+11-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
+11-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
-12-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:22-76
+12-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
+12-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:22-76
 13    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bongani\.gradle\caches\transforms-3\48812859e8a74f89648d8669b40cec86\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
-13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bongani\.gradle\caches\transforms-3\48812859e8a74f89648d8669b40cec86\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bongani\.gradle\caches\transforms-3\bf78d33d0662b00fa0e6d16b14050c13\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bongani\.gradle\caches\transforms-3\bf78d33d0662b00fa0e6d16b14050c13\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
 14
 15    <permission
-15-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\303bc5c12b1c1b68fc03e48d8975e4f5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 16        android:name="com.example.farmguardian.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-16-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\303bc5c12b1c1b68fc03e48d8975e4f5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 17        android:protectionLevel="signature" />
-17-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\303bc5c12b1c1b68fc03e48d8975e4f5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 18
 19    <uses-permission android:name="com.example.farmguardian.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-19-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\303bc5c12b1c1b68fc03e48d8975e4f5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-19-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\303bc5c12b1c1b68fc03e48d8975e4f5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:7:5-44:19
+21-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:7:5-44:19
 22        android:allowBackup="true"
-22-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:8:9-35
+22-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:8:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\303bc5c12b1c1b68fc03e48d8975e4f5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:icon="@drawable/fgslogo"
-26-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:10:9-41
+26-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:10:9-41
 27        android:label="Farm Guardian"
-27-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:11:9-38
+27-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:11:9-38
 28        android:roundIcon="@drawable/fgslogo"
-28-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:12:9-46
+28-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:12:9-46
 29        android:supportsRtl="true"
-29-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:13:9-35
+29-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:13:9-35
 30        android:testOnly="true"
 31        android:theme="@style/AppTheme" >
-31-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:9:9-40
+31-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:9-40
 32        <activity
-32-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:15:9-17:40
+32-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:15:9-17:40
 33            android:name="com.example.farmguardian.LoginBackupActivity"
-33-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:16:13-48
+33-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:16:13-48
 34            android:exported="false" />
-34-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:17:13-37
+34-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:17:13-37
 35        <activity
-35-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:18:9-21:40
+35-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:9-21:40
 36            android:name="com.example.farmguardian.Equipment"
-36-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:20:13-38
+36-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:20:13-38
 37            android:exported="false" />
-37-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:21:13-37
+37-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:13-37
 38        <activity
-38-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:22:9-24:40
+38-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:22:9-24:40
 39            android:name="com.example.farmguardian.FindACaretaker"
-39-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:23:13-43
+39-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:23:13-43
 40            android:exported="false" />
-40-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:24:13-37
+40-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:13-37
 41        <activity
-41-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:25:9-27:40
+41-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:25:9-27:40
 42            android:name="com.example.farmguardian.animalCaretaker"
-42-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:26:13-44
+42-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:26:13-44
 43            android:exported="false" />
-43-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:27:13-37
+43-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:27:13-37
 44        <activity
-44-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:28:9-30:40
+44-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:28:9-30:40
 45            android:name="com.example.farmguardian.HomeActivity"
-45-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:29:13-41
+45-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:29:13-41
 46            android:exported="false" />
-46-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:30:13-37
+46-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:30:13-37
 47        <activity
-47-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:31:9-33:40
+47-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:31:9-33:40
 48            android:name="com.example.farmguardian.RegisterActivity"
-48-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:32:13-45
+48-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:32:13-45
 49            android:exported="false" />
-49-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:33:13-37
+49-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:33:13-37
 50        <activity
-50-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:34:9-43:20
+50-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:34:9-43:20
 51            android:name="com.example.farmguardian.LoginActivityFirebase"
-51-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:36:13-50
+51-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:13-50
 52            android:exported="true" >
-52-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:37:13-36
+52-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:37:13-36
 53            <intent-filter>
-53-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:38:13-42:29
+53-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:38:13-42:29
 54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:39:17-69
-54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:39:25-66
+54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:17-69
+54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:25-66
 55
 56                <category android:name="android.intent.category.LAUNCHER" />
-56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:41:17-77
-56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardianV2\app\src\main\AndroidManifest.xml:41:27-74
+56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:17-77
+56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:27-74
 57            </intent-filter>
 58        </activity>
 59        <activity
-59-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+59-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
 60            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-60-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+60-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
 61            android:excludeFromRecents="true"
-61-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+61-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
 62            android:exported="true"
-62-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+62-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
 63            android:launchMode="singleTask"
-63-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+63-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
 64            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-64-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+64-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
 65            <intent-filter>
-65-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+65-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
 66                <action android:name="android.intent.action.VIEW" />
-66-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
-66-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+66-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+66-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
 67
 68                <category android:name="android.intent.category.DEFAULT" />
-68-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
-68-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+68-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+68-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
 69                <category android:name="android.intent.category.BROWSABLE" />
-69-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
-69-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+69-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+69-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
 70
 71                <data
-71-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+71-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
 72                    android:host="firebase.auth"
-72-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+72-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
 73                    android:path="/"
-73-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+73-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
 74                    android:scheme="genericidp" />
-74-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+74-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
 75            </intent-filter>
 76        </activity>
 77        <activity
-77-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+77-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
 78            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-78-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+78-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
 79            android:excludeFromRecents="true"
-79-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+79-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
 80            android:exported="true"
-80-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+80-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
 81            android:launchMode="singleTask"
-81-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+81-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
 82            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-82-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+82-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
 83            <intent-filter>
-83-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+83-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
 84                <action android:name="android.intent.action.VIEW" />
-84-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
-84-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+84-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+84-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
 85
 86                <category android:name="android.intent.category.DEFAULT" />
-86-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
-86-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+86-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+86-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
 87                <category android:name="android.intent.category.BROWSABLE" />
-87-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
-87-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+87-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+87-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
 88
 89                <data
-89-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+89-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
 90                    android:host="firebase.auth"
-90-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+90-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
 91                    android:path="/"
-91-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+91-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
 92                    android:scheme="recaptcha" />
-92-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+92-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
 93            </intent-filter>
 94        </activity>
 95
 96        <service
-96-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:66:9-72:19
+96-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:66:9-72:19
 97            android:name="com.google.firebase.components.ComponentDiscoveryService"
-97-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:67:13-84
+97-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:67:13-84
 98            android:directBootAware="true"
-98-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+98-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
 99            android:exported="false" >
-99-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
+99-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
 100            <meta-data
-100-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+100-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
 101                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-101-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+101-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
 102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\226aa173cf66614539e4fcbc30b19a98\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+102-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
 103            <meta-data
-103-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\ad7c33c4505b6f6166c4c2529ff469f6\transformed\firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+103-->[com.google.firebase:firebase-database:20.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\293b36a54239d121ed84df309851fe69\transformed\firebase-database-20.3.1\AndroidManifest.xml:29:13-31:85
 104                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
-104-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\ad7c33c4505b6f6166c4c2529ff469f6\transformed\firebase-database-20.3.0\AndroidManifest.xml:30:17-120
+104-->[com.google.firebase:firebase-database:20.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\293b36a54239d121ed84df309851fe69\transformed\firebase-database-20.3.1\AndroidManifest.xml:30:17-120
 105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\ad7c33c4505b6f6166c4c2529ff469f6\transformed\firebase-database-20.3.0\AndroidManifest.xml:31:17-82
+105-->[com.google.firebase:firebase-database:20.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\293b36a54239d121ed84df309851fe69\transformed\firebase-database-20.3.1\AndroidManifest.xml:31:17-82
 106            <meta-data
-106-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\ad7c33c4505b6f6166c4c2529ff469f6\transformed\firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+106-->[com.google.firebase:firebase-database:20.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\293b36a54239d121ed84df309851fe69\transformed\firebase-database-20.3.1\AndroidManifest.xml:32:13-34:85
 107                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-107-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\ad7c33c4505b6f6166c4c2529ff469f6\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
+107-->[com.google.firebase:firebase-database:20.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\293b36a54239d121ed84df309851fe69\transformed\firebase-database-20.3.1\AndroidManifest.xml:33:17-109
 108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\ad7c33c4505b6f6166c4c2529ff469f6\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+108-->[com.google.firebase:firebase-database:20.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\293b36a54239d121ed84df309851fe69\transformed\firebase-database-20.3.1\AndroidManifest.xml:34:17-82
 109            <meta-data
-109-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\a178e4a682fafd4c100d08197c91e748\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+109-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\a87a61a77bf1e10c352a136566ac9460\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
 110                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-110-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\a178e4a682fafd4c100d08197c91e748\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+110-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\a87a61a77bf1e10c352a136566ac9460\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
 111                android:value="com.google.firebase.components.ComponentRegistrar" />
-111-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\a178e4a682fafd4c100d08197c91e748\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+111-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\a87a61a77bf1e10c352a136566ac9460\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
 112            <meta-data
-112-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+112-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
 113                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-113-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+113-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
 114                android:value="com.google.firebase.components.ComponentRegistrar" />
-114-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+114-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
 115        </service>
 116
 117        <provider
-117-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+117-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
 118            android:name="com.google.firebase.provider.FirebaseInitProvider"
-118-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+118-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
 119            android:authorities="com.example.farmguardian.firebaseinitprovider"
-119-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+119-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
 120            android:directBootAware="true"
-120-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+120-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
 121            android:exported="false"
-121-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+121-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
 122            android:initOrder="100" />
-122-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\f2a04c46968f35e7d0c8e76983464bd1\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+122-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Bongani\.gradle\caches\transforms-3\3f99bff5a9b5b127f5995800599f1ee8\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
 123
 124        <activity
-124-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\a4fe03fb9a65adb1b074c06994bcf732\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+124-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\709b041e94491a47f8c3f79d83b6bcbb\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 125            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-125-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\a4fe03fb9a65adb1b074c06994bcf732\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+125-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\709b041e94491a47f8c3f79d83b6bcbb\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
 126            android:exported="false"
-126-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\a4fe03fb9a65adb1b074c06994bcf732\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+126-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\709b041e94491a47f8c3f79d83b6bcbb\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
 127            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-127-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\a4fe03fb9a65adb1b074c06994bcf732\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+127-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\709b041e94491a47f8c3f79d83b6bcbb\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 128
 129        <provider
-129-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+129-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 130            android:name="androidx.startup.InitializationProvider"
-130-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+130-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 131            android:authorities="com.example.farmguardian.androidx-startup"
-131-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+131-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 132            android:exported="false" >
-132-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+132-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 133            <meta-data
-133-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+133-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 134                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-134-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+134-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 135                android:value="androidx.startup" />
-135-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\b9aba49f06721845298d2fc0fd7fdcc5\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+135-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\1465ff23686889c6f7a2b896400a3ffa\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 136            <meta-data
-136-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bongani\.gradle\caches\transforms-3\d694fbc9ef2b744c086acf201f952e23\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+136-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bongani\.gradle\caches\transforms-3\cbdb7ede7c251f7de818a894104ad688\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
 137                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-137-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bongani\.gradle\caches\transforms-3\d694fbc9ef2b744c086acf201f952e23\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+137-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bongani\.gradle\caches\transforms-3\cbdb7ede7c251f7de818a894104ad688\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 138                android:value="androidx.startup" />
-138-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bongani\.gradle\caches\transforms-3\d694fbc9ef2b744c086acf201f952e23\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+138-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Bongani\.gradle\caches\transforms-3\cbdb7ede7c251f7de818a894104ad688\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
 139            <meta-data
-139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 140                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 141                android:value="androidx.startup" />
-141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 142        </provider>
 143
 144        <meta-data
-144-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\0eb1f7ffc1a38a1ed5962779158d252f\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+144-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\8bcbf64d72717fb6258d7472d0b1540b\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
 145            android:name="com.google.android.gms.version"
-145-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\0eb1f7ffc1a38a1ed5962779158d252f\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+145-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\8bcbf64d72717fb6258d7472d0b1540b\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
 146            android:value="@integer/google_play_services_version" />
-146-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Bongani\.gradle\caches\transforms-3\0eb1f7ffc1a38a1ed5962779158d252f\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+146-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\8bcbf64d72717fb6258d7472d0b1540b\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
 147
 148        <receiver
-148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 149            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 150            android:directBootAware="false"
-150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 151            android:enabled="true"
-151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 152            android:exported="true"
-152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 153            android:permission="android.permission.DUMP" >
-153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 154            <intent-filter>
-154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 155                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 156            </intent-filter>
 157            <intent-filter>
-157-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 158                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 159            </intent-filter>
 160            <intent-filter>
-160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 161                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 162            </intent-filter>
 163            <intent-filter>
-163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 164                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\56b95a95ea706af0347ae1c3b9a263bd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Bongani\.gradle\caches\transforms-3\b4bb22bf99b8fae19730307d10ee9c8f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 165            </intent-filter>
 166        </receiver>
 167    </application>

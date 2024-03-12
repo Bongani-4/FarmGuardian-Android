@@ -16,7 +16,6 @@
             android:layout_width="360dp"
             android:layout_height="49dp"
             android:layout_marginBottom="348dp"
-            android:background="@drawable/input_bg"
             android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Location"
@@ -39,7 +38,7 @@
             android:layout_width="360dp"
             android:layout_height="50dp"
             android:layout_marginBottom="412dp"
-            android:background="@drawable/input_bg"
+
             android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Experience in years(numbers)"
@@ -62,7 +61,7 @@
             android:layout_width="360dp"
             android:layout_height="46dp"
             android:layout_marginBottom="288dp"
-            android:background="@drawable/input_bg"
+
             android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Contacts"
@@ -87,7 +86,6 @@
 
             android:layout_marginTop="14dp"
             android:layout_marginBottom="480dp"
-            android:background="@drawable/input_bg"
             android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Full names"
