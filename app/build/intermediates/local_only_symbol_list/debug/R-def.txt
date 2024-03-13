@@ -28,8 +28,6 @@ drawable input_bg
 drawable language
 drawable line
 drawable line_fill_up
-drawable loginback
-drawable loginfg
 drawable loginfgdesign
 drawable newsicon
 drawable peakpx
@@ -71,7 +69,7 @@ id editTextTextPassword
 id editTextTextRegPassword
 id editTxtEMAIL
 id fragment_container
-id fragment_containerRD
+id fragment_containerR
 id hireInProgressSubheading
 id hiredSubheading
 id imageView

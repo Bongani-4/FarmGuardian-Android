@@ -36,10 +36,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\list_item_acaretaker.xml"
     },
     {
-        "merged": "com.example.farmguardian.app-mergeDebugResources-38:/layout/aniamal_caretaker.xml",
-        "source": "com.example.farmguardian.app-main-41:/layout/aniamal_caretaker.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-38:\\layout\\activity_view_acset_profile.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\activity_view_acset_profile.xml"
     },
@@ -56,12 +52,16 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-38:\\layout\\aniamal_caretaker.xml",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\aniamal_caretaker.xml"
+        "merged": "com.example.farmguardian.app-mergeDebugResources-38:/layout/requestdetails.xml",
+        "source": "com.example.farmguardian.app-main-41:/layout/requestdetails.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-38:\\layout\\requestdetails.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\requestdetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-38:\\layout\\aniamal_caretaker.xml",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\aniamal_caretaker.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-38:\\layout\\activity_login.xml",

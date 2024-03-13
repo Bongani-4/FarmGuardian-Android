@@ -3063,8 +3063,6 @@ drawable input_bg
 drawable language
 drawable line
 drawable line_fill_up
-drawable loginback
-drawable loginfg
 drawable loginfgdesign
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3383,7 +3381,7 @@ id flip
 id floating
 id forever
 id fragment_container
-id fragment_containerRD
+id fragment_containerR
 id fragment_container_view_tag
 id frost
 id fullscreen_header

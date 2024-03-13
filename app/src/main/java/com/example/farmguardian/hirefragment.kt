@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
@@ -37,23 +38,33 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
 
         // launching lifecycleScope to perform database operation in a coroutine in IO dispatchers
         lifecycleScope.launch(Dispatchers.IO) {
-            val db = Database(requireContext(), "FarmGuardian", null, 1)
-            val caretakerList = db.getAcaretakerList()
-
-            // switch to the main dispatcher before updating the UI
-            withContext(Dispatchers.Main) {
-                val adapter = AcaretakerAdapter(
-                    requireContext(),
-                    R.layout.list_item_acaretaker,
-                    caretakerList
-                )
-                listView.adapter = adapter
+            try {
 
 
-                listView.setOnItemClickListener { _, _, position, _ ->
-                    selectedCaretakerFullnames = caretakerList[position].fullNames
-                    selectedCaretakerContacts = caretakerList[position].contact
-                    showConfirmationDialog()
+                val db = Database(requireContext(), "FarmGuardian", null, 1)
+                val caretakerList = db.getAcaretakerList()
+
+                // switch to the main dispatcher before updating the UI
+                withContext(Dispatchers.Main) {
+                    val adapter = AcaretakerAdapter(
+                        requireContext(),
+                        R.layout.list_item_acaretaker,
+                        caretakerList
+                    )
+                    listView.adapter = adapter
+
+
+                    listView.setOnItemClickListener { _, _, position, _ ->
+                        selectedCaretakerFullnames = caretakerList[position].fullNames
+                        selectedCaretakerContacts = caretakerList[position].contact
+                        showConfirmationDialog()
+                    }
+                }
+            }catch (e: Exception) {
+
+                withContext(Dispatchers.Main) {
+                    //  an error toast for exceptions handling db queries
+                    Toast.makeText(requireContext(), "Error loading caretaker data", Toast.LENGTH_SHORT).show()
                 }
             }
         }

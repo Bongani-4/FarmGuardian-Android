@@ -159,7 +159,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         fragment =  new RequestDetailsFragment();
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_containerRD, fragment)
+                .replace(R.id.fragment_container, fragment)
                 .commit();
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
