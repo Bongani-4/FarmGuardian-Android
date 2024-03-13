@@ -3147,6 +3147,7 @@ id ALT
 id Animalcaretakerbackhome
 id BOTTOM_END
 id BOTTOM_START
+id Barprogress
 id CTRL
 id Equipment
 id EquipmentBack
@@ -3285,6 +3286,7 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id circular_progress
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3436,7 +3438,6 @@ id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
 id list_item
-id loading_progress
 id m3_side_sheet
 id marquee
 id masked

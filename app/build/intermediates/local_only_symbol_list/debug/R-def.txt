@@ -35,6 +35,7 @@ drawable newsicon
 drawable peakpx
 drawable widgets
 id Animalcaretakerbackhome
+id Barprogress
 id Equipment
 id EquipmentBack
 id EquipmentBuy
@@ -54,6 +55,7 @@ id buttonRegister
 id buttonSetACprofile
 id buttonhome
 id checkBoxAVailable
+id circular_progress
 id container_layout
 id container_layoutRD
 id dialogMessage
@@ -79,7 +81,6 @@ id listViewAcaretakers
 id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
-id loading_progress
 id menu_HireAnimalCareteker
 id menu_RequestDetails
 id menu_becomeAnimalCaretaker

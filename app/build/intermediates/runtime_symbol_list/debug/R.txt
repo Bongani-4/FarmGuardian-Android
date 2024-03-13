@@ -3146,6 +3146,7 @@ int id ALT 0x7f080000
 int id Animalcaretakerbackhome 0x7f080001
 int id BOTTOM_END 0x7f080002
 int id BOTTOM_START 0x7f080003
+int id Barprogress 0x7f08023d
 int id CTRL 0x7f080004
 int id Equipment 0x7f080005
 int id EquipmentBack 0x7f080006
@@ -3284,6 +3285,7 @@ int id checkbox 0x7f08008a
 int id checked 0x7f08008b
 int id chronometer 0x7f08008c
 int id circle_center 0x7f08008d
+int id circular_progress 0x7f08023c
 int id clear_text 0x7f08008e
 int id clip_horizontal 0x7f08008f
 int id clip_vertical 0x7f080090
@@ -3435,7 +3437,6 @@ int id listViewAcaretakers2 0x7f080121
 int id listViewAcaretakersHiredRD 0x7f080122
 int id listViewAcaretakersRD 0x7f080123
 int id list_item 0x7f080124
-int id loading_progress 0x7f080125
 int id m3_side_sheet 0x7f080126
 int id marquee 0x7f080127
 int id masked 0x7f080128

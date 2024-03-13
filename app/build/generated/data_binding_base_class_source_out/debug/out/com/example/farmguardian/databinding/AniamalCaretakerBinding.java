@@ -27,7 +27,13 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   public final TextView Animalcaretakerbackhome;
 
   @NonNull
+  public final ProgressBar Barprogress;
+
+  @NonNull
   public final BottomNavigationView bottomNavigationView;
+
+  @NonNull
+  public final ProgressBar circularProgress;
 
   @NonNull
   public final RelativeLayout containerLayout;
@@ -38,20 +44,19 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   @NonNull
   public final ListView listViewAcaretakers;
 
-  @NonNull
-  public final ProgressBar loadingProgress;
-
   private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView Animalcaretakerbackhome, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull TextView Animalcaretakerbackhome, @NonNull ProgressBar Barprogress,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull ProgressBar circularProgress,
       @NonNull RelativeLayout containerLayout, @NonNull FrameLayout fragmentContainer,
-      @NonNull ListView listViewAcaretakers, @NonNull ProgressBar loadingProgress) {
+      @NonNull ListView listViewAcaretakers) {
     this.rootView = rootView;
     this.Animalcaretakerbackhome = Animalcaretakerbackhome;
+    this.Barprogress = Barprogress;
     this.bottomNavigationView = bottomNavigationView;
+    this.circularProgress = circularProgress;
     this.containerLayout = containerLayout;
     this.fragmentContainer = fragmentContainer;
     this.listViewAcaretakers = listViewAcaretakers;
-    this.loadingProgress = loadingProgress;
   }
 
   @Override
@@ -87,9 +92,21 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Barprogress;
+      ProgressBar Barprogress = ViewBindings.findChildViewById(rootView, id);
+      if (Barprogress == null) {
+        break missingId;
+      }
+
       id = R.id.bottom_navigation_view;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      id = R.id.circular_progress;
+      ProgressBar circularProgress = ViewBindings.findChildViewById(rootView, id);
+      if (circularProgress == null) {
         break missingId;
       }
 
@@ -107,15 +124,9 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.loading_progress;
-      ProgressBar loadingProgress = ViewBindings.findChildViewById(rootView, id);
-      if (loadingProgress == null) {
-        break missingId;
-      }
-
       return new AniamalCaretakerBinding((RelativeLayout) rootView, Animalcaretakerbackhome,
-          bottomNavigationView, containerLayout, fragmentContainer, listViewAcaretakers,
-          loadingProgress);
+          Barprogress, bottomNavigationView, circularProgress, containerLayout, fragmentContainer,
+          listViewAcaretakers);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
@@ -20,6 +21,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.os.Handler;
+import android.view.View;
+import android.widget.ProgressBar;
+
+
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
     Fragment fragment = null;
@@ -65,37 +71,21 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         if (item.getItemId() == R.id.menu_HireAnimalCareteker) {
-            loadingBAR();
 
-            Fragment fragment = new hirefrgament();
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
-                    .addToBackStack(null)
-                    .commit();
-
+            openAnimalCaretakerFragment();
             return true;
 
         }
         if(item.getItemId() == R.id.menu_becomeAnimalCaretaker)
         {
-            loadingBAR();
-            fragment =  new ACaretakerProfile2Fragment();
-
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
-                    .commit();
+            BecomeCaretakerFragment();
             return true;
 
 
 
         }else if (item.getItemId() == R.id.menu_RequestDetails) {
+            RequestDetailsFragment();
 
-            loadingBAR();
-            fragment =  new RequestDetailsFragment();
-
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_containerRD, fragment)
-                    .commit();
             return true;
 
 
@@ -105,7 +95,15 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
     public void loadingBAR()
     {
-        ProgressBar loadingProgress = findViewById(R.id.loading_progress);
+
+        ProgressBar loadingProgress = findViewById(R.id.Barprogress);
+        loadingProgress.setIndeterminate(true);
+        // Set the color of the ProgressBar to green
+        loadingProgress.getIndeterminateDrawable().setColorFilter(
+                ContextCompat.getColor(this, R.color.DarkGreen), android.graphics.PorterDuff.Mode.SRC_IN
+        );
+
+
         loadingProgress.setVisibility(View.VISIBLE);
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -113,14 +111,14 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
                 // Hide the loading ProgressBar after a delay
                 loadingProgress.setVisibility(View.GONE);
             }
-        }, 2000);
+        }, 1500);
 
     }
+
+
     private void openAnimalCaretakerFragment() {
-
-
-        
-
+        // Show loading progress bar
+        loadingBAR();
 
         Fragment fragment = new hirefrgament();
         getSupportFragmentManager().beginTransaction()
@@ -128,18 +126,57 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
                 .addToBackStack(null)
                 .commit();
 
+        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+            @Override
+            public void onBackStackChanged() {
+                // Fragment transaction is complete, hide the loading progress bar
+                hideLoadingBAR();
+            }
+        });
+    }
 
+    private void BecomeCaretakerFragment() {
+        // Show loading progress bar
+        loadingBAR();
+        fragment =  new ACaretakerProfile2Fragment();
 
-
-
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .commit();
 
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
-               // findViewById(R.id.loading_animation).setVisibility(View.GONE);
+                // Fragment transaction is complete, hide the loading progress bar
+                hideLoadingBAR();
             }
         });
-
     }
+    private void RequestDetailsFragment() {
+        // Show loading progress bar
+
+        loadingBAR();
+        fragment =  new RequestDetailsFragment();
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_containerRD, fragment)
+                .commit();
+        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+            @Override
+            public void onBackStackChanged() {
+                // Fragment transaction is complete, hide the loading progress bar
+                hideLoadingBAR();
+            }
+        });
+    }
+
+    private void hideLoadingBAR() {
+        ProgressBar loadingProgress = findViewById(R.id.Barprogress);
+        loadingProgress.setVisibility(View.GONE);
+    }
+
+
+
+
 
 }
