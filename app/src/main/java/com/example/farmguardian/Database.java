@@ -19,7 +19,7 @@ public class Database extends SQLiteOpenHelper {
 
     private final Context context;
 
-    public Database(@Nullable Context context, @Nullable String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public  Database(@Nullable Context context, @Nullable String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
         this.context = context;
     }

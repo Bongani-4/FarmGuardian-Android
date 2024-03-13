@@ -204,18 +204,20 @@ public class LoginActivityFirebase extends AppCompatActivity {
                     String email = userSnapshot.child("email").getValue(String.class);
                     String username = userSnapshot.child("username").getValue(String.class);
 
-
                     if (email.equals(currentUser.getEmail()) || username.equals(currentUser.getDisplayName())) {
+                        // Save user details to SharedPreferences
+                        saveUserDetails(currentUser.getUid(), username, email);
+
+
                         Toast.makeText(getApplicationContext(), "Welcome, " + username, Toast.LENGTH_SHORT).show();
 
-                        saveLoginStatus(getApplicationContext(),true);
+                        saveLoginStatus(getApplicationContext(), true);
 
                         startActivity(new Intent(LoginActivityFirebase.this, HomeActivity.class));
                         finish();
                         return;
                     }
                 }
-
 
                 Toast.makeText(getApplicationContext(), "User not found in the database.", Toast.LENGTH_SHORT).show();
             }
@@ -225,6 +227,32 @@ public class LoginActivityFirebase extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Error fetching user details.", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void createNewNodeForLoggedInUser(String uid, String username, String email, String selectedCaretakerFullnames, String selectedCaretakerContacts) {
+        DatabaseReference userNode = FirebaseDatabase.getInstance().getReference("users").child(uid);
+
+        AcaretakerModel acaretakerModel = new AcaretakerModel(selectedCaretakerFullnames, "Default Location", selectedCaretakerContacts, "Default Experience", 1);
+
+        userNode.child("acaretaker").setValue(acaretakerModel).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                Log.d("LoginActivityFirebase", "Node creation for logged-in user successful");
+            } else {
+                Log.e("LoginActivityFirebase", "Node creation failed: " + task.getException());
+            }
+        });
+    }
+
+
+
+
+    // Save user details to SharedPreferences
+    private void saveUserDetails(String uid, String username, String email) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("uid", uid);
+        editor.putString("username", username);
+        editor.putString("email", email);
+        editor.apply();
     }
 
 
