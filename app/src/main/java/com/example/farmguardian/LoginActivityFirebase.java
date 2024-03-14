@@ -24,6 +24,7 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -102,9 +103,10 @@ public class LoginActivityFirebase extends AppCompatActivity {
                                         if (currentUser != null) {
                                             getUserDetails(currentUser);
 
+
                                         }
                                     } else {
-                                        Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "No user found, login again.", Toast.LENGTH_SHORT).show();
                                     }
                                 });
                     }
@@ -196,15 +198,21 @@ public class LoginActivityFirebase extends AppCompatActivity {
     };
 
 
-    private void getUserDetails(FirebaseUser currentUser) {
+    private void getUserDetails(FirebaseUser currentUser) {boolean userFound = false;
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                boolean userFound = false;
                 for (DataSnapshot userSnapshot : snapshot.getChildren()) {
                     String email = userSnapshot.child("email").getValue(String.class);
                     String username = userSnapshot.child("username").getValue(String.class);
+                    String me = currentUser.getEmail();
 
-                    if (email.equals(currentUser.getEmail()) || username.equals(currentUser.getDisplayName())) {
+                    Snackbar.make(findViewById(android.R.id.content), "A" + me +email, Snackbar.LENGTH_SHORT).show();
+
+
+
+                    if((email.trim().equalsIgnoreCase(currentUser.getEmail().trim()))){
                         // Save user details to SharedPreferences
                         saveUserDetails(currentUser.getUid(), username, email);
 
@@ -215,12 +223,18 @@ public class LoginActivityFirebase extends AppCompatActivity {
 
                         startActivity(new Intent(LoginActivityFirebase.this, HomeActivity.class));
                         finish();
-                        return;
+                        userFound = true;
+                        break; // Exit the loop once user is found
                     }
                 }
 
-                Toast.makeText(getApplicationContext(), "User not found in the database.", Toast.LENGTH_SHORT).show();
-            }
+                if (!userFound) {
+                    Toast.makeText(getApplicationContext(), "User not found in the database.", Toast.LENGTH_SHORT).show();
+                }
+                        return;
+                }
+
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

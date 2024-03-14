@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
+
+
     Fragment fragment = null;
 
 
@@ -104,10 +106,10 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
                 // Hide the loading ProgressBar after a delay
                 loadingProgress.setVisibility(View.GONE);
             }
-        }, 1500);
+        }, 5000);
 
     }
-    public void passSelectedCaretaker(AcaretakerModel selectedCaretaker) {
+    public void lectedCaretaker(AcaretakerModel selectedCaretaker) {
         RequestDetailsFragment requestDetailsFragment = new RequestDetailsFragment();
         requestDetailsFragment.setSelectedCaretaker(selectedCaretaker);
 
@@ -123,18 +125,30 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
     private void openAnimalCaretakerFragment() {
         // Show loading progress bar
         loadingBAR();
+        ProgressBar loadingProgress = findViewById(R.id.Barprogress);
 
-        Fragment fragment = new hirefrgament();
+        fragment = new hirefrgament();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, fragment)
                 .addToBackStack(null)
                 .commit();
 
+        //check when the fragment is added
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
-                // Fragment transaction is complete, hide the loading progress bar
-                hideLoadingBAR();
+                // Fragment is added, retrieve the dataloaded variable from the fragment
+                if (fragment != null) {
+                    // Check if fragment is an instance of hirefrgament
+                    if (fragment instanceof hirefrgament) {
+                        // Cast fragment to hirefrgament and access dataloaded
+                        boolean dataLoaded = ((hirefrgament) fragment).isDataLoaded();
+                        // If dataloaded is true, hide the progress bar
+                        if (dataLoaded) {
+                            loadingProgress.setVisibility(View.GONE);
+                        }
+                    }
+                }
             }
         });
     }
@@ -146,6 +160,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, fragment)
+                .addToBackStack(null)
                 .commit();
 
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
@@ -164,6 +179,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, fragment)
+                .addToBackStack(null)
                 .commit();
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
@@ -172,6 +188,19 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
                 hideLoadingBAR();
             }
         });
+    }
+    public void onDataLoadedChanged(boolean isLoaded) {
+        if (isLoaded) {
+            hideLoadingBAR();
+        }
+    }
+    public void passSelectedCaretaker(AcaretakerModel selectedCaretaker) {
+        RequestDetailsFragment requestDetailsFragment = new RequestDetailsFragment();
+        requestDetailsFragment.setSelectedCaretaker(selectedCaretaker);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, requestDetailsFragment)
+                .addToBackStack(null)
+                .commit();
     }
 
     private void hideLoadingBAR() {

@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.util.Patterns;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText edusername, edEmail, edpassword, Edconfirm;
@@ -72,8 +73,6 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-                                Toast.makeText(getApplicationContext(), "Passwords must contain at least 8 characters, having a letter, digit & special character", Toast.LENGTH_SHORT).show();
-
 
                         } else {
                             Toast.makeText(getApplicationContext(), "Passwords don't match", Toast.LENGTH_SHORT).show();
@@ -90,28 +89,34 @@ public class RegisterActivity extends AppCompatActivity {
     private boolean isValidEmail(String email) {
         return Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
-
     private void registerUser(String username, String email, String password) {
-        Log.d("RegisterActivity", "Inside registerUser method");//debug
-        firebaseDatabaseHelper.saveProfile(username, email, password, new FirebaseDatabaseCallback<Boolean>() {
-            @Override
-            public void onSuccess(Boolean result) {
-                Log.d("RegisterActivity", "Registration success");//debug
-                Toast.makeText(getApplicationContext(), "Registration success", Toast.LENGTH_SHORT).show();
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        // User registration successful, save profile to Firebase Realtime Database
+                        firebaseDatabaseHelper.saveProfile(username, email, password, new FirebaseDatabaseCallback<Boolean>() {
+                            @Override
+                            public void onSuccess(Boolean result) {
+                                Log.d("RegisterActivity", "Registration success");//debug
+                                Toast.makeText(getApplicationContext(), "Registration success", Toast.LENGTH_SHORT).show();
 
-                startActivity(new Intent(RegisterActivity.this, LoginActivityFirebase.class));
+                                startActivity(new Intent(RegisterActivity.this, LoginActivityFirebase.class));
+                            }
 
-            }
-
-            @Override
-            public void onFailure(String errorMessage) {
-                Log.e("RegisterActivity", "Registration failed: " + errorMessage); // debug
-
-                Toast.makeText(getApplicationContext(), "Registration failed: " + errorMessage, Toast.LENGTH_SHORT).show();
-            }
-        });
-
+                            @Override
+                            public void onFailure(String errorMessage) {
+                                Log.e("RegisterActivity", "Registration failed: " + errorMessage); // debug
+                                Toast.makeText(getApplicationContext(), "Registration failed: " + errorMessage, Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    } else {
+                        // User registration failed
+                        Log.e("RegisterActivity", "User registration failed: " + task.getException().getMessage());
+                        Toast.makeText(getApplicationContext(), "User registration failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
+
 
 
 }

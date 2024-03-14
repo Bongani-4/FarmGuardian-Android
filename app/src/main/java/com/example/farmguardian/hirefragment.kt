@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -15,13 +16,43 @@ import com.google.firebase.database.FirebaseDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-
+interface DataLoadListener {
+    fun onDataLoadedChanged(isLoaded: Boolean)
+}
 
 public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDialogListener {
 
     private var listener: ConfirmationDialogListener? = null
     private var selectedCaretakerFullnames = ""
     private var selectedCaretakerContacts = ""
+
+
+    private var dataLoadListener: DataLoadListener? = null
+
+
+    private fun notifyDataLoadedChanged(isLoaded: Boolean) {
+        dataLoadListener?.onDataLoadedChanged(isLoaded)
+    }
+
+
+
+    private  var dataloaded = false
+    set(value) {
+        field = value
+        dataLoadListener?.onDataLoadedChanged(value)
+    }
+
+    fun isDataLoaded(): Boolean {
+        return dataloaded
+    }
+
+    fun setDataLoadListener(listener: DataLoadListener) {
+        dataLoadListener = listener
+    }
+
+
+
+
 
     interface ConfirmationDialogListener {
         fun onConfirmClick()
@@ -36,6 +67,7 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
     ): View? {
         val view = inflater.inflate(R.layout.activity_hire_animal_caretaker, container, false)
         val listView: ListView = view.findViewById(R.id.listViewAcaretakers2)
+        dataloaded = false
 
         // Initialize Database
         val database = Database()
@@ -45,7 +77,7 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
             try {
                 // Retrieve list of animal caretakers from Firebase
                 val caretakerList = database.getAcaretakerList()
-                database.initializeDatabase()
+               /** database.initializeDatabase()  only to be executed once**/
                 // switch to the main dispatcher before updating the UI
                 withContext(Dispatchers.Main) {
                     val adapter = AcaretakerAdapter(
@@ -54,6 +86,10 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
                         caretakerList
                     )
                     listView.adapter = adapter
+
+
+                    // Hide the progress bar
+                  dataloaded = true
 
                     listView.setOnItemClickListener { _, _, position, _ ->
                         val selectedCaretaker = caretakerList[position]
