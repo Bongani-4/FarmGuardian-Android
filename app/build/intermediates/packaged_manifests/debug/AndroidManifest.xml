@@ -36,9 +36,6 @@
             android:name="com.example.farmguardian.Equipment"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.FindACaretaker"
-            android:exported="false" />
-        <activity
             android:name="com.example.farmguardian.animalCaretaker"
             android:exported="false" />
         <activity
