@@ -7,64 +7,74 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.Collections;
 import java.util.List;
 
 public class RequestDetailsFragment extends Fragment implements ConfirmationHireFragment.ConfirmationDialogListener {
 
-    private String selectedCaretakerFullnames;
-    private String selectedCaretakerContacts;
+    private AcaretakerModel selectedCaretaker;
+    private ListView listViewAcaretakersRDs;
+    private AcaretakerAdapter adapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.requestdetails, container, false);
 
-        // Fetch data from the 'ACprofile' table
-        Database db = new Database(requireContext(), "FarmGuardian", null, 1);
-        List<AcaretakerModel> caretakerList = db.getAcaretakerList();
+        // Initialize the ListView
+        listViewAcaretakersRDs = view.findViewById(R.id.listViewAcaretakersRD);
 
-        // Create the adapter
-        AcaretakerAdapter adapter = new AcaretakerAdapter(requireContext(), R.layout.list_item_acaretaker, caretakerList);
+        // Initialize the adapter
+        adapter = new AcaretakerAdapter(requireContext(), R.layout.list_item_acaretaker, Collections.emptyList());
 
-        // Attach the adapter to the ListView
-        ListView listView = view.findViewById(R.id.listViewAcaretakersRD);
-        listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               listViewAcaretakersRDs.setAdapter(adapter);
 
-                // Get the selected caretaker's full names
-                selectedCaretakerFullnames = caretakerList.get(position).getFullNames();
-                selectedCaretakerContacts   = caretakerList.get(position).getContact();
 
-                showConfirmationDialog();
-            }
-        });
+
+        // Check if selected caretaker is not null
+        if (selectedCaretaker != null) {
+            // Update the ListView with the selected caretaker
+            updateListView(selectedCaretaker);
+        }
 
         return view;
     }
 
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        // Call onConfirmClick when the fragment is created
+        onConfirmClick();
+    }
+
+    // Method to update ListView with selected caretaker
+    private void updateListView(AcaretakerModel caretaker) {
+        // Create a new list with only the selected caretaker
+        List<AcaretakerModel> selectedList = Collections.singletonList(caretaker);
+
+
+        // Add the selected caretaker to the adapter
+        adapter.addAll(selectedList);
+
+        // Notify the adapter that the data has changed
+        adapter.notifyDataSetChanged();
+    }
+
+    // Setter method to update the selected caretaker
+    public void setSelectedCaretaker(AcaretakerModel caretaker) {
+        this.selectedCaretaker = caretaker;
+        // Update the ListView with the new selected caretaker
+        updateListView(selectedCaretaker);
+    }
+
     private void showConfirmationDialog() {
-        ConfirmationHireFragment confirmationDialog = new ConfirmationHireFragment();
-
-        // Pass the selected caretaker's full names to the fragment
-        Bundle args = new Bundle();
-        args.putString("selectedCaretakerFullnames", selectedCaretakerFullnames);
-        args.putString("selectedCaretakerContacts", selectedCaretakerContacts);
-        confirmationDialog.setArguments(args);
-
-
-        confirmationDialog.setConfirmationDialogListener(this);
-
-
-        confirmationDialog.show(getChildFragmentManager(), "ConfirmationDialog");
     }
 
     @Override
     public void onConfirmClick() {
-        //  logic applied elsewhere better,follow 'usage' to trace it
-            }
+
+    }
 }

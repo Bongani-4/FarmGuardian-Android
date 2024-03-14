@@ -19,9 +19,7 @@
 
             android:name=".Equipment"
             android:exported="false" />
-        <activity
-            android:name=".FindACaretaker"
-            android:exported="false" />
+
         <activity
             android:name=".animalCaretaker"
             android:exported="false" />

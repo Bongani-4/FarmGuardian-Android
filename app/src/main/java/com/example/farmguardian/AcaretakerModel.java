@@ -16,23 +16,8 @@ public class AcaretakerModel {
         this.available = available;
     }
 
-    public void setFullNames(String fullNames) {
-        this.fullNames = fullNames;
-    }
-        public void setLocation(String location) {
-        this.location = location;
-    }
-        public void setContact(String contact) {
-        this.contact = contact;
-    }
-    public void setExperience(String experience) {
-        this.experience = experience;
-    }
 
 
-    public void setAvailable(int available) {
-        this.available = available;
-    }
 
     public String getFullNames() {
         return fullNames;

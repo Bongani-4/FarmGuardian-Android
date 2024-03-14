@@ -1,5 +1,7 @@
 package com.example.farmguardian;
 
+import static kotlinx.coroutines.time.TimeKt.delay;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -13,6 +15,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ConfirmationHireFragment extends DialogFragment {
 
@@ -29,6 +34,7 @@ public class ConfirmationHireFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+
         // Create a custom layout inflater
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_confirmation_hire, null);
@@ -55,15 +61,21 @@ public class ConfirmationHireFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 dismiss();
-                if (listener != null) {
-                    listener.onConfirmClick();
 
-                    assert getArguments() != null;
-                    String contacts = getArguments().getString("selectedCaretakerContacts");
-                    String caretakerName = getArguments().getString("selectedCaretakerFullnames");
-                    Database db = new Database(requireContext(), "FarmGuardian", null, 1);
-                    db.saveHiredCaretaker(caretakerName,contacts);
-                }
+                assert listener != null;
+                listener.onConfirmClick();
+
+                assert getArguments() != null;
+                String contacts = getArguments().getString("selectedCaretakerContacts");
+                String caretakerName = getArguments().getString("selectedCaretakerFullnames");
+                // Save hired caretaker to the "ToBeHired" node
+                DatabaseReference toBeHiredCaretakerRef = FirebaseDatabase.getInstance().getReference("toBeHired").push();
+                toBeHiredCaretakerRef.child("caretaker_name").setValue(caretakerName);
+                toBeHiredCaretakerRef.child("contact").setValue(contacts);
+
+                // Clear arguments
+                getArguments().clear();
+
             }
         });
 

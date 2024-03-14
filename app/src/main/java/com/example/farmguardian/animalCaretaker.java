@@ -6,9 +6,6 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
 import androidx.fragment.app.Fragment;
@@ -21,10 +18,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.os.Handler;
-import android.view.View;
-import android.widget.ProgressBar;
-
 
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
@@ -114,6 +107,17 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         }, 1500);
 
     }
+    public void passSelectedCaretaker(AcaretakerModel selectedCaretaker) {
+        RequestDetailsFragment requestDetailsFragment = new RequestDetailsFragment();
+        requestDetailsFragment.setSelectedCaretaker(selectedCaretaker);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, requestDetailsFragment)
+                .addToBackStack(null)
+                .commit();
+    }
+
+
 
 
     private void openAnimalCaretakerFragment() {
@@ -138,7 +142,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
     private void BecomeCaretakerFragment() {
         // Show loading progress bar
         loadingBAR();
-        fragment =  new ACaretakerProfile2Fragment();
+        fragment =  new BecomeAnimalcaretakerFragment();
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, fragment)
