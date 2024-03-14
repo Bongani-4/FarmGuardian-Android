@@ -59,10 +59,10 @@ class Database {
     }
 
     // Method to add sample data for animal caretakers,Executed only once
-  /**  private fun addAnimalCaretakers() {
+    private fun addAnimalCaretakers() {
         val faker = Faker()
 
-        for (i in 0 until 20) {
+        for (i in 0 until 10) {
             val caretakerRef = FirebaseDatabase.getInstance().getReference("ACUser").push()
             caretakerRef.child("username").setValue(faker.name().username())
             caretakerRef.child("contacts").setValue(faker.phoneNumber().cellPhone())
@@ -71,7 +71,7 @@ class Database {
             caretakerRef.child("experience").setValue((Random().nextInt(10) + i).toString())
             caretakerRef.child("CBavailable").setValue(i % 2)
         }
-    }**/
+    }
 
     // Method to initialize the database
     suspend fun initializeDatabase() {
