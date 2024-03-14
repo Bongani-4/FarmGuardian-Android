@@ -1,10 +1,14 @@
 import android.util.Log
+import androidx.lifecycle.lifecycleScope
 import com.example.farmguardian.AcaretakerModel
 import com.github.javafaker.Faker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import java.util.*
+
 
 class Database {
 
@@ -13,6 +17,9 @@ class Database {
     private val hiredRef: DatabaseReference
 
     init {
+
+
+
         val firebaseDatabase = FirebaseDatabase.getInstance()
 
         // Reference to the "users" node where user profiles are stored
@@ -25,21 +32,7 @@ class Database {
         hiredRef = firebaseDatabase.getReference("hired")
     }
 
-    // Method to save user profile to Firebase Realtime Database
-    suspend fun saveProfile(username: String, email: String, password: String): Boolean {
-        return try {
-            val authResult = FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).await()
-            val currentUserRef = usersRef.child(authResult.user?.uid ?: "")
-            currentUserRef.child("username").setValue(username)
-            currentUserRef.child("email").setValue(email)
-            currentUserRef.child("password").setValue(password)
-            currentUserRef.child("request").setValue(0)
-            true
-        } catch (e: Exception) {
-            Log.e("Database", "Error saving profile: ${e.message}")
-            false
-        }
-    }
+
 
     // Method to save hired caretaker to Firebase Realtime Database
     suspend fun saveHiredCaretaker(caretakerName: String, contacts: String) {
@@ -65,8 +58,8 @@ class Database {
         return caretakerList
     }
 
-    // Method to add sample data for animal caretakers
-    private fun addAnimalCaretakers() {
+    // Method to add sample data for animal caretakers,Executed only once
+  /**  private fun addAnimalCaretakers() {
         val faker = Faker()
 
         for (i in 0 until 20) {
@@ -78,7 +71,7 @@ class Database {
             caretakerRef.child("experience").setValue((Random().nextInt(10) + i).toString())
             caretakerRef.child("CBavailable").setValue(i % 2)
         }
-    }
+    }**/
 
     // Method to initialize the database
     suspend fun initializeDatabase() {
@@ -144,7 +137,7 @@ class Database {
             }
         })
 
-        // Add sample data for animal caretakers
-        addAnimalCaretakers()
+        // Add sample data for animal caretakers,executed nly once
+        //addAnimalCaretakers()
     }
 }

@@ -98,7 +98,9 @@ public class RegisterActivity extends AppCompatActivity {
             public void onSuccess(Boolean result) {
                 Log.d("RegisterActivity", "Registration success");//debug
                 Toast.makeText(getApplicationContext(), "Registration success", Toast.LENGTH_SHORT).show();
+
                 startActivity(new Intent(RegisterActivity.this, LoginActivityFirebase.class));
+
             }
 
             @Override

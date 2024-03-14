@@ -45,7 +45,7 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
             try {
                 // Retrieve list of animal caretakers from Firebase
                 val caretakerList = database.getAcaretakerList()
-
+                database.initializeDatabase()
                 // switch to the main dispatcher before updating the UI
                 withContext(Dispatchers.Main) {
                     val adapter = AcaretakerAdapter(
