@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="05dp">
 
     <TextView
         android:id="@+id/dialogTitle"
@@ -23,7 +23,6 @@
         android:gravity="center"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,21 +30,34 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/btncall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:layout_marginEnd="8dp"
+            android:text="Call"
+            android:textSize="14sp" />
+
+        <Button
             android:id="@+id/btnYes"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Yes"
+            android:layout_weight="1"
+            android:text="Hire"
             android:textSize="14sp"
             android:background="@drawable/green_button_background"
             android:layout_marginEnd="8dp"/>
 
         <Button
             android:id="@+id/btnNo"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="No"
+            android:layout_weight="1"
+            android:text="Cancel"
             android:textSize="14sp"
             android:background="@drawable/btn_bg"/>
     </LinearLayout>
+
 
 </LinearLayout>

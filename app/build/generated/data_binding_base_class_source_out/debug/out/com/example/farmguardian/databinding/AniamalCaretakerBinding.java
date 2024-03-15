@@ -33,9 +33,6 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
-  public final ProgressBar circularProgress;
-
-  @NonNull
   public final RelativeLayout containerLayout;
 
   @NonNull
@@ -44,19 +41,22 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   @NonNull
   public final ListView listViewAcaretakers;
 
+  @NonNull
+  public final TextView noInternet;
+
   private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
       @NonNull TextView Animalcaretakerbackhome, @NonNull ProgressBar Barprogress,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull ProgressBar circularProgress,
-      @NonNull RelativeLayout containerLayout, @NonNull FrameLayout fragmentContainer,
-      @NonNull ListView listViewAcaretakers) {
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull RelativeLayout containerLayout,
+      @NonNull FrameLayout fragmentContainer, @NonNull ListView listViewAcaretakers,
+      @NonNull TextView noInternet) {
     this.rootView = rootView;
     this.Animalcaretakerbackhome = Animalcaretakerbackhome;
     this.Barprogress = Barprogress;
     this.bottomNavigationView = bottomNavigationView;
-    this.circularProgress = circularProgress;
     this.containerLayout = containerLayout;
     this.fragmentContainer = fragmentContainer;
     this.listViewAcaretakers = listViewAcaretakers;
+    this.noInternet = noInternet;
   }
 
   @Override
@@ -104,12 +104,6 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.circular_progress;
-      ProgressBar circularProgress = ViewBindings.findChildViewById(rootView, id);
-      if (circularProgress == null) {
-        break missingId;
-      }
-
       RelativeLayout containerLayout = (RelativeLayout) rootView;
 
       id = R.id.fragment_container;
@@ -124,9 +118,15 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.noInternet;
+      TextView noInternet = ViewBindings.findChildViewById(rootView, id);
+      if (noInternet == null) {
+        break missingId;
+      }
+
       return new AniamalCaretakerBinding((RelativeLayout) rootView, Animalcaretakerbackhome,
-          Barprogress, bottomNavigationView, circularProgress, containerLayout, fragmentContainer,
-          listViewAcaretakers);
+          Barprogress, bottomNavigationView, containerLayout, fragmentContainer,
+          listViewAcaretakers, noInternet);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

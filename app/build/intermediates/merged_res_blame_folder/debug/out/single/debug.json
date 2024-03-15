@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\anim_fade_in.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\anim\\fade_in.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\drawable_home.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\drawable\\home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\anim_fade_in.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\anim\\fade_in.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\drawable_line_fill_up.xml.flat",
@@ -188,10 +188,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\drawable\\info.xml"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-39:/layout_activity_acaretaker_profile2.xml.flat",
-        "source": "com.example.farmguardian.app-main-41:/layout/activity_acaretaker_profile2.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -214,6 +210,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\layout_fragment_confirmation_hire.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-41:\\layout\\fragment_confirmation_hire.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-39:/layout_fragment_confirmation_hire.xml.flat",
+        "source": "com.example.farmguardian.app-main-41:/layout/fragment_confirmation_hire.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-39:\\layout_activity_view_acset_profile.xml.flat",

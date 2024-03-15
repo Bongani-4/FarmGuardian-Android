@@ -3146,6 +3146,7 @@ id Animalcaretakerbackhome
 id BOTTOM_END
 id BOTTOM_START
 id Barprogress
+id Barsprogress
 id CTRL
 id Equipment
 id EquipmentBack
@@ -3261,6 +3262,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnNo
 id btnYes
+id btncall
 id buttonBack
 id buttonLogin
 id buttonPanel
@@ -3284,7 +3286,6 @@ id checkbox
 id checked
 id chronometer
 id circle_center
-id circular_progress
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3509,6 +3510,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id noInternet
 id noScroll
 id noState
 id none

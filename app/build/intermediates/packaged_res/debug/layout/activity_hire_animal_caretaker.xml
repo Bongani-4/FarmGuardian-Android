@@ -9,9 +9,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="0dp"
         android:layout_marginStart="0dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
+    <ProgressBar
+        android:id="@+id/Barsprogress"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="2dp"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressBackgroundTint="@color/DarkGreen"
+        android:progressTint="@color/DarkGreen"
+        android:visibility="gone"
+        />
 </RelativeLayout>

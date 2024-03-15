@@ -24,19 +24,14 @@ import kotlinx.coroutines.withContext
 
 public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDialogListener {
 
-    private var listener: ConfirmationDialogListener? = null
-    private var selectedCaretakerFullnames = ""
+     private var selectedCaretakerFullnames = ""
     private var selectedCaretakerContacts = ""
 
     private lateinit var usersRef: DatabaseReference
 
-    interface ConfirmationDialogListener {
-        fun onConfirmClick()
-    }
 
-    fun setConfirmationDialogListener(listener: ConfirmationDialogListener) {
-        this.listener = listener
-    }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -151,6 +146,13 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
                                 .child(currentUser.uid)
                                 .child("selectedCaretakers")
                             usersRef.push().setValue(selectedCaretaker)
+
+                            Toast.makeText(
+                                requireContext(),
+                                "candidate saved, to be hired.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
                         } else {
                             // The "selectedCaretakers" node already exists, add selected caretaker
                             selectedCaretakersRef.push().setValue(selectedCaretaker)

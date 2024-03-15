@@ -3,6 +3,7 @@ package com.example.farmguardian;
 
 public class AcaretakerModel {
 
+    private String id;
     private String fullNames;
     private String location;
     private String contact;
@@ -15,6 +16,16 @@ public class AcaretakerModel {
         // Default constructor required by Firebase
     }
 
+
+    public AcaretakerModel(String id, String fullNames, String location, String contact, String experience, int available) {
+        this.id = id;
+        this.fullNames = fullNames;
+        this.location = location;
+        this.contact = contact;
+        this.experience = experience;
+        this.available = available;
+    }
+
     public AcaretakerModel(String fullNames, String location, String contact, String experience, int available) {
         this.fullNames = fullNames;
         this.location = location;
@@ -25,6 +36,14 @@ public class AcaretakerModel {
 
 
 
+    // Getter and setter for ID
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getFullNames() {
         return fullNames;

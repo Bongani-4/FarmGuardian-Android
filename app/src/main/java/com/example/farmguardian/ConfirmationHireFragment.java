@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 
 import com.google.firebase.database.DatabaseReference;
@@ -44,13 +45,20 @@ public class ConfirmationHireFragment extends DialogFragment {
         TextView dialogMessage = view.findViewById(R.id.dialogMessage);
         Button btnYes = view.findViewById(R.id.btnYes);
         Button btnNo = view.findViewById(R.id.btnNo);
+        Button btncall = view.findViewById(R.id.btncall);
 
+
+        btnNo.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.DarkGreen));
+        btnYes.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.DarkGreen));
+        btncall.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(), R.color.DarkGreen));
         // Get the selected caretaker's name from arguments
         String caretakerName = getArguments().getString("selectedCaretakerFullnames");
 
         // Set the title and message
         dialogTitle.setText("Hire Confirmation");
-        dialogMessage.setText("Do you want to hire " + caretakerName + " as the Animal Caretaker?");
+        if(caretakerName != null) {
+            dialogMessage.setText("What do you want to do with animal caretaker " + caretakerName + "?");
+        }
 
         // Set up animations
         //Animation slideInAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in_bottoml);
