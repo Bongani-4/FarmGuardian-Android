@@ -32,6 +32,7 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
     private AcaretakerModel selectedCaretaker;
     private ListView listViewAcaretakersRDs, ListViewHIred;
     private AcaretakerAdapter adapter;
+    private AcaretakerAdapter hiredAdapter;
     private Context mContext;
 
     @Override
@@ -48,6 +49,7 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
         ListViewHIred = view.findViewById(R.id.listViewAcaretakersHiredRD);
         listViewAcaretakersRDs = view.findViewById(R.id.listViewAcaretakersRD);
         retrieveSelectedCaretakersFromFirebase();
+        retrieveHiredCaretakersFromFirebase();
 
 
         return view;
@@ -105,6 +107,40 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     Toast.makeText(mContext.getApplicationContext(), "data fetch cancelled", Toast.LENGTH_SHORT).show();
 
+                }
+            });
+        }
+    }
+    private void retrieveHiredCaretakersFromFirebase() {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser != null) {
+            String loggedInUserId = currentUser.getUid();
+            DatabaseReference userRef = FirebaseDatabase.getInstance().getReference()
+                    .child("users")
+                    .child(loggedInUserId)
+                    .child("HiredCaretakers");
+            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    List<AcaretakerModel> hiredCaretakerList = new ArrayList<>();
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        AcaretakerModel hiredCaretaker = snapshot.getValue(AcaretakerModel.class);
+                        hiredCaretakerList.add(hiredCaretaker);
+                    }
+                    // Create adapter if null or update existing adapter
+                    if (hiredAdapter == null) {
+                        hiredAdapter = new AcaretakerAdapter(requireContext(), R.layout.list_item_acaretaker, hiredCaretakerList);
+                        ListViewHIred.setAdapter(hiredAdapter);
+                    } else {
+                        hiredAdapter.clear();
+                        hiredAdapter.addAll(hiredCaretakerList);
+                        hiredAdapter.notifyDataSetChanged();
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Toast.makeText(mContext.getApplicationContext(), "Data fetch cancelled", Toast.LENGTH_SHORT).show();
                 }
             });
         }
