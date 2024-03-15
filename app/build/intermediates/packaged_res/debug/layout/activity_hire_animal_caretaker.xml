@@ -12,8 +12,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="0dp"
         android:layout_marginStart="0dp"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
+        android:divider="@null"
+    android:dividerHeight="0dp"/>
     <ProgressBar
         android:id="@+id/Barsprogress"
         android:layout_width="match_parent"
