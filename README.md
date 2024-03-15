@@ -81,7 +81,7 @@ Example:  let other farmers know of your lost livestock and get notified when it
 
 * ***News***:
 
-Function: Get up to date with the world's or local current agriculture news.
+Function: Get up to date with the world's or local current agriculture news and nature hazards.
 
 Example: See trending news, tips, cautious weather updates, market & currency .
 
