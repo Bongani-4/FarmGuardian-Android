@@ -21,6 +21,7 @@
             android:id="@+id/Barprogress"
             android:layout_width="match_parent"
             android:layout_height="10dp"
+            android:layout_marginTop="2dp"
             android:layout_gravity="top"
             style="?android:attr/progressBarStyleHorizontal"
             android:progressBackgroundTint="@color/DarkGreen"
