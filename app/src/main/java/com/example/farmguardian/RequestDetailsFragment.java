@@ -241,11 +241,9 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
                                     selectedCaretakerRef.removeValue(new DatabaseReference.CompletionListener() {
                                         @Override
                                         public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
-                                            if (error == null) {
-                                                // Successfully removed the selected caretaker
-                                                Toast.makeText(mContext, "Selected caretaker removed.", Toast.LENGTH_SHORT).show();
-                                            } else {
-                                                // Failed to remove the selected caretaker
+                                            if(error != null) {
+
+                                            // Failed to remove the selected caretaker
                                                 Toast.makeText(mContext, "Failed to remove selected caretaker.", Toast.LENGTH_SHORT).show();
                                             }
                                         }
