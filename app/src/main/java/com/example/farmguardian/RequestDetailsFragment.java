@@ -1,24 +1,41 @@
 package com.example.farmguardian;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 public class RequestDetailsFragment extends Fragment implements ConfirmationHireFragment.ConfirmationDialogListener {
 
     private AcaretakerModel selectedCaretaker;
     private ListView listViewAcaretakersRDs;
     private AcaretakerAdapter adapter;
+    private Context mContext;
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        mContext = context;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,49 +43,56 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
 
         // Initialize the ListView
         listViewAcaretakersRDs = view.findViewById(R.id.listViewAcaretakersRD);
-
-        // Initialize the adapter
-        adapter = new AcaretakerAdapter(requireContext(), R.layout.list_item_acaretaker, Collections.emptyList());
-
-
-               listViewAcaretakersRDs.setAdapter(adapter);
+        retrieveSelectedCaretakersFromFirebase();
 
 
 
-        // Check if selected caretaker is not null
-        if (selectedCaretaker != null) {
-            // Update the ListView with the selected caretaker
-            updateListView(selectedCaretaker);
-        }
+
 
         return view;
     }
+    //Retrieve selected animal caretaker information from Firebase
+    private void retrieveSelectedCaretakersFromFirebase() {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser != null) {
+            String loggedInUserId = currentUser.getUid();
+            DatabaseReference userRef = FirebaseDatabase.getInstance().getReference()
+                    .child("users")
+                    .child(loggedInUserId)
+                    .child("selectedCaretakers");
+            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
 
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        // Call onConfirmClick when the fragment is created
-        onConfirmClick();
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    List<AcaretakerModel> caretakerList = new ArrayList<>();
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        AcaretakerModel caretaker = snapshot.getValue(AcaretakerModel.class);
+                        caretakerList.add(caretaker);
+                    }
+                    // Create adapter if null or update existing adapter
+                    if (adapter == null) {
+                        adapter = new AcaretakerAdapter(requireContext(), R.layout.list_item_acaretaker, caretakerList);
+                        listViewAcaretakersRDs.setAdapter(adapter);
+                    } else {
+
+                        adapter.clear();
+                        adapter.addAll(caretakerList);
+                        adapter.notifyDataSetChanged();
+                    }
+
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Toast.makeText(mContext.getApplicationContext(), "data fetch cancelled", Toast.LENGTH_SHORT).show();
+
+                }
+            });
+        }
     }
 
-    // Method to update ListView with selected caretaker
-    private void updateListView(AcaretakerModel caretaker) {
-        // Create a new list with only the selected caretaker
-        List<AcaretakerModel> selectedList = Collections.singletonList(caretaker);
 
-
-        // Add the selected caretaker to the adapter
-        adapter.addAll(selectedList);
-
-        // Notify the adapter that the data has changed
-        adapter.notifyDataSetChanged();
-    }
-
-    // Setter method to update the selected caretaker
-    public void setSelectedCaretaker(AcaretakerModel caretaker) {
-        this.selectedCaretaker = caretaker;
-        // Update the ListView with the new selected caretaker
-        updateListView(selectedCaretaker);
-    }
 
     private void showConfirmationDialog() {
     }
@@ -76,5 +100,7 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
     @Override
     public void onConfirmClick() {
 
+        }
+
     }
-}
+

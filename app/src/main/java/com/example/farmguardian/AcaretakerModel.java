@@ -1,5 +1,6 @@
 package com.example.farmguardian;
 
+
 public class AcaretakerModel {
 
     private String fullNames;
@@ -7,6 +8,12 @@ public class AcaretakerModel {
     private String contact;
     private String experience;
     private int available;
+
+
+    // Default constructor
+    public AcaretakerModel() {
+        // Default constructor required by Firebase
+    }
 
     public AcaretakerModel(String fullNames, String location, String contact, String experience, int available) {
         this.fullNames = fullNames;

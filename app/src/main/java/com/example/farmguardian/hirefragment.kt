@@ -2,23 +2,25 @@ package com.example.farmguardian
 
 import Database
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-interface DataLoadListener {
-    fun onDataLoadedChanged(isLoaded: Boolean)
-}
+
 
 public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDialogListener {
 
@@ -26,33 +28,7 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
     private var selectedCaretakerFullnames = ""
     private var selectedCaretakerContacts = ""
 
-
-    private var dataLoadListener: DataLoadListener? = null
-
-
-    private fun notifyDataLoadedChanged(isLoaded: Boolean) {
-        dataLoadListener?.onDataLoadedChanged(isLoaded)
-    }
-
-
-
-    private  var dataloaded = false
-    set(value) {
-        field = value
-        dataLoadListener?.onDataLoadedChanged(value)
-    }
-
-    fun isDataLoaded(): Boolean {
-        return dataloaded
-    }
-
-    fun setDataLoadListener(listener: DataLoadListener) {
-        dataLoadListener = listener
-    }
-
-
-
-
+    private lateinit var usersRef: DatabaseReference
 
     interface ConfirmationDialogListener {
         fun onConfirmClick()
@@ -61,13 +37,26 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
     fun setConfirmationDialogListener(listener: ConfirmationDialogListener) {
         this.listener = listener
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Initialize usersRef reference
+        usersRef = FirebaseDatabase.getInstance().getReference("users")
+
+
         val view = inflater.inflate(R.layout.activity_hire_animal_caretaker, container, false)
         val listView: ListView = view.findViewById(R.id.listViewAcaretakers2)
-        dataloaded = false
+        val progressBar: ProgressBar = view.findViewById(R.id.Barsprogress)
+
+        // Set the progress tint color to green
+        progressBar.indeterminateTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.DarkGreen)
+
+
+        // Show the progress bar
+        progressBar.visibility = View.VISIBLE
 
         // Initialize Database
         val database = Database()
@@ -77,19 +66,21 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
             try {
                 // Retrieve list of animal caretakers from Firebase
                 val caretakerList = database.getAcaretakerList()
-               /** database.initializeDatabase()  only to be executed once**/
+
+
+                /** to be  only to be executed once
+                 * database.initializeDatabase() **/
+
                 // switch to the main dispatcher before updating the UI
                 withContext(Dispatchers.Main) {
+                    // Hide the progress bar
+                    progressBar.visibility = View.GONE
                     val adapter = AcaretakerAdapter(
                         requireContext(),
                         R.layout.list_item_acaretaker,
                         caretakerList
                     )
                     listView.adapter = adapter
-
-
-                    // Hide the progress bar
-                  dataloaded = true
 
                     listView.setOnItemClickListener { _, _, position, _ ->
                         val selectedCaretaker = caretakerList[position]
@@ -102,13 +93,18 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
                 // Handle exceptions
                 withContext(Dispatchers.Main) {
                     // Show error toast for exceptions handling database queries
-                    Toast.makeText(requireContext(), "Error loading caretaker data: ${e.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "Error loading caretaker data: ${e.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    // Hide the progress bar
+                    progressBar.visibility = View.GONE
                 }
             }
         }
         return view
     }
-
 
 
     private fun showConfirmationDialog() {
@@ -133,42 +129,52 @@ public class hirefrgament : Fragment(), ConfirmationHireFragment.ConfirmationDia
             // Create a new instance of AcaretakerModel with selected caretaker details
             val selectedCaretaker = AcaretakerModel(
                 selectedCaretakerFullnames,
-                "Default Location",
+                "Na",
                 selectedCaretakerContacts,
-                "Default Experience",
+                "Na",
                 1
             )
 
-            // Pass the selected caretaker to RequestDetailsFragment
-            (activity as animalCaretaker).passSelectedCaretaker(selectedCaretaker)
-        } else {
 
-            Toast.makeText(requireContext(), "Selected caretaker details are empty.", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-
-    private fun createNewNodeForLoggedInUser(selectedCaretakerFullnames: String, selectedCaretakerContacts: String) {
-        val currentUser = FirebaseAuth.getInstance().currentUser
-
-        if (currentUser != null) {
-            val userNode = FirebaseDatabase.getInstance().getReference("users").child(currentUser.uid)
-
-            // Create an instance of AcaretakerModel with selected caretaker details
-            val acaretakerModel = AcaretakerModel(selectedCaretakerFullnames, "Default Location", selectedCaretakerContacts, "Default Experience", 1)
-
-            // Set the AcaretakerModel as a child node under the logged-in user
-            userNode.child("acaretaker").setValue(acaretakerModel)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        Log.d("hirefrgament", "Node creation for logged-in user successful")
-                        // Handle success if needed
-                    } else {
-                        Log.e("hirefrgament", "Node creation failed: ${task.exception}")
-                        // Handle failure if needed
+            //save selected animal caretakers to the DB
+            val currentUser = FirebaseAuth.getInstance().currentUser
+            if (currentUser != null) {
+                val selectedCaretakersRef = FirebaseDatabase.getInstance().reference
+                    .child("users")
+                    .child(currentUser.uid)
+                    .child("selectedCaretakers")
+                selectedCaretakersRef.addListenerForSingleValueEvent(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        if (!dataSnapshot.exists()) {
+                            // The "selectedCaretakers" node does not exist, create it and add selected caretaker
+                            usersRef = FirebaseDatabase.getInstance().reference.child("users")
+                                .child(currentUser.uid)
+                                .child("selectedCaretakers")
+                            usersRef.push().setValue(selectedCaretaker)
+                        } else {
+                            // The "selectedCaretakers" node already exists, add selected caretaker
+                            selectedCaretakersRef.push().setValue(selectedCaretaker)
+                        }
                     }
-                }
-        }
-    }
 
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        Toast.makeText(
+                            requireContext(),
+                            "Saving candidate cancelled.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                })
+            } else {
+
+                Toast.makeText(
+                    requireContext(),
+                    "Selected caretaker details are empty.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+
+    }
 }
