@@ -27,9 +27,9 @@ License
 <p align="center">
 
  <img src="images/screenshots/Screenshot_20240314_115624.jpg" alt="Login" width="120">
-<img src="images/screenshots/Screenshot_20240315_174028.jpg" alt="App serviices,Home" width="120">
+ <img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App serviices,Home" width="120">
 <img src="images/screenshots/Screenshot_20240315_160932.jpg" alt="Registration" width="120">
-<img src="images/screenshots/Screenshot_20240124_140226.jpg" alt="Animal caretaker" width="120">
+<img src="images/screenshots/Screenshot_20240315_174028.jpg" alt="App serviices,Home" width="120">
 <img src="images/screenshots/Screenshot_20240315_160548.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240314_115552.jpg" alt="Become Animal caretaker" width="120">
 <img src="images/screenshots/Screenshot_20240315_174205 (1).jpg" alt="Registration" width="120">
