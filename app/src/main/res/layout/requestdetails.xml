@@ -49,9 +49,9 @@
             android:layout_marginStart="0dp"
             android:layout_marginTop="45dp"
             android:layout_marginBottom="5dp"
+            android:divider="@null"
             android:background="#BDC1BD"
-            android:divider="@color/DarkGreen"
-            android:dividerHeight="1dp" />
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -61,13 +61,13 @@
             <ListView
                 android:id="@+id/listViewAcaretakersHiredRD"
                 android:layout_width="405dp"
+                android:divider="@null"
                 android:layout_height="280dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="1dp"
                 android:layout_gravity="bottom"
                 android:background="#D2F8C7"
-                android:divider="@color/DarkGreen"
-                android:dividerHeight="1dp" />
+                 />
 
         </RelativeLayout>
 
