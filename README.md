@@ -32,10 +32,10 @@ License
  <img src="images/screenshots/Screenshot_20240124_132858.jpg" alt="App serviices,Home" width="120">
 <img src="images/screenshots/Screenshot_20240315_160932.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240315_174028.jpg" alt="App serviices,Home" width="120">
-<img src="images/screenshots/Screenshot_20240315_160548.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240314_115552.jpg" alt="Become Animal caretaker" width="120">
 <img src="images/screenshots/Screenshot_20240315_174205 (1).jpg" alt="Registration" width="120">
-<img src="images/screenshots/Screenshot_20240124_132908.jpg" alt="Equipment services" width="120">
+<img src="images/screenshots/Screenshot_20240316_211317.jpg" alt="Equipment services" width="120">
+<img src="images/screenshots/Screenshot_20240316_211023.jpg" alt="Equipment services" width="120">
 
 
 (or view "Highlights.HTML" file)
