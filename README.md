@@ -9,7 +9,7 @@
 
 ## Table of Contents
 
-Screeenshots
+UI mockups
 
 Installation
 
@@ -21,7 +21,9 @@ Contributing
 
 License
 
-## Current Screeenshots
+## UI mockups
+
+### Current interactive pages
 
 
 <p align="center">
