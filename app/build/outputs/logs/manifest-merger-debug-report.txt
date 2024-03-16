@@ -121,51 +121,57 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Bongani\.gradle\ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:11:9-38
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:10:9-38
 	android:roundIcon
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:12:9-46
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:11:9-46
 	tools:targetApi
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:14:9-29
 	android:icon
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:9:9-41
 	android:allowBackup
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:9:9-40
-activity#com.example.farmguardian.LoginBackupActivity
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.farmguardian.LivestockActivity
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:16:13-48
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:16:13-46
+activity#com.example.farmguardian.LoginBackupActivity
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:18:9-20:40
+	android:exported
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:19:13-48
 activity#com.example.farmguardian.Equipment
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:18:9-21:40
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:20:13-38
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:22:13-38
 activity#com.example.farmguardian.animalCaretaker
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:23:9-25:40
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:24:13-44
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:25:13-44
 activity#com.example.farmguardian.HomeActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:28:13-41
 activity#com.example.farmguardian.RegisterActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:29:9-31:40
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:30:13-45
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:31:13-45
 activity#com.example.farmguardian.LoginActivityFirebase
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:32:9-41:20
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:33:9-41:20
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\src\main\AndroidManifest.xml:35:13-36
 	android:name

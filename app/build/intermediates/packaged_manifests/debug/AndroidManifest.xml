@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.farmguardian.LivestockActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.farmguardian.LoginBackupActivity"
             android:exported="false" />
         <activity
