@@ -20,6 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         CardView  animalcaretaker = findViewById(R.id.animalcaretaker);
         CardView news = findViewById(R.id.News);
         CardView Equipment = findViewById(R.id.Equipment);
+         CardView livestock  = findViewById(R.id.LivestockACT);
 
         Equipment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,11 +37,17 @@ public class HomeActivity extends AppCompatActivity {
             }
 
         });
+        livestock.setOnClickListener(new View.OnClickListener() {
+                                         @Override
+                                         public void onClick(View v) {
+                                             startActivity(new Intent(HomeActivity.this,LivestockActivity.class));
+                                         }
+                                     });
         news.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,NewsActivity.class));
-            }
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(HomeActivity.this, NewsActivity.class));
+                    }
         });
 
 
