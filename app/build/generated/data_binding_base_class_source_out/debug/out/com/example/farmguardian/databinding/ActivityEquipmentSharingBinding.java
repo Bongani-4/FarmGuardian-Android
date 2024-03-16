@@ -4,25 +4,47 @@ package com.example.farmguardian.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.farmguardian.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityEquipmentSharingBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
-  private ActivityEquipmentSharingBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final CardView EquipmentBack;
+
+  @NonNull
+  public final CardView EquipmentBuy;
+
+  @NonNull
+  public final CardView EquipmentShare;
+
+  @NonNull
+  public final TextView textViewFG;
+
+  private ActivityEquipmentSharingBinding(@NonNull RelativeLayout rootView,
+      @NonNull CardView EquipmentBack, @NonNull CardView EquipmentBuy,
+      @NonNull CardView EquipmentShare, @NonNull TextView textViewFG) {
     this.rootView = rootView;
+    this.EquipmentBack = EquipmentBack;
+    this.EquipmentBuy = EquipmentBuy;
+    this.EquipmentShare = EquipmentShare;
+    this.textViewFG = textViewFG;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +65,38 @@ public final class ActivityEquipmentSharingBinding implements ViewBinding {
 
   @NonNull
   public static ActivityEquipmentSharingBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.EquipmentBack;
+      CardView EquipmentBack = ViewBindings.findChildViewById(rootView, id);
+      if (EquipmentBack == null) {
+        break missingId;
+      }
 
-    return new ActivityEquipmentSharingBinding((ConstraintLayout) rootView);
+      id = R.id.EquipmentBuy;
+      CardView EquipmentBuy = ViewBindings.findChildViewById(rootView, id);
+      if (EquipmentBuy == null) {
+        break missingId;
+      }
+
+      id = R.id.EquipmentShare;
+      CardView EquipmentShare = ViewBindings.findChildViewById(rootView, id);
+      if (EquipmentShare == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewFG;
+      TextView textViewFG = ViewBindings.findChildViewById(rootView, id);
+      if (textViewFG == null) {
+        break missingId;
+      }
+
+      return new ActivityEquipmentSharingBinding((RelativeLayout) rootView, EquipmentBack,
+          EquipmentBuy, EquipmentShare, textViewFG);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

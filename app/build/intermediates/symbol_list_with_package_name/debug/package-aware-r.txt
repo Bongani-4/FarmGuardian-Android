@@ -3008,6 +3008,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable buttondesign
+drawable buy
 drawable calendar
 drawable chat
 drawable common_full_open_on_phone
@@ -3039,6 +3040,7 @@ drawable firstpagebackground
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable green_button_background
+drawable health
 drawable home
 drawable homebackground
 drawable ic_arrow_back_black_24
@@ -3058,6 +3060,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable icnforward
+drawable icsell
 drawable info
 drawable input_bg
 drawable language
@@ -3140,6 +3144,7 @@ drawable peakpx
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable transport
 drawable widgets
 id ALT
 id Animalcaretakerbackhome
@@ -3154,8 +3159,11 @@ id EquipmentBuy
 id EquipmentShare
 id FUNCTION
 id Forgotpasword
+id LIvestockBack
+id LIvestockHealth
+id LivestockACT
+id LivestockBuyandsell
 id Logout
-id LostLivestock
 id META
 id Market
 id NO_DEBUG
@@ -3437,6 +3445,8 @@ id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
 id list_item
+id livestockTransport
+id livestocklost
 id m3_side_sheet
 id marquee
 id masked
@@ -3836,6 +3846,7 @@ layout activity_equipment
 layout activity_equipment_sharing
 layout activity_hire_animal_caretaker
 layout activity_home
+layout activity_livestock
 layout activity_login
 layout activity_login_firebase
 layout activity_news

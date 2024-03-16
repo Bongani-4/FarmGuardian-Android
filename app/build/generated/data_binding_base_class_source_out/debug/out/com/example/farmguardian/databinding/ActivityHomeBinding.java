@@ -24,10 +24,10 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final CardView Equipment;
 
   @NonNull
-  public final CardView Logout;
+  public final CardView LivestockACT;
 
   @NonNull
-  public final CardView LostLivestock;
+  public final CardView Logout;
 
   @NonNull
   public final CardView Market;
@@ -42,12 +42,12 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final TextView textViewFG;
 
   private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull CardView Equipment,
-      @NonNull CardView Logout, @NonNull CardView LostLivestock, @NonNull CardView Market,
+      @NonNull CardView LivestockACT, @NonNull CardView Logout, @NonNull CardView Market,
       @NonNull CardView News, @NonNull CardView animalcaretaker, @NonNull TextView textViewFG) {
     this.rootView = rootView;
     this.Equipment = Equipment;
+    this.LivestockACT = LivestockACT;
     this.Logout = Logout;
-    this.LostLivestock = LostLivestock;
     this.Market = Market;
     this.News = News;
     this.animalcaretaker = animalcaretaker;
@@ -87,15 +87,15 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.Logout;
-      CardView Logout = ViewBindings.findChildViewById(rootView, id);
-      if (Logout == null) {
+      id = R.id.LivestockACT;
+      CardView LivestockACT = ViewBindings.findChildViewById(rootView, id);
+      if (LivestockACT == null) {
         break missingId;
       }
 
-      id = R.id.LostLivestock;
-      CardView LostLivestock = ViewBindings.findChildViewById(rootView, id);
-      if (LostLivestock == null) {
+      id = R.id.Logout;
+      CardView Logout = ViewBindings.findChildViewById(rootView, id);
+      if (Logout == null) {
         break missingId;
       }
 
@@ -123,7 +123,7 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((RelativeLayout) rootView, Equipment, Logout, LostLivestock,
+      return new ActivityHomeBinding((RelativeLayout) rootView, Equipment, LivestockACT, Logout,
           Market, News, animalcaretaker, textViewFG);
     }
     String missingId = rootView.getResources().getResourceName(id);

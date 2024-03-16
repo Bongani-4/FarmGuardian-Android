@@ -11,11 +11,13 @@ dimen activity_vertical_margin
 drawable arrow_back
 drawable btn_bg
 drawable buttondesign
+drawable buy
 drawable calendar
 drawable chat
 drawable fgslogo
 drawable firstpagebackground
 drawable green_button_background
+drawable health
 drawable home
 drawable homebackground
 drawable ic_baseline_email_24
@@ -23,6 +25,8 @@ drawable ic_baseline_person_24
 drawable ic_baseline_security_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable icnforward
+drawable icsell
 drawable info
 drawable input_bg
 drawable language
@@ -31,6 +35,7 @@ drawable line_fill_up
 drawable loginfgdesign
 drawable newsicon
 drawable peakpx
+drawable transport
 drawable widgets
 id Animalcaretakerbackhome
 id Barprogress
@@ -40,8 +45,11 @@ id EquipmentBack
 id EquipmentBuy
 id EquipmentShare
 id Forgotpasword
+id LIvestockBack
+id LIvestockHealth
+id LivestockACT
+id LivestockBuyandsell
 id Logout
-id LostLivestock
 id Market
 id News
 id animalcaretaker
@@ -80,6 +88,8 @@ id listViewAcaretakers
 id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
+id livestockTransport
+id livestocklost
 id menu_HireAnimalCareteker
 id menu_RequestDetails
 id menu_becomeAnimalCaretaker
@@ -107,6 +117,7 @@ layout activity_equipment
 layout activity_equipment_sharing
 layout activity_hire_animal_caretaker
 layout activity_home
+layout activity_livestock
 layout activity_login
 layout activity_login_firebase
 layout activity_news
