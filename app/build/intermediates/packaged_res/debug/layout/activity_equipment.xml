@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Equipment"
     android:background="#8DEAE3E3">
 
     <TextView
@@ -61,15 +62,24 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:layout_marginStart="0dp"
                     android:src="@android:drawable/ic_menu_set_as" />
 
                 <TextView
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Equipment sharing"
                     android:textAlignment="center"
                     android:textColor="@color/DarkGreen"
+
+                    android:layout_marginStart="20dp"
                     android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icnforward" />
+
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -105,12 +115,18 @@
                     android:layout_width="123dp"
                     android:layout_height="30dp"
                     android:text="Buy Equipment"
-                    android:textAlignment="center"
                     android:textColor="@color/DarkGreen"
+                    android:layout_marginStart="20dp"
                     android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icnforward" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/EquipmentBack"
             android:layout_width="271dp"
@@ -141,9 +157,15 @@
                     android:layout_width="124dp"
                     android:layout_height="wrap_content"
                     android:text="Back"
-                    android:textAlignment="center"
                     android:textColor="@color/DarkGreen"
+                    android:layout_marginStart="20dp"
                     android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icnforward" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
