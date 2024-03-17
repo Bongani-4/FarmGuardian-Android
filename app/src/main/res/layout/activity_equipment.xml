@@ -60,8 +60,8 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginStart="0dp"
                     android:src="@android:drawable/ic_menu_set_as" />
 
@@ -107,9 +107,9 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="46dp"
-                    android:src="@android:drawable/ic_menu_add" />
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icsell" />
 
                 <TextView
                     android:layout_width="123dp"
@@ -149,23 +149,20 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="46dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="28dp"
                     android:src="@android:drawable/ic_menu_revert" />
 
                 <TextView
-                    android:layout_width="124dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Back"
                     android:textColor="@color/DarkGreen"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="120dp"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/icnforward" />
+
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

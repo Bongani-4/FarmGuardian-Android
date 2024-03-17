@@ -200,7 +200,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="35dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
                     android:src="@android:drawable/ic_menu_revert" />
 
                 <TextView
@@ -208,16 +208,13 @@
                     android:layout_height="wrap_content"
                     android:text="Back"
                     android:textSize="18sp"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="40dp"
                     android:textAlignment="center"
                     android:textColor="@color/DarkGreen"
                     android:textStyle="bold" />
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="35dp"
 
-                    android:src="@drawable/icnforward" />
+
+
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
