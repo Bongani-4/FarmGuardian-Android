@@ -26,6 +26,7 @@ drawable ic_baseline_security_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icnforward
+drawable iconconstruction
 drawable icsell
 drawable info
 drawable input_bg
@@ -120,6 +121,7 @@ layout activity_home
 layout activity_livestock
 layout activity_login
 layout activity_login_firebase
+layout activity_market
 layout activity_news
 layout activity_register
 layout activity_view_acaretaker_details

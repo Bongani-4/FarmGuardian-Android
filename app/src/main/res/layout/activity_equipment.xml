@@ -60,8 +60,8 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:layout_marginStart="0dp"
                     android:src="@android:drawable/ic_menu_set_as" />
 
@@ -107,8 +107,9 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
                     android:src="@drawable/icsell" />
 
                 <TextView
@@ -142,10 +143,11 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
+                android:background="#CED5CF"
                 android:orientation="horizontal">
 
                 <ImageView

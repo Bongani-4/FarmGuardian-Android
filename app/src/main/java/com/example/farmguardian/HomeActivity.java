@@ -21,11 +21,18 @@ public class HomeActivity extends AppCompatActivity {
         CardView news = findViewById(R.id.News);
         CardView Equipment = findViewById(R.id.Equipment);
          CardView livestock  = findViewById(R.id.LivestockACT);
+         CardView market = findViewById(R.id.Market);
 
         Equipment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, Equipment.class));
+            }
+        });
+        market.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, MarketActivity.class));
             }
         });
         animalcaretaker.setOnClickListener(new View.OnClickListener() {

@@ -187,6 +187,7 @@
             android:layout_gravity="fill"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+
             app:cardUseCompatPadding="true">
 
 
@@ -195,6 +196,7 @@
                 android:layout_height="46dp"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
+                android:background="#CED5CF"
                 android:orientation="horizontal">
 
                 <ImageView

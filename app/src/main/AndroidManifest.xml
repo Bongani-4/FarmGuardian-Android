@@ -19,8 +19,12 @@
             android:name=".LivestockActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginBackupActivity"
+            android:name=".EquipmentSharingActivity"
             android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="false" />
+
         <activity
             android:name=".Equipment"
             android:exported="false" />

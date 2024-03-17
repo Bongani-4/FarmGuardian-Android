@@ -30,10 +30,16 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.farmguardian.MarketActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.farmguardian.LivestockActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.LoginBackupActivity"
+            android:name="com.example.farmguardian.EquipmentSharingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.farmguardian.NewsActivity"
             android:exported="false" />
         <activity
             android:name="com.example.farmguardian.Equipment"

@@ -3061,6 +3061,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable icnforward
+drawable iconconstruction
 drawable icsell
 drawable info
 drawable input_bg
@@ -3849,6 +3850,7 @@ layout activity_home
 layout activity_livestock
 layout activity_login
 layout activity_login_firebase
+layout activity_market
 layout activity_news
 layout activity_register
 layout activity_view_acaretaker_details

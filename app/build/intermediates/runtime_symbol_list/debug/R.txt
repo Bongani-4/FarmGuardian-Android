@@ -3060,6 +3060,7 @@ int drawable ic_mtrl_chip_checked_circle 0x7f0700b6
 int drawable ic_mtrl_chip_close_circle 0x7f0700b7
 int drawable ic_search_black_24 0x7f0700b8
 int drawable icnforward 0x7f0700b9
+int drawable iconconstruction 0x7f07010f
 int drawable icsell 0x7f0700ba
 int drawable info 0x7f0700bb
 int drawable input_bg 0x7f0700bc
@@ -3848,6 +3849,7 @@ int layout activity_home 0x7f0b0020
 int layout activity_livestock 0x7f0b0021
 int layout activity_login 0x7f0b0022
 int layout activity_login_firebase 0x7f0b0023
+int layout activity_market 0x7f0b007c
 int layout activity_news 0x7f0b0024
 int layout activity_register 0x7f0b0025
 int layout activity_view_acaretaker_details 0x7f0b0026
