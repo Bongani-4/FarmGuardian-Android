@@ -25,7 +25,7 @@ License
 
 <img src="images/screenshots/FG.png" alt="App serviices,Home" width="820">
 
-### Current Higlights
+### Current Highlights
 
 
 <p align="center">
