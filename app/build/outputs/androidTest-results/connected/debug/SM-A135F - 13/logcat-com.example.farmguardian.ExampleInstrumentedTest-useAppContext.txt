@@ -1,5 +1,0 @@
-01-22 00:22:32.398 27734 27825 I TestRunner: started: useAppContext(com.example.farmguardian.ExampleInstrumentedTest)
-01-22 00:22:32.403 20956 27292 I GmsCoreXrpcWrapper: (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
-01-22 00:22:32.408  9001  9191 I PolicyManager: [#CMH#] Is foreground game app: false
-01-22 00:22:32.415 12919 12919 D SurfaceView@ec2089f: updateSurface: has no frame
-01-22 00:22:32.430 27734 27825 I TestRunner: finished: useAppContext(com.example.farmguardian.ExampleInstrumentedTest)

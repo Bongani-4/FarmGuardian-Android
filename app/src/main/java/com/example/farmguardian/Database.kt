@@ -89,7 +89,8 @@ class Database {
                     usersNodeRef.child("toBeHired").addListenerForSingleValueEvent(object : ValueEventListener {
                         override fun onDataChange(dataSnapshot: DataSnapshot) {
                             if (!dataSnapshot.exists()) {
-                                // "toBeHired" node doesn't exist, create it
+
+
                                 val toBeHiredNodeRef = usersNodeRef.child("toBeHired")
                                 toBeHiredNodeRef.setValue("")
                             }
@@ -104,7 +105,6 @@ class Database {
                     usersNodeRef.child("hired").addListenerForSingleValueEvent(object : ValueEventListener {
                         override fun onDataChange(dataSnapshot: DataSnapshot) {
                             if (!dataSnapshot.exists()) {
-                                // "hired" node doesn't exist, create it
                                 val hiredNodeRef = usersNodeRef.child("hired")
                                 hiredNodeRef.setValue("")
                             }
@@ -126,7 +126,7 @@ class Database {
         rootRef.child("ACUser").addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (!dataSnapshot.exists()) {
-                    // "ACUser" node doesn't exist, create it
+
                     val acUserNodeRef = rootRef.child("ACUser")
                     acUserNodeRef.setValue("")
                 }
