@@ -23,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\AndroidStudioProjects\\FarmGuardian-Androidv2\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\766ac0790f8d6372008b6302371e0f9c\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Bongani\\AndroidStudioProjects\\FarmGuardian-Android\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "1",
@@ -37,16 +47,6 @@
                         "startOffsets": "264",
                         "endColumns": "57",
                         "endOffsets": "317"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\766ac0790f8d6372008b6302371e0f9c\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

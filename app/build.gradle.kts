@@ -47,6 +47,7 @@ android {
 }
 
 dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     // Espresso core library
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 

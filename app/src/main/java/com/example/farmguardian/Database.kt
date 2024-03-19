@@ -31,6 +31,40 @@ class Database {
         // Reference to the "hired" node where hired caretakers are stored
         hiredRef = firebaseDatabase.getReference("hired")
     }
+    suspend fun getHiredCaretakers(): List<AcaretakerModel> {
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        val hiredCaretakerList = mutableListOf<AcaretakerModel>()
+        currentUser?.uid?.let { loggedInUserId ->
+            val userRef = FirebaseDatabase.getInstance().getReference("users")
+                .child(loggedInUserId)
+                .child("HiredCaretakers")
+            try {
+                val dataSnapshot = userRef.get().await()
+                for (snapshot in dataSnapshot.children) {
+                    val hiredCaretaker = snapshot.getValue(AcaretakerModel::class.java)
+                    hiredCaretaker?.let {
+                        hiredCaretakerList.add(it)
+                    }
+                }
+            } catch (e: Exception) {
+                // Handle exception
+                Log.e("Database", "Error retrieving hired caretakers: ${e.message}")
+            }
+        }
+        return hiredCaretakerList
+    }
+    suspend fun isDatabaseInitialized(): Boolean {
+        val rootRef = FirebaseDatabase.getInstance().reference
+
+        val usersNodeRef = rootRef.child("users").get().await()
+        val toBeHiredNodeRef = rootRef.child("users").child("toBeHired").get().await()
+        val hiredNodeRef = rootRef.child("users").child("hired").get().await()
+        val acUserNodeRef = rootRef.child("ACUser").get().await()
+
+        return usersNodeRef.exists() && toBeHiredNodeRef.exists() && hiredNodeRef.exists() && acUserNodeRef.exists()
+    }
+
+
 
 
 
