@@ -62,14 +62,14 @@ public class LoginActivityFirebaseTest  {
         //to avoid flakiness in the test,Delaying some time for navigation
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(3500);
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //Logout card-view will display is successfully logged in
-        assertThat(ViewMatchers.withId(R.id.Logout).matches(ViewMatchers.isDisplayed())).isTrue();
-
+        //Logout card-view will display is successfully logged in  by Checking  if Home page heading text is displayed in HomeActivity
+           Espresso.onView(ViewMatchers.withId(R.id.textViewFG))
+                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
 
 

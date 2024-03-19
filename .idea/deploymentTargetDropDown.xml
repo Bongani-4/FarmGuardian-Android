@@ -2,10 +2,19 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="DatabaseTest">
+        <State />
+      </entry>
       <entry key="LoginActivityFirebaseTest">
         <State />
       </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="testInitializeDatabaseWhenNodesExist()">
+        <State />
+      </entry>
+      <entry key="testLoginWithvalidCredentials()">
         <State />
       </entry>
     </value>

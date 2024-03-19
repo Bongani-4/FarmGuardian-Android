@@ -111,7 +111,7 @@ public class RequestDetailsFragment extends Fragment implements ConfirmationHire
             });
         }
     }
-    private void retrieveHiredCaretakersFromFirebase() {
+    public  void retrieveHiredCaretakersFromFirebase() {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
             String loggedInUserId = currentUser.getUid();
