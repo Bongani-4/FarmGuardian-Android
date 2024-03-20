@@ -47,6 +47,8 @@ android {
 }
 
 dependencies {
+    testImplementation("io.mockk:mockk:1.12.0")
+
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     // Espresso core library
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -84,4 +86,26 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+    // JUnit 4 for unit testing
+    testImplementation("junit:junit:4.13.2")
+
+    // Truth library for assertions in unit and instrumentation tests
+    testImplementation("com.google.truth:truth:1.0.1")
+    androidTestImplementation("com.google.truth:truth:1.0.1")
+
+    // Kotlin coroutines test dependency for testing suspending functions
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+    // AndroidX test dependencies
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // Mocking framework
+    testImplementation("org.mockito:mockito-core:4.0.0")
+
+
+
+    // Robolectric for unit testing with Android framework
+    testImplementation("org.robolectric:robolectric:4.11.1")
+    androidTestImplementation ("androidx.test:core:1.5.0")
+    testImplementation("androidx.test:core:1.5.0")
 }
