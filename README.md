@@ -72,7 +72,7 @@ Example: Marketplace feature connecting farmers with buyers, eliminating middlem
 
 * ***Get help***:
 
-Function: AI to help sick livestock and offer other assistant
+Function: AI in FG to help clients with sick livestock live and offer other assistant withing FG app
 
 Example: chat page to communicate with artificial pet
 
