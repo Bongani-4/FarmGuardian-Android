@@ -1,3 +1,8 @@
+import java.util.Properties
+import java.io.FileInputStream
+
+
+
 plugins {
     id("com.android.application") version "8.2.0"
 
@@ -6,12 +11,21 @@ plugins {
     id("org.jetbrains.kotlin.android")
 
 }
+val getProperty: (String) -> String = { key ->
+    val properties = Properties()
+    val propertiesFile = FileInputStream(File("app/api.properties"))
+
+    properties.load(propertiesFile)
+    propertiesFile.close()
+    properties.getProperty(key, "")
+}
 
 android {
 
 
     namespace = "com.example.farmguardian"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.example.farmguardian"
@@ -29,6 +43,11 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            // Retrieve API_KEY value using getProperty function
+            val apiKey = getProperty("API_KEY")
+
+            buildConfigField("String", "API_KEY", "\"$apiKey\"")
+
         }
     }
 
@@ -39,12 +58,19 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
+
+
 
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+
+
 }
+
 
 dependencies {
     testImplementation("io.mockk:mockk:1.12.0")
