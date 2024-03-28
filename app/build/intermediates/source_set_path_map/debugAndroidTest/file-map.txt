@@ -28,7 +28,7 @@ com.example.farmguardian.test.app-lifecycle-viewmodel-2.7.0-26 C:\Users\Bongani\
 com.example.farmguardian.test.app-transition-1.2.0-27 C:\Users\Bongani\.gradle\caches\transforms-3\ea1e1b1cc54cef06f604ed7987663fe8\transformed\transition-1.2.0\res
 com.example.farmguardian.test.app-emoji2-views-helper-1.2.0-28 C:\Users\Bongani\.gradle\caches\transforms-3\f25713e1da0ac1172aa2d8da714a67bd\transformed\emoji2-views-helper-1.2.0\res
 com.example.farmguardian.test.app-core-runtime-2.2.0-29 C:\Users\Bongani\.gradle\caches\transforms-3\f3098e8166e6d30eee42163acf981e8e\transformed\core-runtime-2.2.0\res
-com.example.farmguardian.test.app-androidTest-30 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\build\generated\res\resValues\androidTest\debug
-com.example.farmguardian.test.app-mergeDebugAndroidTestResources-31 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.farmguardian.test.app-mergeDebugAndroidTestResources-32 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.farmguardian.test.app-merged_res-33 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Androidv2\app\build\intermediates\merged_res\debugAndroidTest
+com.example.farmguardian.test.app-androidTest-30 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\build\generated\res\resValues\androidTest\debug
+com.example.farmguardian.test.app-mergeDebugAndroidTestResources-31 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.farmguardian.test.app-mergeDebugAndroidTestResources-32 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.farmguardian.test.app-merged_res-33 C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\build\intermediates\merged_res\debugAndroidTest

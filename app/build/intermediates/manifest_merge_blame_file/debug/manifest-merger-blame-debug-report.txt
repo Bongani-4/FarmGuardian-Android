@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:5-67
-11-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:25:22-64
+11-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:7:5-66
+11-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:7:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:5-79
 12-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Bongani\.gradle\caches\transforms-3\d2e23c39c1f60c6faa4f81408ec7c8eb\transformed\firebase-auth-22.3.1\AndroidManifest.xml:26:22-76
@@ -30,87 +30,87 @@
 19-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:7:5-49:19
+21-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:5-51:19
 22        android:allowBackup="true"
-22-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:8:9-35
+22-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:10:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.9.0] C:\Users\Bongani\.gradle\caches\transforms-3\390c8fff099c8acd08adf5ccd757d370\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:icon="@drawable/fgslogo"
-26-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:9-41
+26-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:11:9-41
 27        android:label="Farm Guardian"
-27-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:10:9-38
+27-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:12:9-38
 28        android:roundIcon="@drawable/fgslogo"
-28-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:11:9-46
+28-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:13:9-46
 29        android:supportsRtl="true"
-29-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:12:9-35
+29-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:14:9-35
 30        android:testOnly="true"
 31        android:theme="@style/AppTheme" >
-31-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:13:9-40
+31-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:15:9-40
 32        <activity
-32-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:15:9-17:40
+32-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:17:9-19:40
 33            android:name="com.example.farmguardian.MarketActivity"
-33-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:16:13-43
+33-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:13-43
 34            android:exported="false" />
-34-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:17:13-37
+34-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:19:13-37
 35        <activity
-35-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:9-20:40
+35-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:20:9-22:40
 36            android:name="com.example.farmguardian.LivestockActivity"
-36-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:19:13-46
+36-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:13-46
 37            android:exported="false" />
-37-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:20:13-37
+37-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:22:13-37
 38        <activity
-38-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:9-23:40
+38-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:23:9-25:40
 39            android:name="com.example.farmguardian.EquipmentSharingActivity"
-39-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:22:13-53
+39-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:13-53
 40            android:exported="false" />
-40-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:23:13-37
+40-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:25:13-37
 41        <activity
-41-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:9-26:40
+41-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:26:9-28:40
 42            android:name="com.example.farmguardian.NewsActivity"
-42-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:25:13-41
+42-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:27:13-41
 43            android:exported="false" />
-43-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:26:13-37
+43-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:28:13-37
 44        <activity
-44-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:28:9-30:40
+44-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:30:9-32:40
 45            android:name="com.example.farmguardian.Equipment"
-45-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:29:13-38
+45-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:31:13-38
 46            android:exported="false" />
-46-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:30:13-37
+46-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:32:13-37
 47        <activity
-47-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:31:9-33:40
+47-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:33:9-35:40
 48            android:name="com.example.farmguardian.animalCaretaker"
-48-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:32:13-44
+48-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:34:13-44
 49            android:exported="false" />
-49-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:33:13-37
+49-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:35:13-37
 50        <activity
-50-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:34:9-36:40
+50-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:9-38:40
 51            android:name="com.example.farmguardian.HomeActivity"
-51-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:35:13-41
+51-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:37:13-41
 52            android:exported="false" />
-52-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:13-37
+52-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:38:13-37
 53        <activity
-53-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:37:9-39:40
+53-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:9-41:40
 54            android:name="com.example.farmguardian.RegisterActivity"
-54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:38:13-45
+54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:40:13-45
 55            android:exported="false" />
-55-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:13-37
+55-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:13-37
 56        <activity
-56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:40:9-48:20
+56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:42:9-50:20
 57            android:name="com.example.farmguardian.LoginActivityFirebase"
-57-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:13-50
+57-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:43:13-50
 58            android:exported="true" >
-58-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:42:13-36
+58-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:13-36
 59            <intent-filter>
-59-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:43:13-47:29
+59-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:45:13-49:29
 60                <action android:name="android.intent.action.MAIN" />
-60-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:17-69
-60-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:25-66
+60-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:17-69
+60-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:25-66
 61
 62                <category android:name="android.intent.category.LAUNCHER" />
-62-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:17-77
-62-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:27-74
+62-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:48:17-77
+62-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:48:27-74
 63            </intent-filter>
 64        </activity>
 65        <activity
