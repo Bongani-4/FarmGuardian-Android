@@ -13,9 +13,7 @@ UI mockups
 
 Installation
 
-Description
-
-Features
+Description and features
 
 Contributing
 
@@ -48,7 +46,9 @@ License
 
 details soon to be posted 
 
-## Description
+## Description and features
+
+(Some fearures are still under maintanance.)
 
 FarmGuardian is a mobile application with services:
 
@@ -92,16 +92,8 @@ Function: Get up to date with the world's or local current agriculture news and 
 
 Example: See trending agriculture news from ML /AI models, tips, cautious weather updates.
 
-## Features
 
 
-User Authentication: Secure login and registration for farmers and caretakers.
-
-Profile Management: Users can update their profiles with relevant information.
-
-Search and Apply: Farmers can search for caretakers based on criteria, and caretakers can apply for available positions.
-
-Real-time Notifications: Users receive notifications for new applications and job updates.
 
 
 
