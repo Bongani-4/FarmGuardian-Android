@@ -90,7 +90,7 @@ Example:  let other farmers know of your lost livestock and get notified when it
 
 Function: Get up to date with the world's or local current agriculture news and nature hazards.
 
-Example: See trending news, tips, cautious weather updates, market & currency .
+Example: See trending agriculture news from ML /AI models, tips, cautious weather updates.
 
 ## Features
 
