@@ -13,35 +13,44 @@
         android:roundIcon="@drawable/fgslogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:screenOrientation="portrait"
+
         tools:targetApi="31">
         <activity
             android:name=".MarketActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".LivestockActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".EquipmentSharingActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".NewsActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
 
         <activity
             android:name=".Equipment"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".animalCaretaker"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".LoginActivityFirebase"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
