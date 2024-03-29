@@ -39,7 +39,7 @@ License
 
 
 
-(or view "Highlights.HTML" file)
+(or visit the "Screenshot" folder)
 
 
 ## Installation
