@@ -9,13 +9,32 @@
     android:orientation="vertical"
     tools:context=".animalCaretaker">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="118dp"
+        android:textSize="20sp"
+        android:text="Animal caretakers"
+        android:id="@+id/heading"/>
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchView"
+        android:layout_width="359dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="589dp"
         android:layout_above="@id/bottom_navigation_view"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="110dp">
 
         <ProgressBar
             android:id="@+id/Barprogress"
@@ -50,20 +69,17 @@
             android:id="@+id/noInternet"/>
     </FrameLayout>
 
-    <TextView
+    <ImageView
         android:id="@+id/Animalcaretakerbackhome"
-        android:layout_width="wrap_content"
-        android:layout_height="59dp"
-        android:layout_above="@+id/fragment_container"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="230dp"
-        android:layout_marginBottom="-29dp"
-        android:text="Go Home"
-        android:textColor="@color/DarkGreen"
-        android:textSize="19sp"
-        android:textStyle="bold" />
+        android:layout_marginStart="10dp"
+
+        android:src="@drawable/back"
+
+
+      />
 
 
 

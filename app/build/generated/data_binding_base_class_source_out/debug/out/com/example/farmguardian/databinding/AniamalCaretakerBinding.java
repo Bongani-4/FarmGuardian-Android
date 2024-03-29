@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -15,6 +16,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.farmguardian.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,7 +26,7 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView Animalcaretakerbackhome;
+  public final ImageView Animalcaretakerbackhome;
 
   @NonNull
   public final ProgressBar Barprogress;
@@ -39,24 +41,33 @@ public final class AniamalCaretakerBinding implements ViewBinding {
   public final FrameLayout fragmentContainer;
 
   @NonNull
+  public final TextView heading;
+
+  @NonNull
   public final ListView listViewAcaretakers;
 
   @NonNull
   public final TextView noInternet;
 
+  @NonNull
+  public final SearchBar searchView;
+
   private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView Animalcaretakerbackhome, @NonNull ProgressBar Barprogress,
+      @NonNull ImageView Animalcaretakerbackhome, @NonNull ProgressBar Barprogress,
       @NonNull BottomNavigationView bottomNavigationView, @NonNull RelativeLayout containerLayout,
-      @NonNull FrameLayout fragmentContainer, @NonNull ListView listViewAcaretakers,
-      @NonNull TextView noInternet) {
+      @NonNull FrameLayout fragmentContainer, @NonNull TextView heading,
+      @NonNull ListView listViewAcaretakers, @NonNull TextView noInternet,
+      @NonNull SearchBar searchView) {
     this.rootView = rootView;
     this.Animalcaretakerbackhome = Animalcaretakerbackhome;
     this.Barprogress = Barprogress;
     this.bottomNavigationView = bottomNavigationView;
     this.containerLayout = containerLayout;
     this.fragmentContainer = fragmentContainer;
+    this.heading = heading;
     this.listViewAcaretakers = listViewAcaretakers;
     this.noInternet = noInternet;
+    this.searchView = searchView;
   }
 
   @Override
@@ -87,7 +98,7 @@ public final class AniamalCaretakerBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.Animalcaretakerbackhome;
-      TextView Animalcaretakerbackhome = ViewBindings.findChildViewById(rootView, id);
+      ImageView Animalcaretakerbackhome = ViewBindings.findChildViewById(rootView, id);
       if (Animalcaretakerbackhome == null) {
         break missingId;
       }
@@ -112,6 +123,12 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.heading;
+      TextView heading = ViewBindings.findChildViewById(rootView, id);
+      if (heading == null) {
+        break missingId;
+      }
+
       id = R.id.listViewAcaretakers;
       ListView listViewAcaretakers = ViewBindings.findChildViewById(rootView, id);
       if (listViewAcaretakers == null) {
@@ -124,9 +141,15 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.searchView;
+      SearchBar searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
+        break missingId;
+      }
+
       return new AniamalCaretakerBinding((RelativeLayout) rootView, Animalcaretakerbackhome,
-          Barprogress, bottomNavigationView, containerLayout, fragmentContainer,
-          listViewAcaretakers, noInternet);
+          Barprogress, bottomNavigationView, containerLayout, fragmentContainer, heading,
+          listViewAcaretakers, noInternet, searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

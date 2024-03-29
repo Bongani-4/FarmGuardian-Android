@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.farmguardian.app-mergeDebugResources-37:/values-v23/values-v23.xml",
+            "outputFile": "com.example.farmguardian.app-mergeDebugResources-59:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\814094362eeea7025a804f36bf1f0b58\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

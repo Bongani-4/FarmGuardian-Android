@@ -73,6 +73,7 @@ android {
 
 
 dependencies {
+    implementation("androidx.compose.ui:ui-tooling-preview-android:1.6.4")
     testImplementation("io.mockk:mockk:1.12.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
@@ -140,6 +141,12 @@ dependencies {
 
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
+
+    //Jcompose
+    implementation("androidx.compose.ui:ui:1.6.4")
+    implementation("androidx.compose.material:material:1.6.4")
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
 
 
 }

@@ -20,16 +20,19 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import com.google.android.material.search.SearchBar;
 
 
 public class animalCaretaker extends AppCompatActivity implements BottomNavigationView.OnItemSelectedListener {
 
 
     Fragment fragment = null;
-    TextView noInternetTextView;
-    TextView backhome;
+    TextView noInternetTextView,heading;
+    ImageView backhome;
+    SearchBar  searchBar;
 
 
     @Override
@@ -46,6 +49,8 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         FrameLayout fragmentContainer = findViewById(R.id.fragment_container);
         noInternetTextView = findViewById(R.id.noInternet);
          backhome = findViewById(R.id.Animalcaretakerbackhome);
+        heading = findViewById(R.id.heading);
+        searchBar= findViewById(R.id.searchView);
 
         openAnimalCaretakerFragment();
 
@@ -145,6 +150,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
     private void openAnimalCaretakerFragment() {
         // Show loading progress bar
         loadingBAR();
+        heading.setVisibility(View.VISIBLE);
         ProgressBar loadingProgress = findViewById(R.id.Barprogress);
 
         fragment = new hirefrgament();
@@ -166,6 +172,8 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
     private void BecomeCaretakerFragment() {
         // Show loading progress bar
         loadingBAR();
+        heading.setVisibility(View.GONE);
+        searchBar.setVisibility(View.GONE);
         fragment =  new BecomeAnimalcaretakerFragment();
 
         getSupportFragmentManager().beginTransaction()
@@ -175,6 +183,7 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
 
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
+
             public void onBackStackChanged() {
                 // Fragment transaction is complete, hide the loading progress bar
                 hideLoadingBAR();
@@ -185,6 +194,8 @@ public class animalCaretaker extends AppCompatActivity implements BottomNavigati
         // Show loading progress bar
 
         loadingBAR();
+        heading.setVisibility(View.GONE);
+        searchBar.setVisibility(View.GONE);
         fragment =  new RequestDetailsFragment();
 
         getSupportFragmentManager().beginTransaction()

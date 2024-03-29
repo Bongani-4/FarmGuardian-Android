@@ -39,11 +39,15 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final CardView animalcaretaker;
 
   @NonNull
+  public final View greyBackground;
+
+  @NonNull
   public final TextView textViewFG;
 
   private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull CardView Equipment,
       @NonNull CardView LivestockACT, @NonNull CardView Logout, @NonNull CardView Market,
-      @NonNull CardView News, @NonNull CardView animalcaretaker, @NonNull TextView textViewFG) {
+      @NonNull CardView News, @NonNull CardView animalcaretaker, @NonNull View greyBackground,
+      @NonNull TextView textViewFG) {
     this.rootView = rootView;
     this.Equipment = Equipment;
     this.LivestockACT = LivestockACT;
@@ -51,6 +55,7 @@ public final class ActivityHomeBinding implements ViewBinding {
     this.Market = Market;
     this.News = News;
     this.animalcaretaker = animalcaretaker;
+    this.greyBackground = greyBackground;
     this.textViewFG = textViewFG;
   }
 
@@ -117,6 +122,12 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.greyBackground;
+      View greyBackground = ViewBindings.findChildViewById(rootView, id);
+      if (greyBackground == null) {
+        break missingId;
+      }
+
       id = R.id.textViewFG;
       TextView textViewFG = ViewBindings.findChildViewById(rootView, id);
       if (textViewFG == null) {
@@ -124,7 +135,7 @@ public final class ActivityHomeBinding implements ViewBinding {
       }
 
       return new ActivityHomeBinding((RelativeLayout) rootView, Equipment, LivestockACT, Logout,
-          Market, News, animalcaretaker, textViewFG);
+          Market, News, animalcaretaker, greyBackground, textViewFG);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

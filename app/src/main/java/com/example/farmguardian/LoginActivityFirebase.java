@@ -106,7 +106,7 @@ public class LoginActivityFirebase extends AppCompatActivity {
 
                                         }
                                     } else {
-                                        Toast.makeText(getApplicationContext(), "No user found, login again.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Invalid login credentials.", Toast.LENGTH_SHORT).show();
                                     }
                                 });
                     }
