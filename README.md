@@ -50,7 +50,7 @@ details soon to be posted
 
 ## Description
 
-FarmGuardian is a mobile application aiming to implement:
+FarmGuardian is a mobile application with services:
 
 * ***Equipment Sharing***:
 
@@ -86,7 +86,7 @@ Example:  let other farmers know of your lost livestock and get notified when it
 
 
 
-* ***News***:
+* ***Alerts***:
 
 Function: Get up to date with the world's or local current agriculture news and nature hazards.
 
