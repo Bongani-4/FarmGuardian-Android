@@ -35,7 +35,7 @@ License
 
 <img src="images/screenshots/Screenshot_20240329_165057.jpg" alt="App serviices,Home" width="120">
 <img src="images/screenshots/Screenshot_20240329_165554.jpg" alt="Become Animal caretaker" width="120">
-<img src="images/screenshots/Screenshot_20240329_165710.jpg" alt="Registration" width="120">
+<img src="images/screenshots/Screenshot_20240329_174701.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240317_153631.jpg" alt="Equipment services" width="120">
 
 
