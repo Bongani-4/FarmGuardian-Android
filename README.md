@@ -48,7 +48,7 @@ details soon to be posted
 
 ## Description and features
 
-(Some fearures are still under maintanance.)
+(FarmGuardian Website and some fearures for this mobile app are still under maintanance.)
 
 FarmGuardian is a mobile application with services:
 
