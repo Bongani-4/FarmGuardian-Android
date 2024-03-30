@@ -148,5 +148,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.8.2")
     implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
 
+    //picasso
+    implementation ("com.squareup.picasso:picasso:2.8")
 
 }
