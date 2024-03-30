@@ -54,7 +54,8 @@
             tools:ignore="Suspicious0dp"
             android:layout_weight="1"
             android:id="@+id/imgHeadLine"
-            android:src="drawable/im"
+            android:src="@drawable/imagenotavailable"
+            android:scaleType="centerCrop"
             />
         
 
