@@ -6,7 +6,7 @@
 
 UI mockups
 
-Installation
+Configuration Setup
 
 Description and features
 
@@ -39,7 +39,7 @@ This project requires certain .json files for configuration purposes. However, t
 
 app/google-services.json: [file can be found from google firebase. After registering this app in your Firebase poject,firebase will generate a google-services.json file specifically configured for this app.],
 
-app/other-file.json and Api.properties file if there are still some challenges[create an API key and place it here (Api.properties)for the variable API_KEY] .
+app/Api.properties file if there are still some challenges[create an API key and place it here (Api.properties)for the variable API_KEY] .
 
 ALternatively use android studio to bypass login activities in which case you wont have your app data.
 
