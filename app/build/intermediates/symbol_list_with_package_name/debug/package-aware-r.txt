@@ -3174,12 +3174,17 @@ id BOTTOM_START
 id Barprogress
 id Barsprogress
 id CTRL
+id DetailContent
+id DetailDetail
+id DetailTime
+id DetaildAuthor
 id Equipment
 id EquipmentBack
 id EquipmentBuy
 id EquipmentShare
 id FUNCTION
 id Forgotpasword
+id ImgDetail
 id LIvestockBack
 id LIvestockHealth
 id LivestockACT
@@ -3196,6 +3201,9 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TextDetails
+id UrlText
+id Urlheading
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3479,6 +3487,7 @@ id listViewAcaretakersRD
 id list_item
 id livestockTransport
 id livestocklost
+id load
 id m3_side_sheet
 id main_container
 id marquee
@@ -3890,6 +3899,7 @@ layout activity_login
 layout activity_login_firebase
 layout activity_market
 layout activity_news
+layout activity_news_details
 layout activity_register
 layout activity_view_acaretaker_details
 layout activity_view_acset_profile

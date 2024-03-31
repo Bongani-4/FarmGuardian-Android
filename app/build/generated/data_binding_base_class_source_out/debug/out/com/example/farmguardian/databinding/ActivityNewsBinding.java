@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,10 +21,15 @@ public final class ActivityNewsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ProgressBar load;
+
+  @NonNull
   public final RecyclerView recyclerNews;
 
-  private ActivityNewsBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView recyclerNews) {
+  private ActivityNewsBinding(@NonNull LinearLayout rootView, @NonNull ProgressBar load,
+      @NonNull RecyclerView recyclerNews) {
     this.rootView = rootView;
+    this.load = load;
     this.recyclerNews = recyclerNews;
   }
 
@@ -54,13 +60,19 @@ public final class ActivityNewsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.load;
+      ProgressBar load = ViewBindings.findChildViewById(rootView, id);
+      if (load == null) {
+        break missingId;
+      }
+
       id = R.id.recycler_news;
       RecyclerView recyclerNews = ViewBindings.findChildViewById(rootView, id);
       if (recyclerNews == null) {
         break missingId;
       }
 
-      return new ActivityNewsBinding((LinearLayout) rootView, recyclerNews);
+      return new ActivityNewsBinding((LinearLayout) rootView, load, recyclerNews);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -50,11 +50,16 @@ drawable widgets
 id Animalcaretakerbackhome
 id Barprogress
 id Barsprogress
+id DetailContent
+id DetailDetail
+id DetailTime
+id DetaildAuthor
 id Equipment
 id EquipmentBack
 id EquipmentBuy
 id EquipmentShare
 id Forgotpasword
+id ImgDetail
 id LIvestockBack
 id LIvestockHealth
 id LivestockACT
@@ -62,6 +67,9 @@ id LivestockBuyandsell
 id Logout
 id Market
 id News
+id TextDetails
+id UrlText
+id Urlheading
 id animalcaretaker
 id bottom_navigation_view
 id btnNo
@@ -103,6 +111,7 @@ id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
 id livestockTransport
 id livestocklost
+id load
 id main_container
 id menu_HireAnimalCareteker
 id menu_RequestDetails
@@ -140,6 +149,7 @@ layout activity_login
 layout activity_login_firebase
 layout activity_market
 layout activity_news
+layout activity_news_details
 layout activity_register
 layout activity_view_acaretaker_details
 layout activity_view_acset_profile

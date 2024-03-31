@@ -5,14 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewsActivity"
-    android:background="#8DEAE3E3">
+    android:orientation="vertical"
+    android:background="#8D212C21">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:progressTint="@color/DarkGreen"
+        android:foregroundTint="@color/DarkGreen"
+        android:id="@+id/load"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_news"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        >
+
+
     </androidx.recyclerview.widget.RecyclerView>
+
+
 
 
 </LinearLayout>

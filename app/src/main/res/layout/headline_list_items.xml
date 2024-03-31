@@ -7,6 +7,7 @@
     android:layout_margin="8dp"
     android:layout_height="wrap_content"
     app:cardElevation="8dp"
+
     xmlns:app="http://schemas.android.com/apk/res-auto" 
     >
     <LinearLayout
@@ -30,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textTitle"
-            android:textSize="22sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:maxLines="3">
@@ -40,7 +41,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/textSource"
-           android:textSize="18sp"
+           android:textSize="15sp"
            android:textStyle="bold"
            android:textColor="@color/DarkGreen"
            android:layout_marginTop="6dp"

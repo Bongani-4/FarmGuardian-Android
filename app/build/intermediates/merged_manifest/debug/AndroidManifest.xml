@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.farmguardian.NewsDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.farmguardian.MarketActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

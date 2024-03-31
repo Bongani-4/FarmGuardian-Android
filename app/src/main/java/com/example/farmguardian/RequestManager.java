@@ -34,7 +34,7 @@ public class RequestManager {
         String apiKey = getApiKey(context);
 
         CallNewsApi callnewsapi = retrofit.create(CallNewsApi.class);
-        Call<NewsAPIResponse> call = callnewsapi.callheadlines("za", category,query,apiKey);
+        Call<NewsAPIResponse> call = callnewsapi.callheadlines("us", category,query,apiKey);
 
         try{
              call.enqueue(new Callback<NewsAPIResponse>() {

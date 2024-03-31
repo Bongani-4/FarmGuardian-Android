@@ -3173,12 +3173,17 @@ int id BOTTOM_START 0x7f080003
 int id Barprogress 0x7f080004
 int id Barsprogress 0x7f080005
 int id CTRL 0x7f080006
+int id DetailContent 0x7f080256
+int id DetailDetail 0x7f080257
+int id DetailTime 0x7f080258
+int id DetaildAuthor 0x7f080259
 int id Equipment 0x7f080007
 int id EquipmentBack 0x7f080008
 int id EquipmentBuy 0x7f080009
 int id EquipmentShare 0x7f08000a
 int id FUNCTION 0x7f08000b
 int id Forgotpasword 0x7f08000c
+int id ImgDetail 0x7f08025a
 int id LIvestockBack 0x7f08000d
 int id LIvestockHealth 0x7f08000e
 int id LivestockACT 0x7f08000f
@@ -3195,6 +3200,9 @@ int id SHOW_PROGRESS 0x7f080019
 int id SYM 0x7f08001a
 int id TOP_END 0x7f08001b
 int id TOP_START 0x7f08001c
+int id TextDetails 0x7f08025b
+int id UrlText 0x7f08025d
+int id Urlheading 0x7f08025e
 int id accelerate 0x7f08001d
 int id accessibility_action_clickable_span 0x7f08001e
 int id accessibility_custom_action_0 0x7f08001f
@@ -3478,6 +3486,7 @@ int id listViewAcaretakersRD 0x7f080133
 int id list_item 0x7f080134
 int id livestockTransport 0x7f080135
 int id livestocklost 0x7f080136
+int id load 0x7f08025c
 int id m3_side_sheet 0x7f080137
 int id main_container 0x7f080252
 int id marquee 0x7f080138
@@ -3889,6 +3898,7 @@ int layout activity_login 0x7f0b0022
 int layout activity_login_firebase 0x7f0b0023
 int layout activity_market 0x7f0b0024
 int layout activity_news 0x7f0b0025
+int layout activity_news_details 0x7f0b0080
 int layout activity_register 0x7f0b0026
 int layout activity_view_acaretaker_details 0x7f0b0027
 int layout activity_view_acset_profile 0x7f0b0028

@@ -1,6 +1,8 @@
 package com.example.farmguardian.Models;
 
-public class NewsHeadlines {
+import java.io.Serializable;
+
+public class NewsHeadlines implements Serializable {
 
     Source source = null;
     String author = "";

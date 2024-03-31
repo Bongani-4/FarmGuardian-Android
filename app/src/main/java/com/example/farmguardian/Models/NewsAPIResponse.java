@@ -1,8 +1,9 @@
 package com.example.farmguardian.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class NewsAPIResponse {
+public class NewsAPIResponse  implements Serializable{
     String status;
     int totalResults;
     List<NewsHeadlines> articles;
