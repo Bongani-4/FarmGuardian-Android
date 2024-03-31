@@ -31,6 +31,7 @@ drawable ic_launcher_foreground
 drawable icnforward
 drawable iconconstruction
 drawable icsell
+drawable imagenotavailable
 drawable info
 drawable input_bg
 drawable language
@@ -93,6 +94,7 @@ id heading
 id hireInProgressSubheading
 id hiredSubheading
 id imageView
+id imgHeadLine
 id linearLayout
 id linearLayout2
 id listViewAcaretakers
@@ -101,13 +103,17 @@ id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
 id livestockTransport
 id livestocklost
+id main_container
 id menu_HireAnimalCareteker
 id menu_RequestDetails
 id menu_becomeAnimalCaretaker
 id noInternet
+id recycler_news
 id searchView
 id textHaveAcc
 id textRegister
+id textSource
+id textTitle
 id textView4
 id textViewAvailable
 id textViewAvailable1
@@ -140,6 +146,7 @@ layout activity_view_acset_profile
 layout aniamal_caretaker
 layout fragment_confirmation_hire
 layout fragment_hirefragment
+layout headline_list_items
 layout list_item_acaretaker
 layout requestdetails
 menu bottom_navigation_layout

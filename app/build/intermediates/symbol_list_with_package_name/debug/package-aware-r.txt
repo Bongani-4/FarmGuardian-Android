@@ -3076,6 +3076,7 @@ drawable ic_search_black_24
 drawable icnforward
 drawable iconconstruction
 drawable icsell
+drawable imagenotavailable
 drawable info
 drawable input_bg
 drawable language
@@ -3446,6 +3447,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imgHeadLine
 id immediateStop
 id included
 id indeterminate
@@ -3478,6 +3480,7 @@ id list_item
 id livestockTransport
 id livestocklost
 id m3_side_sheet
+id main_container
 id marquee
 id masked
 id match_constraint
@@ -3600,6 +3603,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recycler_news
 id report_drawn
 id reverseSawtooth
 id right
@@ -3689,9 +3693,11 @@ id text2
 id textEnd
 id textHaveAcc
 id textRegister
+id textSource
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTitle
 id textTop
 id textView4
 id textViewAvailable
@@ -3908,6 +3914,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_confirmation_hire
 layout fragment_hirefragment
+layout headline_list_items
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout list_item_acaretaker

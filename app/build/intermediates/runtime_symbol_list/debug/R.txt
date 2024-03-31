@@ -3075,6 +3075,7 @@ int drawable ic_search_black_24 0x7f0700c0
 int drawable icnforward 0x7f0700c1
 int drawable iconconstruction 0x7f0700c2
 int drawable icsell 0x7f0700c3
+int drawable imagenotavailable 0x7f07011f
 int drawable info 0x7f0700c4
 int drawable input_bg 0x7f0700c5
 int drawable language 0x7f0700c6
@@ -3445,6 +3446,7 @@ int id ignore 0x7f080114
 int id ignoreRequest 0x7f080115
 int id image 0x7f080116
 int id imageView 0x7f080117
+int id imgHeadLine 0x7f080251
 int id immediateStop 0x7f080118
 int id included 0x7f080119
 int id indeterminate 0x7f08011a
@@ -3477,6 +3479,7 @@ int id list_item 0x7f080134
 int id livestockTransport 0x7f080135
 int id livestocklost 0x7f080136
 int id m3_side_sheet 0x7f080137
+int id main_container 0x7f080252
 int id marquee 0x7f080138
 int id masked 0x7f080139
 int id match_constraint 0x7f08013a
@@ -3599,6 +3602,7 @@ int id progress_horizontal 0x7f0801ae
 int id radio 0x7f0801af
 int id ratio 0x7f0801b0
 int id rectangles 0x7f0801b1
+int id recycler_news 0x7f080253
 int id report_drawn 0x7f0801b2
 int id reverseSawtooth 0x7f0801b3
 int id right 0x7f0801b4
@@ -3688,9 +3692,11 @@ int id text2 0x7f080206
 int id textEnd 0x7f080207
 int id textHaveAcc 0x7f080208
 int id textRegister 0x7f080209
+int id textSource 0x7f080254
 int id textSpacerNoButtons 0x7f08020a
 int id textSpacerNoTitle 0x7f08020b
 int id textStart 0x7f08020c
+int id textTitle 0x7f080255
 int id textTop 0x7f08020d
 int id textView4 0x7f08020e
 int id textViewAvailable 0x7f08020f
@@ -3907,6 +3913,7 @@ int layout design_text_input_end_icon 0x7f0b003a
 int layout design_text_input_start_icon 0x7f0b003b
 int layout fragment_confirmation_hire 0x7f0b003c
 int layout fragment_hirefragment 0x7f0b003d
+int layout headline_list_items 0x7f0b007f
 int layout ime_base_split_test_activity 0x7f0b003e
 int layout ime_secondary_split_test_activity 0x7f0b003f
 int layout list_item_acaretaker 0x7f0b0040

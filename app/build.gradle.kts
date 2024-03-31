@@ -5,15 +5,13 @@ import java.io.FileInputStream
 
 plugins {
     id("com.android.application") version "8.2.0"
-
-
     id("com.google.gms.google-services")
     id("org.jetbrains.kotlin.android")
 
 }
 val getProperty: (String) -> String = { key ->
     val properties = Properties()
-    val propertiesFile = FileInputStream(File("app/api.properties"))
+    val propertiesFile = FileInputStream(File("app/src/main/assets/api.properties"))
 
     properties.load(propertiesFile)
     propertiesFile.close()

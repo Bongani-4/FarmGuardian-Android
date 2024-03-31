@@ -7,6 +7,7 @@ import com.example.farmguardian.Models.NewsAPIResponse;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import retrofit2.Call;
@@ -30,7 +31,7 @@ public class RequestManager {
     public void getNewsHadlines(OnFetchDataListener listener, String category, String query)
     {
         // Load the API key from its  file
-        String apiKey = getApiKey();
+        String apiKey = getApiKey(context);
 
         CallNewsApi callnewsapi = retrofit.create(CallNewsApi.class);
         Call<NewsAPIResponse> call = callnewsapi.callheadlines("za", category,query,apiKey);
@@ -70,20 +71,20 @@ public class RequestManager {
     }
 
 
-    private static String getApiKey() {
+    private static String getApiKey(Context context) {
         Properties properties = new Properties();
         try {
-            // Load the api file
-            FileInputStream input = new FileInputStream("app/api.properties");
+            // Load the api file from assets
+            InputStream input = context.getAssets().open("api.properties");
             properties.load(input);
             input.close();
             // Get the API key value
             return properties.getProperty("API_KEY");
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
+
     public interface CallNewsApi{
         @GET("top-headlines")
         Call<NewsAPIResponse> callheadlines(
