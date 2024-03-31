@@ -3160,6 +3160,7 @@ int drawable notification_template_icon_low_bg 0x7f070114
 int drawable notification_tile_bg 0x7f070115
 int drawable notify_panel_notification_icon_bg 0x7f070116
 int drawable peakpx 0x7f070117
+int drawable rounded_corner 0x7f070120
 int drawable test_level_drawable 0x7f070118
 int drawable tooltip_frame_dark 0x7f070119
 int drawable tooltip_frame_light 0x7f07011a
@@ -3280,6 +3281,7 @@ int id auto 0x7f080066
 int id autoComplete 0x7f080067
 int id autoCompleteToEnd 0x7f080068
 int id autoCompleteToStart 0x7f080069
+int id backNews 0x7f080266
 int id barrier 0x7f08006a
 int id baseline 0x7f08006b
 int id beginOnFirstDraw 0x7f08006c
@@ -3297,9 +3299,15 @@ int id browser_actions_menu_item_icon 0x7f080077
 int id browser_actions_menu_item_text 0x7f080078
 int id browser_actions_menu_items 0x7f080079
 int id browser_actions_menu_view 0x7f08007a
+int id btnAgric 0x7f08025f
+int id btnHealth 0x7f080260
 int id btnNo 0x7f08007b
+int id btnScince 0x7f080261
+int id btnTech 0x7f080262
 int id btnYes 0x7f08007c
 int id btncall 0x7f08007d
+int id btngeneral 0x7f080263
+int id business 0x7f080264
 int id buttonBack 0x7f08007e
 int id buttonLogin 0x7f08007f
 int id buttonPanel 0x7f080080
@@ -3644,6 +3652,7 @@ int id search_voice_btn 0x7f0801cd
 int id select_dialog_listview 0x7f0801ce
 int id selected 0x7f0801cf
 int id selection_type 0x7f0801d0
+int id serachbar 0x7f080265
 int id sharedValueSet 0x7f0801d1
 int id sharedValueUnset 0x7f0801d2
 int id shortcut 0x7f0801d3

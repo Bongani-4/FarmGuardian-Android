@@ -3161,6 +3161,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable peakpx
+drawable rounded_corner
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3281,6 +3282,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backNews
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3298,9 +3300,15 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnAgric
+id btnHealth
 id btnNo
+id btnScince
+id btnTech
 id btnYes
 id btncall
+id btngeneral
+id business
 id buttonBack
 id buttonLogin
 id buttonPanel
@@ -3645,6 +3653,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id serachbar
 id sharedValueSet
 id sharedValueUnset
 id shortcut

@@ -70,7 +70,7 @@ public class NewsDetailsActivity extends AppCompatActivity {
             intent.setPackage("com.android.chrome");
             startActivity(intent);
 
-            
+
         } else {
             Toast.makeText(this, "URL is empty", Toast.LENGTH_SHORT).show();
         }

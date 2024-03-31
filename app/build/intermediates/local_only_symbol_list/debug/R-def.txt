@@ -44,6 +44,7 @@ drawable market
 drawable newsicon
 drawable newstr
 drawable peakpx
+drawable rounded_corner
 drawable transport
 drawable wethher
 drawable widgets
@@ -71,10 +72,17 @@ id TextDetails
 id UrlText
 id Urlheading
 id animalcaretaker
+id backNews
 id bottom_navigation_view
+id btnAgric
+id btnHealth
 id btnNo
+id btnScince
+id btnTech
 id btnYes
 id btncall
+id btngeneral
+id business
 id buttonBack
 id buttonLogin
 id buttonRegister
@@ -119,6 +127,7 @@ id menu_becomeAnimalCaretaker
 id noInternet
 id recycler_news
 id searchView
+id serachbar
 id textHaveAcc
 id textRegister
 id textSource

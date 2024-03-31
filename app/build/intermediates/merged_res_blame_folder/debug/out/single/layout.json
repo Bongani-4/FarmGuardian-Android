@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.farmguardian.app-mergeDebugResources-60:/layout/headline_list_items.xml",
-        "source": "com.example.farmguardian.app-main-63:/layout/headline_list_items.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_news_details.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_news_details.xml"
     },
@@ -58,6 +54,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\list_item_acaretaker.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\list_item_acaretaker.xml"
+    },
+    {
+        "merged": "com.example.farmguardian.app-mergeDebugResources-60:/layout/activity_news.xml",
+        "source": "com.example.farmguardian.app-main-63:/layout/activity_news.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_livestock.xml",

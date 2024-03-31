@@ -55,7 +55,7 @@ public class RequestManager {
                  @Override
                  public void onFailure(Call<NewsAPIResponse> call, Throwable throwable) {
 
-                     listener.onError("Request Failed");
+                     listener.onError("API Request Failed");
                  }
              });
 

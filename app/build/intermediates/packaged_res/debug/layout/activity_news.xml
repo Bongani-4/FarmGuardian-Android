@@ -6,14 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".NewsActivity"
     android:orientation="vertical"
-    android:background="#8D212C21">
+    android:background="#716F6F">
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="115dp"
-        android:progressTint="@color/DarkGreen"
-        android:foregroundTint="@color/DarkGreen"
+        android:progressTint="@color/white"
+        android:foregroundTint="@color/white"
         android:id="@+id/load"/>
+    <ImageView
+        android:id="@+id/backNews"
+       android:src="@drawable/back"
+        android:layout_width="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        app:tint="@color/white">
+
+
+    </ImageView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="14dp"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+       <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:id="@+id/serachbar"
+           app:defaultQueryHint="Search current ews"
+           app:iconifiedByDefault="false">
+
+       </androidx.appcompat.widget.SearchView>
+
+
+    </androidx.cardview.widget.CardView>
+    
+    <HorizontalScrollView
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agric"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/btnAgric">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="health"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="6dp"
+                android:id="@+id/btnHealth">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="science"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/btnScince">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="technology"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/btnTech">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="business"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/business">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="general"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="6dp"
+                android:id="@+id/btngeneral">
+
+            </Button>
+        </LinearLayout>
+      </HorizontalScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_news"
