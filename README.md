@@ -2,17 +2,6 @@
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-## Table of Contents
-
-UI mockups
-
-Configuration Setup
-
-Description and features
-
-Contributing
-
-License
 
 ## UI mockups
 
@@ -23,11 +12,10 @@ License
 <p align="center">
 
  <img src="images/screenshots/Screenshot_20240329_154609.jpg" alt="App serviices,Home" width="120">
-
 <img src="images/screenshots/Screenshot_20240329_165057.jpg" alt="App serviices,Home" width="120">
-<img src="images/screenshots/Screenshot_20240329_165554.jpg" alt="Become Animal caretaker" width="120">
 <img src="images/screenshots/Screenshot_20240329_174701.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240317_153631.jpg" alt="Equipment services" width="120">
+<img src="images/screenshots/Screenshot_20240331_210536.jpg" alt="Become Animal caretaker" width="120">
 
 (or visit the "Screenshot" folder)
 
@@ -107,7 +95,7 @@ For major changes, please open an issue first to discuss potential changes.
 
 ## License
 
-This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
 
 ## Attribution
 
