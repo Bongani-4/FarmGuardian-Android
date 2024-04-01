@@ -81,16 +81,6 @@ Example: See trending agriculture news from ML /AI models, tips, cautious weathe
 
 I welcome contributions from the community to enhance FarmGuardian. To contribute, follow these steps:
 
-Fork the repository.
-
-Create a new branch for your feature: git checkout -b feature-name.
-
-Commit your changes: git commit -m 'Add some feature'.
-
-Push to the branch: git push origin feature-name.
-
-Submit a pull request.
-
 For major changes, please open an issue first to discuss potential changes.
 
 ## License
