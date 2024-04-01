@@ -3282,6 +3282,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backHealth
 id backNews
 id barrier
 id baseline
@@ -3314,6 +3315,9 @@ id buttonLogin
 id buttonPanel
 id buttonRegister
 id buttonSetACprofile
+id button_process_images
+id button_upload_image1
+id button_upload_image2
 id buttonhome
 id cache_measures
 id callMeasure
@@ -3462,7 +3466,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image1
+id image2
 id imageView
+id image_container
 id imgHeadLine
 id immediateStop
 id included
@@ -3615,6 +3622,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id progressBarHealth
 id progress_circular
 id progress_horizontal
 id radio
@@ -3622,6 +3630,7 @@ id ratio
 id rectangles
 id recycler_news
 id report_drawn
+id result_health
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3745,7 +3754,9 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id title_Detail
 id title_template
+id title_text
 id toggle
 id top
 id topPanel
@@ -3901,6 +3912,7 @@ layout abc_tooltip
 layout activity_acaretaker_profile2
 layout activity_equipment
 layout activity_equipment_sharing
+layout activity_healthactivity
 layout activity_hire_animal_caretaker
 layout activity_home
 layout activity_livestock
@@ -4090,6 +4102,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string healthDetailInstruction
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description

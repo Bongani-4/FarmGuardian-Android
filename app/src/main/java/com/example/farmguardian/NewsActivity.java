@@ -49,7 +49,7 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
             @Override
             public boolean onQueryTextSubmit(String query) {
 
-                RequestManager manager = new RequestManager(NewsActivity.this);
+                RequestManagerNews manager = new RequestManagerNews(NewsActivity.this);
                 showLoading();
                 manager.getNewsHadlines(listener, "general", query);
                 return true;
@@ -90,7 +90,7 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
 
 
 
-        RequestManager manager = new RequestManager(this);
+        RequestManagerNews manager = new RequestManagerNews(this);
         showLoading();
         manager.getNewsHadlines(listener, "general", null);
     }
@@ -149,7 +149,7 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
          String category = button.getText().toString();
 
          //call category API
-        RequestManager manager = new RequestManager(this);
+        RequestManagerNews manager = new RequestManagerNews(this);
         showLoading();
         manager.getNewsHadlines(listener, category, null);
 

@@ -72,6 +72,7 @@ id TextDetails
 id UrlText
 id Urlheading
 id animalcaretaker
+id backHealth
 id backNews
 id bottom_navigation_view
 id btnAgric
@@ -87,6 +88,9 @@ id buttonBack
 id buttonLogin
 id buttonRegister
 id buttonSetACprofile
+id button_process_images
+id button_upload_image1
+id button_upload_image2
 id buttonhome
 id checkBoxAVailable
 id container_layout
@@ -109,7 +113,10 @@ id greyBackground
 id heading
 id hireInProgressSubheading
 id hiredSubheading
+id image1
+id image2
 id imageView
+id image_container
 id imgHeadLine
 id linearLayout
 id linearLayout2
@@ -125,7 +132,9 @@ id menu_HireAnimalCareteker
 id menu_RequestDetails
 id menu_becomeAnimalCaretaker
 id noInternet
+id progressBarHealth
 id recycler_news
+id result_health
 id searchView
 id serachbar
 id textHaveAcc
@@ -148,9 +157,12 @@ id textViewLocation1
 id textViewLogin
 id textViewProfile
 id textViewProfileDetails1
+id title_Detail
+id title_text
 layout activity_acaretaker_profile2
 layout activity_equipment
 layout activity_equipment_sharing
+layout activity_healthactivity
 layout activity_hire_animal_caretaker
 layout activity_home
 layout activity_livestock
@@ -179,6 +191,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string healthDetailInstruction
 string hello_blank_fragment
 string invalid_password
 string invalid_username

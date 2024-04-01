@@ -4,7 +4,24 @@
             "outputFile": "com.example.farmguardian.app-mergeDebugResources-59:/values-kn/values-kn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\7944188f046d1001e715916079ef6c88\\transformed\\material-1.11.0\\res\\values-kn\\values-kn.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\7e8886885841d9ff8f6f28e2b615619f\\transformed\\core-1.12.0\\res\\values-kn\\values-kn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,256,357,463,564,672,800",
+                        "endColumns": "97,102,100,105,100,107,127,100",
+                        "endOffsets": "148,251,352,458,559,667,795,896"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,145",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3532,3630,3733,3834,3940,4041,4149,13358",
+                        "endColumns": "97,102,100,105,100,107,127,100",
+                        "endOffsets": "3625,3728,3829,3935,4036,4144,4272,13454"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\a1b5d0e4e5ec0f128653cbf8a2aa225a\\transformed\\material-1.11.0\\res\\values-kn\\values-kn.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\5c83e1ca0b4f5f7a8878bc4c1bb22032\\transformed\\core-1.12.0\\res\\values-kn\\values-kn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,256,357,463,564,672,800",
-                        "endColumns": "97,102,100,105,100,107,127,100",
-                        "endOffsets": "148,251,352,458,559,667,795,896"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41,42,43,44,145",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3532,3630,3733,3834,3940,4041,4149,13358",
-                        "endColumns": "97,102,100,105,100,107,127,100",
-                        "endOffsets": "3625,3728,3829,3935,4036,4144,4272,13454"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\068801b82f386c06139899592a67cba6\\transformed\\foundation-release\\res\\values-kn\\values-kn.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\ea4c489a5bc9f5f43d3b54d6ec631558\\transformed\\foundation-release\\res\\values-kn\\values-kn.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\766ac0790f8d6372008b6302371e0f9c\\transformed\\appcompat-1.6.1\\res\\values-kn\\values-kn.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\11edf7fe9789a8dc6c156b1c0566862a\\transformed\\appcompat-1.6.1\\res\\values-kn\\values-kn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -74,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\a9d5596c314291fb31d61280ffe15585\\transformed\\ui-release\\res\\values-kn\\values-kn.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\be37877847454ad24f944d0429cb3330\\transformed\\ui-release\\res\\values-kn\\values-kn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,24 +91,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\12c8860f632c40a5a50bbd07288a8156\\transformed\\browser-1.4.0\\res\\values-kn\\values-kn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,169,269,385",
-                        "endColumns": "113,99,115,100",
-                        "endOffsets": "164,264,380,481"
-                    },
-                    "to": {
-                        "startLines": "68,74,75,76",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "6999,7555,7655,7771",
-                        "endColumns": "113,99,115,100",
-                        "endOffsets": "7108,7650,7766,7867"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\709b041e94491a47f8c3f79d83b6bcbb\\transformed\\play-services-base-18.1.0\\res\\values-kn\\values.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\ed3d52e03c8d5f5fd82845dbc7e845a1\\transformed\\play-services-base-18.1.0\\res\\values-kn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -125,7 +108,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\8bcbf64d72717fb6258d7472d0b1540b\\transformed\\play-services-basement-18.3.0\\res\\values-kn\\values.xml",
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\77fe59e972c1c67760a01238fb5b0693\\transformed\\browser-1.4.0\\res\\values-kn\\values-kn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,169,269,385",
+                        "endColumns": "113,99,115,100",
+                        "endOffsets": "164,264,380,481"
+                    },
+                    "to": {
+                        "startLines": "68,74,75,76",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "6999,7555,7655,7771",
+                        "endColumns": "113,99,115,100",
+                        "endOffsets": "7108,7650,7766,7867"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Bongani\\.gradle\\caches\\transforms-3\\8858119363fe212b8de6d3b7931c337e\\transformed\\play-services-basement-18.3.0\\res\\values-kn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

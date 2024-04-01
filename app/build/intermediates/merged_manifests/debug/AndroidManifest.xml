@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.farmguardian.healthactivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.farmguardian.NewsDetailsActivity"
             android:exported="false" />
         <activity
@@ -158,15 +161,6 @@
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <provider
-            android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.example.farmguardian.com.squareup.picasso"
-            android:exported="false" />
-
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"
             android:directBootAware="false"
@@ -186,6 +180,15 @@
                 <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
             </intent-filter>
         </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.farmguardian.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>
