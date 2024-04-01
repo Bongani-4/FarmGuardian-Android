@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
@@ -53,11 +54,14 @@ public final class ActivityNewsBinding implements ViewBinding {
   @NonNull
   public final SearchView serachbar;
 
+  @NonNull
+  public final TextView textViewFG;
+
   private ActivityNewsBinding(@NonNull LinearLayout rootView, @NonNull ImageView backNews,
       @NonNull Button btnAgric, @NonNull Button btnHealth, @NonNull Button btnScince,
       @NonNull Button btnTech, @NonNull Button btngeneral, @NonNull Button business,
-      @NonNull ProgressBar load, @NonNull RecyclerView recyclerNews,
-      @NonNull SearchView serachbar) {
+      @NonNull ProgressBar load, @NonNull RecyclerView recyclerNews, @NonNull SearchView serachbar,
+      @NonNull TextView textViewFG) {
     this.rootView = rootView;
     this.backNews = backNews;
     this.btnAgric = btnAgric;
@@ -69,6 +73,7 @@ public final class ActivityNewsBinding implements ViewBinding {
     this.load = load;
     this.recyclerNews = recyclerNews;
     this.serachbar = serachbar;
+    this.textViewFG = textViewFG;
   }
 
   @Override
@@ -158,8 +163,14 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textViewFG;
+      TextView textViewFG = ViewBindings.findChildViewById(rootView, id);
+      if (textViewFG == null) {
+        break missingId;
+      }
+
       return new ActivityNewsBinding((LinearLayout) rootView, backNews, btnAgric, btnHealth,
-          btnScince, btnTech, btngeneral, business, load, recyclerNews, serachbar);
+          btnScince, btnTech, btngeneral, business, load, recyclerNews, serachbar, textViewFG);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\list_item_acaretaker.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_language.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\language.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_loginfgdesign.png.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\loginfgdesign.png"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_language.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\language.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -176,12 +176,12 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_line_fill_up.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\line_fill_up.xml"
+        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_news.xml.flat",
+        "source": "com.example.farmguardian.app-main-63:/layout/activity_news.xml"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_healthactivity.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_healthactivity.xml"
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_line_fill_up.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\line_fill_up.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_health.png.flat",
