@@ -17,6 +17,8 @@ import android.widget.Toast;
 import com.example.farmguardian.Models.NewsAPIResponse;
 import com.example.farmguardian.Models.NewsHeadlines;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class NewsActivity extends AppCompatActivity implements NewsSelectListner, View.OnClickListener {
@@ -36,6 +38,9 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
         progressD = findViewById(R.id.load);
         searchview = findViewById(R.id.serachbar);
         back = findViewById(R.id.backNews);
+
+
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,7 +98,15 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
         RequestManagerNews manager = new RequestManagerNews(this);
         showLoading();
         manager.getNewsHadlines(listener, "general", null);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fetchAgricultureNews();
+            }
+        });
     }
+
 
     private final OnFetchDataListener<NewsAPIResponse> listener = new OnFetchDataListener<NewsAPIResponse>() {
         @Override
@@ -154,4 +167,82 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
         manager.getNewsHadlines(listener, category, null);
 
     }
+
+    /**get agric news from general news*/
+
+    private void fetchAgricultureNews() {
+        // Call general category API to fetch all news
+        RequestManagerNews manager = new RequestManagerNews(this);
+        showLoading();
+        manager.getNewsHadlines(new OnFetchDataListener<NewsAPIResponse>() {
+            @Override
+            public void onfetchData(List<NewsHeadlines> list, String message) {
+                if (list.isEmpty()) {
+                    Toast.makeText(NewsActivity.this, "No news found for agriculture", Toast.LENGTH_SHORT).show();
+                    hideLoading();
+                    return;
+                }
+
+                // Filter news related to agriculture
+                List<NewsHeadlines> agricultureNews = filterNewsByKeywords(list);
+
+                if (agricultureNews.isEmpty()) {
+                    Toast.makeText(NewsActivity.this, "No agriculture news found", Toast.LENGTH_SHORT).show();
+                } else {
+                    ShowNews(agricultureNews);
+                }
+
+                hideLoading();
+            }
+
+            @Override
+            public void onError(String message) {
+                hideLoading();
+                Toast.makeText(NewsActivity.this, "Error fetching agriculture news", Toast.LENGTH_SHORT).show();
+            }
+        }, "general", null);
+    }
+
+    // filter news related to agriculture
+    private static final List<String> KEYWORDS = Arrays.asList(
+            "agriculture", "farming", "farmers", "crops", "livestock", "harvest",
+            "irrigation", "cultivation", "plantation", "agronomy", "horticulture",
+            "organic farming", "sustainable agriculture", "crop rotation",
+            "soil fertility", "pest control", "fertilizers", "pesticides",
+            "crop yield", "agricultural machinery", "tractors", "harvesters",
+            "greenhouses", "aquaculture", "hydroponics",
+            "hazard", "warning", "alert", "risk", "emergency", "disaster",
+            "hazardous", "dangerous", "safety", "precaution", "prevention",
+            "mitigation", "hazard assessment", "hazard management", "hazard mitigation",
+            "hazardous materials",
+            "weather", "climate", "meteorology", "storm", "hurricane", "tornado",
+            "cyclone", "typhoon", "flood", "drought", "heatwave", "cold wave",
+            "blizzard", "thunderstorm", "lightning", "hailstorm", "wildfire",
+            "nutrition", "diet", "nutrient", "balanced diet", "protein", "carbohydrate",
+            "fat", "vitamin", "mineral", "fiber", "calories", "micronutrient",
+            "macronutrient", "antioxidant", "superfood", "organic food", "functional food",
+            "dietary supplement", "healthy eating");
+
+    public List<NewsHeadlines> filterNewsByKeywords(List<NewsHeadlines> newsList) {
+        List<NewsHeadlines> filteredNews = new ArrayList<>();
+        for (NewsHeadlines news : newsList) {
+            if (containsKeywords(news)) {
+                filteredNews.add(news);
+            }
+        }
+        return filteredNews;
+    }
+
+    private boolean containsKeywords(NewsHeadlines news) {
+        String title = news.getTitle().toLowerCase();
+        String content = news.getContent().toLowerCase();
+        for (String keyword : KEYWORDS) {
+            if (title.contains(keyword) || content.contains(keyword)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }

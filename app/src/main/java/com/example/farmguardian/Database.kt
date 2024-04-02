@@ -68,14 +68,14 @@ class Database {
 
 
 
-    // Method to save hired caretaker to Firebase Realtime Database
+    //  save hired caretaker to Firebase Realtime Database
     suspend fun saveHiredCaretaker(caretakerName: String, contacts: String) {
         val hiredCaretakerRef = hiredRef.push()
         hiredCaretakerRef.child("caretaker_name").setValue(caretakerName)
         hiredCaretakerRef.child("contact").setValue(contacts)
     }
 
-    // Method to retrieve list of animal caretakers from Firebase Realtime Database
+    //  retrieve list of animal caretakers from Firebase Realtime Database
     suspend fun getAcaretakerList(): List<AcaretakerModel> {
         val caretakerList = mutableListOf<AcaretakerModel>()
         val acUserRef = FirebaseDatabase.getInstance().getReference("ACUser").get().await()
@@ -92,7 +92,7 @@ class Database {
         return caretakerList
     }
 
-    // Method to add sample data for animal caretakers,Executed only once
+    //  add sample data for animal caretakers,Executed only once
     private fun addAnimalCaretakers() {
         val faker = Faker()
 
