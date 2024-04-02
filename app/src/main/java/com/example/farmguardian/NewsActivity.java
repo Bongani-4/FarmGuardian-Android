@@ -20,6 +20,8 @@ import com.example.farmguardian.Models.NewsHeadlines;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import android.util.LruCache;
+
 
 public class NewsActivity extends AppCompatActivity implements NewsSelectListner, View.OnClickListener {
 
@@ -31,6 +33,11 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
     Button btn1,btn2,btn3,btn4,btn5,btn6;
     SearchView searchview;
 
+
+    // a cache to store filtered news articles
+    private LruCache<String, List<NewsHeadlines>> newsCache;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +45,10 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
         progressD = findViewById(R.id.load);
         searchview = findViewById(R.id.serachbar);
         back = findViewById(R.id.backNews);
+
+        // Initialize cache with a maximum size
+        int cacheSize = 10 * 1024 * 1024; // 10 MB
+        newsCache = new LruCache<>(cacheSize);
 
 
 
@@ -171,37 +182,45 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
     /**get agric news from general news*/
 
     private void fetchAgricultureNews() {
-        // Call general category API to fetch all news
-        RequestManagerNews manager = new RequestManagerNews(this);
-        showLoading();
-        manager.getNewsHadlines(new OnFetchDataListener<NewsAPIResponse>() {
-            @Override
-            public void onfetchData(List<NewsHeadlines> list, String message) {
-                if (list.isEmpty()) {
-                    Toast.makeText(NewsActivity.this, "No news found for agriculture", Toast.LENGTH_SHORT).show();
+        // Check if the filtered agriculture news articles exist in the cache
+        List<NewsHeadlines> cachedAgricultureNews = newsCache.get("agriculture");
+        if (cachedAgricultureNews != null && !cachedAgricultureNews.isEmpty()) {
+            // If cached news exist, show them directly
+            ShowNews(cachedAgricultureNews);
+        } else {
+            // If not cached, fetch news articles from the API
+            RequestManagerNews manager = new RequestManagerNews(this);
+            showLoading();
+            manager.getNewsHadlines(new OnFetchDataListener<NewsAPIResponse>() {
+                @Override
+                public void onfetchData(List<NewsHeadlines> list, String message) {
+                    if (!list.isEmpty()) {
+                        // Filter news related to agriculture
+                        List<NewsHeadlines> agricultureNews = filterNewsByKeywords(list);
+
+                        if (!agricultureNews.isEmpty()) {
+                            // Show the filtered agriculture news articles
+                            ShowNews(agricultureNews);
+                            // Cache the filtered agriculture news articles for future use
+                            newsCache.put("agriculture", agricultureNews);
+                        } else {
+                            Toast.makeText(NewsActivity.this, "No agriculture news found", Toast.LENGTH_SHORT).show();
+                        }
+                    } else {
+                        Toast.makeText(NewsActivity.this, "No news found for agriculture", Toast.LENGTH_SHORT).show();
+                    }
                     hideLoading();
-                    return;
                 }
 
-                // Filter news related to agriculture
-                List<NewsHeadlines> agricultureNews = filterNewsByKeywords(list);
-
-                if (agricultureNews.isEmpty()) {
-                    Toast.makeText(NewsActivity.this, "No agriculture news found", Toast.LENGTH_SHORT).show();
-                } else {
-                    ShowNews(agricultureNews);
+                @Override
+                public void onError(String message) {
+                    hideLoading();
+                    Toast.makeText(NewsActivity.this, "Error fetching agriculture news: " + message, Toast.LENGTH_SHORT).show();
                 }
-
-                hideLoading();
-            }
-
-            @Override
-            public void onError(String message) {
-                hideLoading();
-                Toast.makeText(NewsActivity.this, "Error fetching agriculture news", Toast.LENGTH_SHORT).show();
-            }
-        }, "general", null);
+            }, "general", null);
+        }
     }
+
 
     // filter news related to agriculture
     private static final List<String> KEYWORDS = Arrays.asList(
@@ -214,14 +233,14 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
             "hazard", "warning", "alert", "risk", "emergency", "disaster",
             "hazardous", "dangerous", "safety", "precaution", "prevention",
             "mitigation", "hazard assessment", "hazard management", "hazard mitigation",
-            "hazardous materials",
-            "weather", "climate", "meteorology", "storm", "hurricane", "tornado",
+            "hazardous materials","farm",
+            "storm", "hurricane", "tornado",
             "cyclone", "typhoon", "flood", "drought", "heatwave", "cold wave",
             "blizzard", "thunderstorm", "lightning", "hailstorm", "wildfire",
             "nutrition", "diet", "nutrient", "balanced diet", "protein", "carbohydrate",
             "fat", "vitamin", "mineral", "fiber", "calories", "micronutrient",
             "macronutrient", "antioxidant", "superfood", "organic food", "functional food",
-            "dietary supplement", "healthy eating");
+            "dietary supplement", "healthy eating","cattle", "cow", "sheep", "goat", "pig", "chicken", "duck", "rabbit", "horse", "donkey","horse","animal","livestock", "buffalo", "deer", "quail", "pheasant", "ostrich");
 
     public List<NewsHeadlines> filterNewsByKeywords(List<NewsHeadlines> newsList) {
         List<NewsHeadlines> filteredNews = new ArrayList<>();
@@ -234,13 +253,33 @@ public class NewsActivity extends AppCompatActivity implements NewsSelectListner
     }
 
     private boolean containsKeywords(NewsHeadlines news) {
-        String title = news.getTitle().toLowerCase();
-        String content = news.getContent().toLowerCase();
-        for (String keyword : KEYWORDS) {
-            if (title.contains(keyword) || content.contains(keyword)) {
-                return true;
+        String title = news.getTitle();
+        String content = news.getContent();
+
+        if (title != null) {
+
+            title = title.toLowerCase();
+
+            if (content != null) {
+
+                content = content.toLowerCase();
+                for (String keyword : KEYWORDS) {
+                    if (title.contains(keyword) || content.contains(keyword)) {
+                        return true;
+                    }
+                }
+            } else {
+                Toast.makeText(NewsActivity.this, "Some incomplete news left out", Toast.LENGTH_SHORT).show();
+
             }
+
+        } else {
+           Toast.makeText(NewsActivity.this, "Some incomplete news left out", Toast.LENGTH_SHORT).show();
         }
+
+
+
+
         return false;
     }
 
