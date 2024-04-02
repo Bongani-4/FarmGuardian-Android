@@ -12,10 +12,10 @@
 <p align="center">
 
  <img src="images/screenshots/Screenshot_20240329_154609.jpg" alt="App serviices,Home" width="120">
-<img src="images/screenshots/Screenshot_20240401_174736.jpg" alt="App serviices,Home" width="120">
-<img src="images/screenshots/Screenshot_20240329_174701.jpg" alt="Registration" width="120">
+<img src="images/screenshots/Screenshot_20240329_165057.jpg" alt="App serviices,Home" width="120">
+<img src="images/screenshots/Screenshot_20240401_172210.jpg" alt="Registration" width="120">
 <img src="images/screenshots/Screenshot_20240317_153631.jpg" alt="Equipment services" width="120">
-<img src="images/screenshots/Screenshot_20240331_210536.jpg" alt="Become Animal caretaker" width="120">
+<img src="images/screenshots/Screenshot_20240401_180231.jpg" alt="Become Animal caretaker" width="120">
 
 (or visit the "Screenshot" folder)
 
@@ -80,16 +80,6 @@ Example: See trending agriculture news from ML /AI models, tips, cautious weathe
 ## Contribution
 
 I welcome contributions from the community to enhance FarmGuardian. To contribute, follow these steps:
-
-Fork the repository.
-
-Create a new branch for your feature: git checkout -b feature-name.
-
-Commit your changes: git commit -m 'Add some feature'.
-
-Push to the branch: git push origin feature-name.
-
-Submit a pull request.
 
 For major changes, please open an issue first to discuss potential changes.
 
