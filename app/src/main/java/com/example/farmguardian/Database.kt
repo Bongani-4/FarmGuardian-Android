@@ -1,3 +1,5 @@
+package com.example.farmguardian
+
 import android.util.Log
 import com.example.farmguardian.Models.AcaretakerModel
 import com.github.javafaker.Faker
@@ -7,11 +9,11 @@ import kotlinx.coroutines.tasks.await
 import java.util.*
 
 
-public class Database {
+class Database {
 
-    val usersRef: DatabaseReference
-    val toBeHiredRef: DatabaseReference
-    val hiredRef: DatabaseReference
+    private val usersRef: DatabaseReference
+    private val toBeHiredRef: DatabaseReference
+    private val hiredRef: DatabaseReference
 
     init {
 
@@ -50,23 +52,14 @@ public class Database {
         }
         return hiredCaretakerList
     }
-    suspend fun isDatabaseInitialized(): Boolean {
-        val rootRef = FirebaseDatabase.getInstance().reference
 
-        val usersNodeRef = rootRef.child("users").get().await()
-        val toBeHiredNodeRef = rootRef.child("users").child("toBeHired").get().await()
-        val hiredNodeRef = rootRef.child("users").child("hired").get().await()
-        val acUserNodeRef = rootRef.child("ACUser").get().await()
-
-        return usersNodeRef.exists() && toBeHiredNodeRef.exists() && hiredNodeRef.exists() && acUserNodeRef.exists()
-    }
 
 
 
 
 
     //  save hired caretaker to Firebase Realtime Database
-    suspend fun saveHiredCaretaker(caretakerName: String, contacts: String) {
+    fun saveHiredCaretaker(caretakerName: String, contacts: String) {
         val hiredCaretakerRef = hiredRef.push()
         hiredCaretakerRef.child("caretaker_name").setValue(caretakerName)
         hiredCaretakerRef.child("contact").setValue(contacts)
@@ -111,7 +104,7 @@ public class Database {
     }
 
     // Method to initialize the database
-    suspend fun initializeDatabase() {
+     fun initializeDatabase() {
         val rootRef = FirebaseDatabase.getInstance().reference
 
         // Check if "users" node already exists
