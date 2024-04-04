@@ -7,7 +7,7 @@
     android:id="@+id/container_layoutRD"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".animalCaretaker">
+    tools:context=".views.animalCaretaker">
 
     <FrameLayout
         android:id="@+id/fragment_containerR"

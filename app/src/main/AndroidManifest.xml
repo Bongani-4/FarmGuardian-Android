@@ -15,45 +15,45 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31" >
         <activity
-            android:name=".healthactivity"
+            android:name=".views.healthactivity"
             android:exported="false" />
         <activity
-            android:name=".NewsDetailsActivity"
+            android:name=".views.NewsDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".MarketActivity"
+            android:name=".views.MarketActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LivestockActivity"
+            android:name=".views.LivestockActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EquipmentSharingActivity"
+            android:name=".views.EquipmentSharingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".NewsActivity"
+            android:name=".views.NewsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Equipment"
+            android:name=".views.Equipment"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".animalCaretaker"
+            android:name=".views.animalCaretaker"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".views.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".views.RegisterActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivityFirebase"
+            android:name=".views.LoginActivityFirebase"
             android:exported="true"
             android:screenOrientation="portrait" >
             <intent-filter>

@@ -30,45 +30,45 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.farmguardian.healthactivity"
+            android:name="com.example.farmguardian.views.healthactivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.NewsDetailsActivity"
+            android:name="com.example.farmguardian.views.NewsDetailsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.MarketActivity"
+            android:name="com.example.farmguardian.views.MarketActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.LivestockActivity"
+            android:name="com.example.farmguardian.views.LivestockActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.EquipmentSharingActivity"
+            android:name="com.example.farmguardian.views.EquipmentSharingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.NewsActivity"
+            android:name="com.example.farmguardian.views.NewsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.Equipment"
+            android:name="com.example.farmguardian.views.Equipment"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.animalCaretaker"
+            android:name="com.example.farmguardian.views.animalCaretaker"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.HomeActivity"
+            android:name="com.example.farmguardian.views.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.RegisterActivity"
+            android:name="com.example.farmguardian.views.RegisterActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.LoginActivityFirebase"
+            android:name="com.example.farmguardian.views.LoginActivityFirebase"
             android:exported="true"
             android:screenOrientation="portrait" >
             <intent-filter>

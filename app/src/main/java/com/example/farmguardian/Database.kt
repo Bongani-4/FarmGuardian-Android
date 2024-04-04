@@ -1,20 +1,17 @@
 import android.util.Log
-import androidx.lifecycle.lifecycleScope
-import com.example.farmguardian.AcaretakerModel
+import com.example.farmguardian.Models.AcaretakerModel
 import com.github.javafaker.Faker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import java.util.*
 
 
-class Database {
+public class Database {
 
-    private val usersRef: DatabaseReference
-    private val toBeHiredRef: DatabaseReference
-    private val hiredRef: DatabaseReference
+    val usersRef: DatabaseReference
+    val toBeHiredRef: DatabaseReference
+    val hiredRef: DatabaseReference
 
     init {
 
@@ -86,7 +83,13 @@ class Database {
             val experience = snapshot.child("experience").getValue(String::class.java) ?: ""
             val CBavailable = snapshot.child("CBavailable").getValue(Int::class.java) ?: 0
 
-            val caretaker = AcaretakerModel(fullNames, location, contacts, experience, CBavailable)
+            val caretaker = AcaretakerModel(
+                fullNames,
+                location,
+                contacts,
+                experience,
+                CBavailable
+            )
             caretakerList.add(caretaker)
         }
         return caretakerList

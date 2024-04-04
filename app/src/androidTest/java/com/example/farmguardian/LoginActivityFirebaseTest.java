@@ -1,19 +1,16 @@
 package com.example.farmguardian;
 
-import static org.junit.Assert.*;
-import androidx.test.core.app.ActivityScenario;
 import androidx.test.espresso.Espresso;
-import androidx.test.espresso.ViewAction;
 import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import static com.google.common.truth.Truth.assertThat;
+
+import com.example.farmguardian.views.LoginActivityFirebase;
+
 import org.junit.Rule;
 import org.junit.Test;
-
-
-import junit.framework.TestCase;
 
 public class LoginActivityFirebaseTest  {
     @Rule

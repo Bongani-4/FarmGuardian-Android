@@ -50,84 +50,84 @@
 31-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:15:9-40
 32        <activity
 32-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:17:9-19:40
-33            android:name="com.example.farmguardian.healthactivity"
-33-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:13-43
+33            android:name="com.example.farmguardian.views.healthactivity"
+33-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:13-49
 34            android:exported="false" />
 34-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:19:13-37
 35        <activity
 35-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:20:9-22:40
-36            android:name="com.example.farmguardian.NewsDetailsActivity"
-36-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:13-48
+36            android:name="com.example.farmguardian.views.NewsDetailsActivity"
+36-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:13-54
 37            android:exported="false" />
 37-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:22:13-37
 38        <activity
 38-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:23:9-26:52
-39            android:name="com.example.farmguardian.MarketActivity"
-39-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:13-43
+39            android:name="com.example.farmguardian.views.MarketActivity"
+39-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:13-49
 40            android:exported="false"
 40-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:25:13-37
 41            android:screenOrientation="portrait" />
 41-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:26:13-49
 42        <activity
 42-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:27:9-30:52
-43            android:name="com.example.farmguardian.LivestockActivity"
-43-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:28:13-46
+43            android:name="com.example.farmguardian.views.LivestockActivity"
+43-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:28:13-52
 44            android:exported="false"
 44-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:29:13-37
 45            android:screenOrientation="portrait" />
 45-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:30:13-49
 46        <activity
 46-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:31:9-34:52
-47            android:name="com.example.farmguardian.EquipmentSharingActivity"
-47-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:32:13-53
+47            android:name="com.example.farmguardian.views.EquipmentSharingActivity"
+47-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:32:13-59
 48            android:exported="false"
 48-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:33:13-37
 49            android:screenOrientation="portrait" />
 49-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:34:13-49
 50        <activity
 50-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:35:9-38:52
-51            android:name="com.example.farmguardian.NewsActivity"
-51-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:13-41
+51            android:name="com.example.farmguardian.views.NewsActivity"
+51-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:13-47
 52            android:exported="false"
 52-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:37:13-37
 53            android:screenOrientation="portrait" />
 53-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:38:13-49
 54        <activity
 54-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:9-42:52
-55            android:name="com.example.farmguardian.Equipment"
-55-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:40:13-38
+55            android:name="com.example.farmguardian.views.Equipment"
+55-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:40:13-44
 56            android:exported="false"
 56-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:13-37
 57            android:screenOrientation="portrait" />
 57-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:42:13-49
 58        <activity
 58-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:43:9-46:52
-59            android:name="com.example.farmguardian.animalCaretaker"
-59-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:13-44
+59            android:name="com.example.farmguardian.views.animalCaretaker"
+59-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:13-50
 60            android:exported="false"
 60-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:45:13-37
 61            android:screenOrientation="portrait" />
 61-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:13-49
 62        <activity
 62-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:47:9-50:52
-63            android:name="com.example.farmguardian.HomeActivity"
-63-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:48:13-41
+63            android:name="com.example.farmguardian.views.HomeActivity"
+63-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:48:13-47
 64            android:exported="false"
 64-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:49:13-37
 65            android:screenOrientation="portrait" />
 65-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:50:13-49
 66        <activity
 66-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:51:9-54:52
-67            android:name="com.example.farmguardian.RegisterActivity"
-67-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:52:13-45
+67            android:name="com.example.farmguardian.views.RegisterActivity"
+67-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:52:13-51
 68            android:exported="false"
 68-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:53:13-37
 69            android:screenOrientation="portrait" />
 69-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:54:13-49
 70        <activity
 70-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:55:9-64:20
-71            android:name="com.example.farmguardian.LoginActivityFirebase"
-71-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:56:13-50
+71            android:name="com.example.farmguardian.views.LoginActivityFirebase"
+71-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:56:13-56
 72            android:exported="true"
 72-->C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:57:13-36
 73            android:screenOrientation="portrait" >
