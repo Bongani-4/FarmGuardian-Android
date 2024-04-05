@@ -57,7 +57,9 @@ Facilitate direct access to markets for farmers to sell their produce, Marketpla
 
 See trending agriculture news from ML /AI models and APIs, tips, cautious weather updates.
 
--**_and more_**:
+- **_and more_**:
+
+
 
 ## Contribution
 
