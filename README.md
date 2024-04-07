@@ -3,7 +3,8 @@
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black&labelColor=FFCA28)](https://firebase.google.com/)
 [![Gemini AI](https://img.shields.io/badge/Gemini%20AI-000000.svg?style=for-the-badge&logo=gemini&logoColor=white&labelColor=000000)](https://example.com/gemini-ai/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-0095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0095D5)](https://kotlinlang.org/)
-[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-6200EE.svg?style=for-the-badge&logo=android&logoColor=white&labelColor=6200EE)](https://developer.android.com/jetpack/compose)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-00557e.svg?style=for-the-badge&logo=android&logoColor=white&labelColor=00557e)](https://developer.android.com/jetpack/compose)
+
 
 
 
