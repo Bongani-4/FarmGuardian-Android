@@ -26,7 +26,6 @@
 
 ## Configuration Setup:
 
-Sensitive File Requirements:
 
 This project requires certain .json files for configuration purposes. However, to maintain security, these files are not included in the repository. You will need to obtain these files separately and place them in the following locations:
 
