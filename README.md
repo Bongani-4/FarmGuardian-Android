@@ -26,7 +26,6 @@
 
 ## Configuration Setup:
 
-Sensitive File Requirements:
 
 This project requires certain .json files for configuration purposes. However, to maintain security, these files are not included in the repository. You will need to obtain these files separately and place them in the following locations:
 
@@ -77,7 +76,7 @@ For major changes, please open an issue first to discuss potential changes.
 [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
 
 
-##### Current Project Author: BONGANI NJATHU
+##### Current Project Author: Bongani Njathu
 
 ##### December 24, 2023
 
