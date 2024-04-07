@@ -3180,7 +3180,7 @@ int id DetailTime 0x7f080009
 int id DetaildAuthor 0x7f08000a
 int id Equipment 0x7f08000b
 int id EquipmentBack 0x7f08000c
-int id EquipmentBuy 0x7f08000d
+int id EquipmentSell 0x7f080272
 int id EquipmentShare 0x7f08000e
 int id FUNCTION 0x7f08000f
 int id Forgotpasword 0x7f080010
@@ -3283,6 +3283,7 @@ int id autoCompleteToEnd 0x7f080070
 int id autoCompleteToStart 0x7f080071
 int id backHealth 0x7f080271
 int id backNews 0x7f080072
+int id backsell 0x7f08027a
 int id barrier 0x7f080073
 int id baseline 0x7f080074
 int id beginOnFirstDraw 0x7f080075
@@ -3313,7 +3314,9 @@ int id buttonBack 0x7f08008d
 int id buttonLogin 0x7f08008e
 int id buttonPanel 0x7f08008f
 int id buttonRegister 0x7f080090
+int id buttonSell 0x7f080273
 int id buttonSetACprofile 0x7f080091
+int id buttonUploadImage 0x7f080274
 int id button_process_images 0x7f080267
 int id button_upload_image1 0x7f080268
 int id button_upload_image2 0x7f080269
@@ -3400,6 +3403,9 @@ int id east 0x7f0800e1
 int id edge 0x7f0800e2
 int id editTextContacts 0x7f0800e3
 int id editTextEmail 0x7f0800e4
+int id editTextEquipmentDescription 0x7f080275
+int id editTextEquipmentName 0x7f080276
+int id editTextEquipmentPrice 0x7f080277
 int id editTextExperiance 0x7f0800e5
 int id editTextLocation 0x7f0800e6
 int id editTextProfileNames 0x7f0800e7
@@ -3468,6 +3474,7 @@ int id image 0x7f080125
 int id image1 0x7f08026a
 int id image2 0x7f08026b
 int id imageView 0x7f080126
+int id imageViewPreview 0x7f080278
 int id image_container 0x7f08026c
 int id imgHeadLine 0x7f080127
 int id immediateStop 0x7f080128
@@ -3498,6 +3505,7 @@ int id listViewAcaretakers 0x7f080140
 int id listViewAcaretakers2 0x7f080141
 int id listViewAcaretakersHiredRD 0x7f080142
 int id listViewAcaretakersRD 0x7f080143
+int id listViewUploadedItems 0x7f080279
 int id list_item 0x7f080144
 int id livestockTransport 0x7f080145
 int id livestocklost 0x7f080146
@@ -3921,6 +3929,7 @@ int layout activity_market 0x7f0b0025
 int layout activity_news 0x7f0b0026
 int layout activity_news_details 0x7f0b0027
 int layout activity_register 0x7f0b0028
+int layout activity_sell_equipment 0x7f0b0082
 int layout activity_view_acaretaker_details 0x7f0b0029
 int layout activity_view_acset_profile 0x7f0b002a
 int layout aniamal_caretaker 0x7f0b002b
@@ -4088,6 +4097,9 @@ int string copy_toast_msg 0x7f110045
 int string default_error_message 0x7f110046
 int string default_popup_window_title 0x7f110047
 int string dropdown_menu 0x7f110048
+int string enter_equipment_description 0x7f1100e1
+int string enter_equipment_name 0x7f1100e2
+int string enter_equipment_price_usd 0x7f1100e3
 int string error_a11y_label 0x7f110049
 int string error_icon_content_description 0x7f11004a
 int string exposed_dropdown_menu_content_description 0x7f11004b
@@ -4211,6 +4223,7 @@ int string mtrl_switch_track_decoration_path 0x7f1100bf
 int string mtrl_switch_track_path 0x7f1100c0
 int string mtrl_timepicker_cancel 0x7f1100c1
 int string mtrl_timepicker_confirm 0x7f1100c2
+int string my_list 0x7f1100e4
 int string navigation_menu 0x7f1100c3
 int string not_selected 0x7f1100c4
 int string off 0x7f1100c5
@@ -4230,6 +4243,8 @@ int string searchbar_scrolling_view_behavior 0x7f1100d2
 int string searchview_clear_text_content_description 0x7f1100d3
 int string searchview_navigation_content_description 0x7f1100d4
 int string selected 0x7f1100d5
+int string sell 0x7f1100e5
+int string sell_your_equipment 0x7f1100e6
 int string side_sheet_accessibility_pane_title 0x7f1100d6
 int string side_sheet_behavior 0x7f1100d7
 int string status_bar_notification_info_overflow 0x7f1100d8
@@ -4239,6 +4254,7 @@ int string template_percent 0x7f1100db
 int string title_activity_login 0x7f1100dc
 int string tooltip_description 0x7f1100dd
 int string tooltip_label 0x7f1100de
+int string upload_image 0x7f1100e7
 int string welcome 0x7f1100df
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001

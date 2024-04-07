@@ -24,7 +24,7 @@ public final class ActivityEquipmentBinding implements ViewBinding {
   public final CardView EquipmentBack;
 
   @NonNull
-  public final CardView EquipmentBuy;
+  public final CardView EquipmentSell;
 
   @NonNull
   public final CardView EquipmentShare;
@@ -33,11 +33,11 @@ public final class ActivityEquipmentBinding implements ViewBinding {
   public final TextView textViewFG;
 
   private ActivityEquipmentBinding(@NonNull RelativeLayout rootView,
-      @NonNull CardView EquipmentBack, @NonNull CardView EquipmentBuy,
+      @NonNull CardView EquipmentBack, @NonNull CardView EquipmentSell,
       @NonNull CardView EquipmentShare, @NonNull TextView textViewFG) {
     this.rootView = rootView;
     this.EquipmentBack = EquipmentBack;
-    this.EquipmentBuy = EquipmentBuy;
+    this.EquipmentSell = EquipmentSell;
     this.EquipmentShare = EquipmentShare;
     this.textViewFG = textViewFG;
   }
@@ -75,9 +75,9 @@ public final class ActivityEquipmentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.EquipmentBuy;
-      CardView EquipmentBuy = ViewBindings.findChildViewById(rootView, id);
-      if (EquipmentBuy == null) {
+      id = R.id.EquipmentSell;
+      CardView EquipmentSell = ViewBindings.findChildViewById(rootView, id);
+      if (EquipmentSell == null) {
         break missingId;
       }
 
@@ -93,7 +93,7 @@ public final class ActivityEquipmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEquipmentBinding((RelativeLayout) rootView, EquipmentBack, EquipmentBuy,
+      return new ActivityEquipmentBinding((RelativeLayout) rootView, EquipmentBack, EquipmentSell,
           EquipmentShare, textViewFG);
     }
     String missingId = rootView.getResources().getResourceName(id);

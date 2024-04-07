@@ -3181,7 +3181,7 @@ id DetailTime
 id DetaildAuthor
 id Equipment
 id EquipmentBack
-id EquipmentBuy
+id EquipmentSell
 id EquipmentShare
 id FUNCTION
 id Forgotpasword
@@ -3284,6 +3284,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backHealth
 id backNews
+id backsell
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3314,7 +3315,9 @@ id buttonBack
 id buttonLogin
 id buttonPanel
 id buttonRegister
+id buttonSell
 id buttonSetACprofile
+id buttonUploadImage
 id button_process_images
 id button_upload_image1
 id button_upload_image2
@@ -3401,6 +3404,9 @@ id east
 id edge
 id editTextContacts
 id editTextEmail
+id editTextEquipmentDescription
+id editTextEquipmentName
+id editTextEquipmentPrice
 id editTextExperiance
 id editTextLocation
 id editTextProfileNames
@@ -3469,6 +3475,7 @@ id image
 id image1
 id image2
 id imageView
+id imageViewPreview
 id image_container
 id imgHeadLine
 id immediateStop
@@ -3499,6 +3506,7 @@ id listViewAcaretakers
 id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
+id listViewUploadedItems
 id list_item
 id livestockTransport
 id livestocklost
@@ -3922,6 +3930,7 @@ layout activity_market
 layout activity_news
 layout activity_news_details
 layout activity_register
+layout activity_sell_equipment
 layout activity_view_acaretaker_details
 layout activity_view_acset_profile
 layout aniamal_caretaker
@@ -4089,6 +4098,9 @@ string copy_toast_msg
 string default_error_message
 string default_popup_window_title
 string dropdown_menu
+string enter_equipment_description
+string enter_equipment_name
+string enter_equipment_price_usd
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4212,6 +4224,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string my_list
 string navigation_menu
 string not_selected
 string off
@@ -4231,6 +4244,8 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string selected
+string sell
+string sell_your_equipment
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
@@ -4240,6 +4255,7 @@ string template_percent
 string title_activity_login
 string tooltip_description
 string tooltip_label
+string upload_image
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

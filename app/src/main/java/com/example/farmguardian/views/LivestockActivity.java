@@ -17,6 +17,23 @@ public class LivestockActivity extends AppCompatActivity {
         setContentView(R.layout.activity_livestock);
         CardView back = findViewById(R.id.LIvestockBack);
         CardView Health = findViewById(R.id.LIvestockHealth);
+        CardView sell = findViewById(R.id.LivestockBuyandsell);
+
+
+
+
+
+
+
+        sell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LivestockActivity.this, SellEquipmentActivity.class));
+
+
+            }
+        });
+
 
 
 

@@ -20,20 +20,12 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\list_item_acaretaker.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_language.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\language.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_loginfgdesign.png.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\loginfgdesign.png"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_register.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_register.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_aniamal_caretaker.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/aniamal_caretaker.xml"
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_language.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\language.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -56,10 +48,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\transport.png"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_market.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_market.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\mipmap-anydpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\mipmap-anydpi\\ic_launcher.xml"
     },
@@ -74,10 +62,6 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_firstpagebackground.jpg.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\firstpagebackground.jpg"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_news_details.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_news_details.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_news.xml.flat",
@@ -140,16 +124,16 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_requestdetails.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/requestdetails.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_fragment_hirefragment.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\fragment_hirefragment.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_wethher.png.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\wethher.png"
+    },
+    {
+        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_sell_equipment.xml.flat",
+        "source": "com.example.farmguardian.app-main-63:/layout/activity_sell_equipment.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_acaretaker_profile2.xml.flat",
@@ -162,10 +146,6 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_rounded_corner.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\rounded_corner.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_equipment_sharing.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_equipment_sharing.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_equipment_sharing.xml.flat",
@@ -192,10 +172,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_livestock.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_livestock.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_info.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\info.xml"
     },
@@ -204,24 +180,8 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_news.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_news.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_equipment.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_equipment.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_line_fill_up.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\line_fill_up.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_view_acset_profile.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_view_acset_profile.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_healthactivity.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_healthactivity.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_health.png.flat",
@@ -248,10 +208,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_acaretaker_profile2.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_acaretaker_profile2.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_green_button_background.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\green_button_background.xml"
     },
@@ -276,10 +232,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_livestock.xml"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_login.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\menu_bottom_navigation_layout.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\menu\\bottom_navigation_layout.xml"
     },
@@ -294,10 +246,6 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_line.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\line.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_login_firebase.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_login_firebase.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_icsell.png.flat",
@@ -356,12 +304,16 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\aniamal_caretaker.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_ic_baseline_email_24.xml.flat",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\ic_baseline_email_24.xml"
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_sell_equipment.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_sell_equipment.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_market.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_market.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\ic_baseline_email_24.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_arrow_back.png.flat",

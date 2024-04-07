@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         Equipment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, Equipment.class));
+                startActivity(new Intent(HomeActivity.this, EquipmentService.class));
             }
         });
         market.setOnClickListener(new View.OnClickListener() {

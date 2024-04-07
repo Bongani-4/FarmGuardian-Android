@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/backsell"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back">
+
+            </ImageView>
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sell_your_equipment"
+                android:textSize="24sp"
+                android:textColor="@color/DarkGreen"
+                android:textStyle="bold"
+                android:layout_marginStart="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- EquipmentService Name -->
+        <EditText
+            android:id="@+id/editTextEquipmentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_equipment_name"/>
+
+        <!-- EquipmentService Description -->
+        <EditText
+            android:id="@+id/editTextEquipmentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_equipment_description"
+            android:layout_marginTop="8dp"/>
+
+        <!-- EquipmentService Price -->
+        <EditText
+            android:id="@+id/editTextEquipmentPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_equipment_price_usd"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Upload Image Button -->
+        <Button
+            android:id="@+id/buttonUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_image"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/imageViewPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/imagenotavailable"
+            />
+
+        <!-- Sell Button -->
+        <Button
+            android:id="@+id/buttonSell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sell"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_list"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!-- Uploaded Items List -->
+        <ListView
+            android:id="@+id/listViewUploadedItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

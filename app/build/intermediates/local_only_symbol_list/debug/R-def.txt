@@ -57,7 +57,7 @@ id DetailTime
 id DetaildAuthor
 id Equipment
 id EquipmentBack
-id EquipmentBuy
+id EquipmentSell
 id EquipmentShare
 id Forgotpasword
 id ImgDetail
@@ -74,6 +74,7 @@ id Urlheading
 id animalcaretaker
 id backHealth
 id backNews
+id backsell
 id bottom_navigation_view
 id btnAgric
 id btnHealth
@@ -87,7 +88,9 @@ id business
 id buttonBack
 id buttonLogin
 id buttonRegister
+id buttonSell
 id buttonSetACprofile
+id buttonUploadImage
 id button_process_images
 id button_upload_image1
 id button_upload_image2
@@ -99,6 +102,9 @@ id dialogMessage
 id dialogTitle
 id editTextContacts
 id editTextEmail
+id editTextEquipmentDescription
+id editTextEquipmentName
+id editTextEquipmentPrice
 id editTextExperiance
 id editTextLocation
 id editTextProfileNames
@@ -116,6 +122,7 @@ id hiredSubheading
 id image1
 id image2
 id imageView
+id imageViewPreview
 id image_container
 id imgHeadLine
 id linearLayout
@@ -124,6 +131,7 @@ id listViewAcaretakers
 id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
+id listViewUploadedItems
 id livestockTransport
 id livestocklost
 id load
@@ -172,6 +180,7 @@ layout activity_market
 layout activity_news
 layout activity_news_details
 layout activity_register
+layout activity_sell_equipment
 layout activity_view_acaretaker_details
 layout activity_view_acset_profile
 layout aniamal_caretaker
@@ -186,6 +195,9 @@ mipmap ic_launcher_round
 string action_sign_in
 string action_sign_in_short
 string app_name
+string enter_equipment_description
+string enter_equipment_name
+string enter_equipment_price_usd
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -196,10 +208,14 @@ string hello_blank_fragment
 string invalid_password
 string invalid_username
 string login_failed
+string my_list
 string project_id
 string prompt_email
 string prompt_password
+string sell
+string sell_your_equipment
 string title_activity_login
+string upload_image
 string welcome
 style AppTheme
 style Base.Theme.FarmGuardian
