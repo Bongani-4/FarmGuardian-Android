@@ -1,6 +1,10 @@
  # FarmGuardian
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=for-the-badge&labelColor=lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black&labelColor=FFCA28)](https://firebase.google.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini%20AI-000000.svg?style=for-the-badge&logo=gemini&logoColor=white&labelColor=000000)](https://example.com/gemini-ai/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-0095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0095D5)](https://kotlinlang.org/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-6200EE.svg?style=for-the-badge&logo=android&logoColor=white&labelColor=6200EE)](https://developer.android.com/jetpack/compose)
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
 ## UI mockups
@@ -70,4 +74,9 @@ For major changes, please open an issue first to discuss potential changes.
 ## License
 
 [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
+
+
+##### Current Project Author: BONGANI NJATHU
+
+##### December 24, 2023
 
