@@ -18,6 +18,27 @@ public class LivestockActivity extends AppCompatActivity {
         CardView back = findViewById(R.id.LIvestockBack);
         CardView Health = findViewById(R.id.LIvestockHealth);
         CardView sell = findViewById(R.id.LivestockBuyandsell);
+        CardView Transport = findViewById(R.id.livestockTransport);
+        CardView lost = findViewById(R.id.livestocklost);
+
+
+
+        lost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LivestockActivity.this, LostLivestock.class));
+
+
+            }
+        });
+        Transport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LivestockActivity.this, TransportLivestock.class));
+
+
+            }
+        });
 
 
 
