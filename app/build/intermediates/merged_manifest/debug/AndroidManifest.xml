@@ -30,7 +30,19 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.farmguardian.SellEquipmentActivity"
+            android:name="com.example.farmguardian.views.ChatDR"
+            android:exported="false" />
+        <activity
+            android:name="com.example.farmguardian.views.SellEquipmentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.farmguardian.views.LostAndFoundLivestock"
+            android:exported="false" />
+        <activity
+            android:name="com.example.farmguardian.views.TransportLivestock"
+            android:exported="false" />
+        <activity
+            android:name="com.example.farmguardian.views.SellLivestockActivity"
             android:exported="false" />
         <activity
             android:name="com.example.farmguardian.views.healthactivity"
@@ -55,7 +67,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.views.Equipment"
+            android:name="com.example.farmguardian.views.EquipmentService"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

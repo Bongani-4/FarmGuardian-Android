@@ -19,4 +19,9 @@
     <string name="upload_image">Upload Image</string>
     <string name="sell">Sell</string>
     <string name="my_list">My list</string>
+    <string name="sell_your_livestock">Sell your livestock</string>
+    <string name="type_of_livestock">Type of livestock</string>
+    <string name="livestock_description">Livestock description</string>
+    <string name="selling_price">Selling price</string>
+    <string name="chat">chat</string>
 </resources>

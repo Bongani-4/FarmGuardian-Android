@@ -76,6 +76,10 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\ic_baseline_security_24.xml"
     },
     {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_transport_livestock.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_transport_livestock.xml"
+    },
+    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_buttondesign.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\buttondesign.xml"
     },
@@ -114,6 +118,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_home.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_sell_livestock.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_sell_livestock.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_login_firebase.xml.flat",
@@ -204,6 +212,10 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\peakpx.jpg"
     },
     {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_chat_dr.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_chat_dr.xml"
+    },
+    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -226,6 +238,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_equipmnettrak.png.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\equipmnettrak.png"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_dr.png.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\dr.png"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_livestock.xml.flat",
@@ -274,6 +290,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_livestocktr.png.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\livestocktr.png"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_lost_and_found_livestock.xml.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_lost_and_found_livestock.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_fragment_confirmation_hire.xml.flat",

@@ -7,7 +7,7 @@
 
 
 
-
+ 
 ## UI mockups
 
 <img src="images/screenshots/FG.png" alt="App serviices,Home" width="820">

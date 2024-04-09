@@ -52,10 +52,10 @@ class SellEquipmentActivity : AppCompatActivity() {
         sellButton.setOnClickListener {
             sellEquipment()
         }
-        val backHealth = findViewById<ImageView>(R.id.backsell)
+        val backEq = findViewById<ImageView>(R.id.backsellEq)
 
-        backHealth.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+        backEq.setOnClickListener {
+            val intent = Intent(this, EquipmentService::class.java)
             startActivity(intent)
             finish()
         }

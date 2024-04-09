@@ -17,8 +17,18 @@ public class EquipmentService extends AppCompatActivity {
         setContentView(R.layout.activity_equipment);
 
         CardView equipmentshare = findViewById(R.id.EquipmentShare);
-        CardView Equipmentbuy = findViewById(R.id.EquipmentSell);
+        CardView Equipmentsell = findViewById(R.id.EquipmentSell);
         CardView backEquipment = findViewById(R.id.EquipmentBack);
+
+        Equipmentsell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EquipmentService.this, SellEquipmentActivity.class));
+
+
+            }
+        });
+
 
       equipmentshare.setOnClickListener(new View.OnClickListener() {
           @Override

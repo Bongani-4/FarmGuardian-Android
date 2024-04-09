@@ -25,10 +25,11 @@ public class LivestockActivity extends AppCompatActivity {
 
 
 
+
         sell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LivestockActivity.this, SellEquipmentActivity.class));
+                startActivity(new Intent(LivestockActivity.this, SellLivestockActivity.class));
 
 
             }

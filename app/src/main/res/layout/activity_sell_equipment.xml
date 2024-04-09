@@ -18,7 +18,7 @@
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="30dp"
-                android:id="@+id/backsell"
+                android:id="@+id/backsellEq"
                 android:layout_height="wrap_content"
                 android:src="@drawable/back">
 
@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sell_your_equipment"
                 android:textSize="24sp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/DarkGreen"
                 android:textStyle="bold"
                 android:layout_marginStart="50dp"

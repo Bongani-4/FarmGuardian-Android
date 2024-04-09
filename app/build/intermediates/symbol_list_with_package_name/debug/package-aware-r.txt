@@ -3041,6 +3041,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dr
 drawable equipmnettrak
 drawable fgslogo
 drawable firstpagebackground
@@ -3285,6 +3286,7 @@ id autoCompleteToStart
 id backHealth
 id backNews
 id backsell
+id backsellEq
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3426,6 +3428,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabCompose
 id fade
 id fill
 id fill_horizontal
@@ -3507,6 +3510,7 @@ id listViewAcaretakers2
 id listViewAcaretakersHiredRD
 id listViewAcaretakersRD
 id listViewUploadedItems
+id listViewUploadedLivestock
 id list_item
 id livestockTransport
 id livestocklost
@@ -3918,6 +3922,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_acaretaker_profile2
+layout activity_chat_dr
 layout activity_equipment
 layout activity_equipment_sharing
 layout activity_healthactivity
@@ -3926,11 +3931,14 @@ layout activity_home
 layout activity_livestock
 layout activity_login
 layout activity_login_firebase
+layout activity_lost_and_found_livestock
 layout activity_market
 layout activity_news
 layout activity_news_details
 layout activity_register
 layout activity_sell_equipment
+layout activity_sell_livestock
+layout activity_transport_livestock
 layout activity_view_acaretaker_details
 layout activity_view_acset_profile
 layout aniamal_caretaker
@@ -4073,6 +4081,7 @@ string call_notification_screening_text
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string chat
 string clear_text_end_icon_content_description
 string close_drawer
 string close_sheet
@@ -4123,6 +4132,7 @@ string indeterminate
 string invalid_password
 string invalid_username
 string item_view_role_description
+string livestock_description
 string login_failed
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -4246,6 +4256,8 @@ string searchview_navigation_content_description
 string selected
 string sell
 string sell_your_equipment
+string sell_your_livestock
+string selling_price
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
@@ -4255,6 +4267,7 @@ string template_percent
 string title_activity_login
 string tooltip_description
 string tooltip_label
+string type_of_livestock
 string upload_image
 string welcome
 style AlertDialog_AppCompat

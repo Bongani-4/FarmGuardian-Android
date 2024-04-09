@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.farmguardian.R
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.content
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.*
@@ -54,8 +55,14 @@ class healthactivity : AppCompatActivity() {
         val   progressBar = findViewById<ProgressBar>(R.id.progressBarHealth)
         val backHealth = findViewById<ImageView>(R.id.backHealth)
 
+        val fabCompose = findViewById<FloatingActionButton>(R.id.fabCompose)
+        fabCompose.setOnClickListener {
+            // Open compose screen or activity
+            startActivity(Intent(this, ChatDR::class.java))
+        }
+
         backHealth.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, LivestockActivity::class.java)
             startActivity(intent)
             finish()
         }

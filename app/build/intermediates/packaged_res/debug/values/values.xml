@@ -9,6 +9,7 @@
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="app_name">FarmGuardian</string>
+    <string name="chat">chat</string>
     <string name="enter_equipment_description">Enter Equipment Description</string>
     <string name="enter_equipment_name">Enter Equipment Name</string>
     <string name="enter_equipment_price_usd">Enter Equipment Price (USD)</string>
@@ -21,6 +22,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
+    <string name="livestock_description">Livestock description</string>
     <string name="login_failed">"Login failed"</string>
     <string name="my_list">My list</string>
     <string name="project_id" translatable="false">android-app-farmguardian</string>
@@ -28,7 +30,10 @@
     <string name="prompt_password">Password</string>
     <string name="sell">Sell</string>
     <string name="sell_your_equipment">Sell Your Equipment</string>
+    <string name="sell_your_livestock">Sell your livestock</string>
+    <string name="selling_price">Selling price</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="type_of_livestock">Type of livestock</string>
     <string name="upload_image">Upload Image</string>
     <string name="welcome">"Welcome !"</string>
     <style name="AppTheme" parent="Base.Theme.FarmGuardian">
