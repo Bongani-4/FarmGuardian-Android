@@ -24,4 +24,6 @@
     <string name="livestock_description">Livestock description</string>
     <string name="selling_price">Selling price</string>
     <string name="chat">chat</string>
+    <string name="send">Send</string>
+    <string name="type_your_message">Type your message...</string>
 </resources>
