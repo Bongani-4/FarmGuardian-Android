@@ -33,14 +33,15 @@ class ChatDR : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_chat_dr)
 
         // Find views
         send = findViewById(R.id.buttonSend)
         prmt = findViewById(R.id.editTextMessage)
-        responseTextView = findViewById(R.id.textViewResponse)
+
         recyclerView = findViewById(R.id.recyclerViewChat)
-        val progressBar = findViewById<ProgressBar>(R.id.progress)
+        val progressBar = findViewById<ProgressBar>(R.id.process)
         val backchat = findViewById<ImageView>(R.id.backchat)
 
         // Set up RecyclerView
@@ -52,6 +53,9 @@ class ChatDR : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        findViewById<Button>(R.id.buttonSend).setBackgroundTintList(ContextCompat.getColorStateList(this,
+            R.color.DarkGreen
+        ))
 
 
         send.setOnClickListener {

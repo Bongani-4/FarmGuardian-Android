@@ -28,10 +28,6 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\language.xml"
     },
     {
-        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_chat_dr.xml.flat",
-        "source": "com.example.farmguardian.app-main-63:/layout/activity_chat_dr.xml"
-    },
-    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -78,6 +74,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_view_acset_profile.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_view_acset_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_ask.png.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\ask.png"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_ic_baseline_security_24.xml.flat",
@@ -196,6 +196,10 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\line_fill_up.xml"
     },
     {
+        "merged": "com.example.farmguardian.app-merged_res-61:/layout_activity_healthactivity.xml.flat",
+        "source": "com.example.farmguardian.app-main-63:/layout/activity_healthactivity.xml"
+    },
+    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_health.png.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\health.png"
     },
@@ -254,6 +258,10 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\layout_activity_livestock.xml.flat",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_livestock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\drawable_aichat.png.flat",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\drawable\\aichat.png"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-merged_res-61:\\menu_bottom_navigation_layout.xml.flat",

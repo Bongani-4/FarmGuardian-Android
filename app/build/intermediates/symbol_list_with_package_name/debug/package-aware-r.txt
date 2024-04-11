@@ -2999,8 +2999,10 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable aichat
 drawable alert
 drawable arrow_back
+drawable ask
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -3465,7 +3467,6 @@ id grouping
 id groups
 id header_title
 id heading
-id headingchat
 id hide_ime_id
 id hide_in_inspector_tag
 id hideable
@@ -3511,6 +3512,7 @@ id line3
 id linear
 id linearLayout
 id linearLayout2
+id linearLayout3
 id listMode
 id listViewAcaretakers
 id listViewAcaretakers2
@@ -3763,7 +3765,6 @@ id textViewLocation1
 id textViewLogin
 id textViewProfile
 id textViewProfileDetails1
-id textViewResponse
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3808,6 +3809,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id warn
 id west
 id wide
 id withText
@@ -4290,6 +4292,7 @@ string type_of_livestock
 string type_your_message
 string upload_image
 string user
+string warning
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

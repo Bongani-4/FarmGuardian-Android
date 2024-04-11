@@ -9,13 +9,16 @@
 
 
     <LinearLayout
-        android:id="@+id/headingchat"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp">
+
         <ImageView
-            android:layout_width="30dp"
             android:id="@+id/backchat"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:src="@drawable/back">
 
@@ -25,27 +28,36 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lets_chat"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/lets_chat"
             android:textColor="@color/DarkGreen"
-            android:layout_marginBottom="24dp"/>
-
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-      android:layout_marginTop="45dp"
-        android:id="@+id/warn"
-        android:text="@string/warning">
-
-    </TextView>
 
 
     <!-- RecyclerView to display previous chat messages -->
+
+    <TextView
+        android:id="@+id/warn"
+        android:layout_width="match_parent"
+android:layout_marginEnd="2dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/warning"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewChat"
         android:layout_width="0dp"
@@ -65,6 +77,7 @@
         android:layout_marginEnd="192dp"
         android:layout_marginBottom="16dp"
         android:id="@+id/process"
+        android:visibility="gone"
         android:progressTint="@color/DarkGreen"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerViewChat"
         app:layout_constraintEnd_toEndOf="@+id/recyclerViewChat"
@@ -94,15 +107,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextMessage"/>
 
-    <!-- TextView to display responses -->
-    <TextView
-        android:id="@+id/textViewResponse"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/editTextMessage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

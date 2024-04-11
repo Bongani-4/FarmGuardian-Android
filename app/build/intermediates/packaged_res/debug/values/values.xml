@@ -38,9 +38,10 @@
     <string name="send">Send</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="type_of_livestock">Type of livestock</string>
-    <string name="type_your_message">Type your message...</string>
+    <string name="type_your_message">Hello, how can I help…</string>
     <string name="upload_image">Upload Image</string>
     <string name="user">You</string>
+    <string name="warning">Responses from this model should not replace professional medical advice</string>
     <string name="welcome">"Welcome !"</string>
     <style name="AppTheme" parent="Base.Theme.FarmGuardian">
 

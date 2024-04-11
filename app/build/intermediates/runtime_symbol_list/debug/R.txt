@@ -2998,8 +2998,10 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
+int drawable aichat 0x7f070122
 int drawable alert 0x7f070078
 int drawable arrow_back 0x7f070079
+int drawable ask 0x7f070123
 int drawable avd_hide_password 0x7f07007a
 int drawable avd_show_password 0x7f07007b
 int drawable back 0x7f07007c
@@ -3464,7 +3466,6 @@ int id grouping 0x7f08011c
 int id groups 0x7f08011d
 int id header_title 0x7f08011e
 int id heading 0x7f08011f
-int id headingchat 0x7f08028c
 int id hide_ime_id 0x7f080120
 int id hide_in_inspector_tag 0x7f080121
 int id hideable 0x7f080122
@@ -3510,6 +3511,7 @@ int id line3 0x7f080149
 int id linear 0x7f08014a
 int id linearLayout 0x7f08014b
 int id linearLayout2 0x7f08014c
+int id linearLayout3 0x7f08028f
 int id listMode 0x7f08014d
 int id listViewAcaretakers 0x7f08014e
 int id listViewAcaretakers2 0x7f08014f
@@ -3762,7 +3764,6 @@ int id textViewLocation1 0x7f080243
 int id textViewLogin 0x7f080244
 int id textViewProfile 0x7f080245
 int id textViewProfileDetails1 0x7f080246
-int id textViewResponse 0x7f080284
 int id text_input_end_icon 0x7f080247
 int id text_input_error_icon 0x7f080248
 int id text_input_start_icon 0x7f080249
@@ -3807,6 +3808,7 @@ int id view_tree_saved_state_registry_owner 0x7f08026c
 int id view_tree_view_model_store_owner 0x7f08026d
 int id visible 0x7f08026e
 int id visible_removing_fragment_view_tag 0x7f08026f
+int id warn 0x7f08028e
 int id west 0x7f080270
 int id wide 0x7f080271
 int id withText 0x7f080272
@@ -4289,6 +4291,7 @@ int string type_of_livestock 0x7f1100e9
 int string type_your_message 0x7f1100ef
 int string upload_image 0x7f1100ea
 int string user 0x7f1100f2
+int string warning 0x7f1100f4
 int string welcome 0x7f1100eb
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001

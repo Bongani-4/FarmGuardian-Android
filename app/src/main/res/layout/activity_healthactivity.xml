@@ -166,11 +166,11 @@
       android:id="@+id/fabCompose"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/aichat"
+      android:src="@drawable/ask"
       android:layout_marginEnd="8dp"
       android:layout_alignParentBottom="true"
-      android:backgroundTint="#BBDFBB"
       app:elevation="6dp"
+      android:tint="@color/DarkGreen"
       android:layout_alignParentEnd="true"
       android:layout_marginBottom="15dp"
       android:contentDescription="@string/chat" />
