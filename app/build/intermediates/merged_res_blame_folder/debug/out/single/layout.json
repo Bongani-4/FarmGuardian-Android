@@ -4,12 +4,16 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_news_details.xml"
     },
     {
-        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_market.xml",
-        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_market.xml"
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_chat_adapter.xml",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_chat_adapter.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_transport_livestock.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_transport_livestock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_market.xml",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_market.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_chat_dr.xml",
@@ -44,6 +48,10 @@
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\headline_list_items.xml"
     },
     {
+        "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\item_chat_message.xml",
+        "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\item_chat_message.xml"
+    },
+    {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_lost_and_found_livestock.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_lost_and_found_livestock.xml"
     },
@@ -58,10 +66,6 @@
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_sell_livestock.xml",
         "source": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-main-63:\\layout\\activity_sell_livestock.xml"
-    },
-    {
-        "merged": "com.example.farmguardian.app-mergeDebugResources-60:/layout/item_chat_message.xml",
-        "source": "com.example.farmguardian.app-main-63:/layout/item_chat_message.xml"
     },
     {
         "merged": "C:\\Users\\Bongani\\.gradle\\daemon\\8.2\\com.example.farmguardian.app-mergeDebugResources-60:\\layout\\activity_view_acset_profile.xml",

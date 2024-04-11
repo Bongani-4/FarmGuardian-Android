@@ -26,4 +26,8 @@
     <string name="chat">chat</string>
     <string name="send">Send</string>
     <string name="type_your_message">Type your message...</string>
+    <string name="bot">Dr Bot</string>
+    <string name="user">You</string>
+    <string name="myprofile_pic">myProfile pic</string>
+    <string name="lets_chat">Lets chat</string>
 </resources>

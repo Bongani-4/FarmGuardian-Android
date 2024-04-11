@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-85:12
-INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:2:1-88:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\Bongani\.gradle\caches\transforms-3\2d08d615e11d844b747d4a7c5cc7636e\transformed\viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.ai.client.generativeai:generativeai:0.2.2] C:\Users\Bongani\.gradle\caches\transforms-3\66db4f0317f75bcbf67691c648b612dd\transformed\generativeai-0.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bongani\.gradle\caches\transforms-3\a1b5d0e4e5ec0f128653cbf8a2aa225a\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
@@ -116,8 +116,8 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Bongani\.gr
 	android:name
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:5-83:19
-INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:5-83:19
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:5-86:19
+INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:9:5-86:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bongani\.gradle\caches\transforms-3\a1b5d0e4e5ec0f128653cbf8a2aa225a\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Bongani\.gradle\caches\transforms-3\a1b5d0e4e5ec0f128653cbf8a2aa225a\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bongani\.gradle\caches\transforms-3\f4f2ad985a5bba7a872c0ab8300cee02\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -174,136 +174,142 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Bo
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:15:9-40
-activity#com.example.farmguardian.views.LostLivestock
+activity#com.example.farmguardian.views.ChatAdapter
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:13-48
-activity#com.example.farmguardian.views.ChatDR
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:18:13-46
+activity#com.example.farmguardian.views.LostLivestock
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:13-41
-activity#com.example.farmguardian.views.SellEquipmentActivity
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:21:13-48
+activity#com.example.farmguardian.views.ChatDR
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:13-56
-activity#com.example.farmguardian.views.LostAndFoundLivestock
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:24:13-41
+activity#com.example.farmguardian.views.SellEquipmentActivity
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:27:13-56
-activity#com.example.farmguardian.views.TransportLivestock
+activity#com.example.farmguardian.views.LostAndFoundLivestock
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:30:13-53
-activity#com.example.farmguardian.views.SellLivestockActivity
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:30:13-56
+activity#com.example.farmguardian.views.TransportLivestock
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:33:13-56
-activity#com.example.farmguardian.views.healthactivity
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:33:13-53
+activity#com.example.farmguardian.views.SellLivestockActivity
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:13-49
-activity#com.example.farmguardian.views.NewsDetailsActivity
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:36:13-56
+activity#com.example.farmguardian.views.healthactivity
 ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:13-54
-activity#com.example.farmguardian.views.MarketActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:9-44:52
-	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:39:13-49
+activity#com.example.farmguardian.views.NewsDetailsActivity
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
 		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:42:13-54
+activity#com.example.farmguardian.views.MarketActivity
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:44:9-47:52
+	android:screenOrientation
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:47:13-49
+	android:exported
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:45:13-49
 activity#com.example.farmguardian.views.LivestockActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:45:9-48:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:48:9-51:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:48:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:51:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:46:13-52
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:49:13-52
 activity#com.example.farmguardian.views.EquipmentSharingActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:49:9-52:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:52:9-55:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:55:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:54:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:50:13-59
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:53:13-59
 activity#com.example.farmguardian.views.NewsActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:53:9-56:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:56:9-59:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:59:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:55:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:54:13-47
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:57:13-47
 activity#com.example.farmguardian.views.EquipmentService
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:57:9-60:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:60:9-63:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:60:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:63:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:59:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:62:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:58:13-51
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:61:13-51
 activity#com.example.farmguardian.views.animalCaretaker
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:61:9-64:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:64:9-67:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:64:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:67:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:63:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:62:13-50
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:65:13-50
 activity#com.example.farmguardian.views.HomeActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:65:9-68:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:68:9-71:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:68:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:71:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:67:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:66:13-47
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:69:13-47
 activity#com.example.farmguardian.views.RegisterActivity
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:69:9-72:52
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:72:9-75:52
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:72:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:75:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:71:13-37
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:74:13-37
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:70:13-51
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:73:13-51
 activity#com.example.farmguardian.views.LoginActivityFirebase
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:73:9-82:20
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:76:9-85:20
 	android:screenOrientation
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:76:13-49
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:79:13-49
 	android:exported
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:75:13-36
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:78:13-36
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:74:13-56
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:77:13-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:77:13-81:29
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:80:13-84:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:78:17-69
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:81:17-69
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:78:25-66
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:81:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:80:17-77
+ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:83:17-77
 	android:name
-		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:80:27-74
+		ADDED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml:83:27-74
 uses-sdk
 INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Bongani\AndroidStudioProjects\FarmGuardian-Android\app\src\main\AndroidManifest.xml

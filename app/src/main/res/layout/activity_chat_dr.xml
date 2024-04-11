@@ -7,19 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".views.ChatDR">
 
+    <LinearLayout
+        android:id="@+id/headingchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/backchat"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lets_chat"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="110dp"
+            android:textColor="@color/DarkGreen"
+            android:layout_marginBottom="24dp"/>
+
+
+
+    </LinearLayout>
+
+
     <!-- RecyclerView to display previous chat messages -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewChat"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="50dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/editTextMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headingchat"
         tools:listitem="@layout/item_chat_message"/>
 
-    <!-- EditText for user input -->
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/process"
+        android:progressTint="@color/DarkGreen"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewChat"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerViewChat"
+        tools:ignore="MissingConstraints">
+
+    </ProgressBar>
+
     <EditText
         android:id="@+id/editTextMessage"
         android:layout_width="0dp"

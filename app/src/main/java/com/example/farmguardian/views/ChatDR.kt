@@ -1,9 +1,13 @@
 package com.example.farmguardian.views
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -25,40 +29,57 @@ class ChatDR : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private val chatAdapter = ChatAdapter()
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_dr)
 
+        // Find views
         send = findViewById(R.id.buttonSend)
         prmt = findViewById(R.id.editTextMessage)
         responseTextView = findViewById(R.id.textViewResponse)
         recyclerView = findViewById(R.id.recyclerViewChat)
+        val progressBar = findViewById<ProgressBar>(R.id.progress)
+        val backchat = findViewById<ImageView>(R.id.backchat)
 
-        send.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.DarkGreen))
-
+        // Set up RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = chatAdapter
 
+        backchat.setOnClickListener {
+            val intent = Intent(this, healthactivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
         send.setOnClickListener {
             val prompt = prmt.text.toString()
-            CoroutineScope(Dispatchers.Main).launch {
+            prmt.text.clear()
+            progressBar.visibility = View.VISIBLE // Show progress bar
+
+            // Launching coroutine for an API request
+            CoroutineScope(Dispatchers.IO).launch {
                 val generativeModel = GenerativeModel(
                     modelName = "gemini-pro",
                     apiKey = getApiKey(applicationContext)
                 )
                 val response = generateResponse(generativeModel, prompt)
-                println(response.text)
 
-                // Display response
-                responseTextView.text = response.text
+                withContext(Dispatchers.Main) {
+                    // Hide progress bar
+                    progressBar.visibility = View.GONE
 
-                // Add response to chat adapter
-                chatAdapter.addMessage("User", prompt)
-                chatAdapter.addMessage("Dr Bot", response.text)
-                recyclerView.scrollToPosition(chatAdapter.itemCount - 1)
+                    // Add response to chat adapter
+                    chatAdapter.addMessage("User", prompt)
+                    chatAdapter.addMessage("Dr Bot", response.text)
+                    recyclerView.scrollToPosition(chatAdapter.itemCount - 1)
+                }
             }
         }
     }
+
 
     private suspend fun generateResponse(generativeModel: GenerativeModel, prompt: String): Response {
         return withContext(Dispatchers.IO) {

@@ -3285,6 +3285,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backHealth
 id backNews
+id backchat
 id backsell
 id backsellEq
 id barrier
@@ -3293,6 +3294,9 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id botMessageLayout
+id botText
+id botTextView
 id bottom
 id bottom_navigation_view
 id bounce
@@ -3461,6 +3465,7 @@ id grouping
 id groups
 id header_title
 id heading
+id headingchat
 id hide_ime_id
 id hide_in_inspector_tag
 id hideable
@@ -3636,6 +3641,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id process
 id progressBarHealth
 id progress_circular
 id progress_horizontal
@@ -3755,10 +3761,9 @@ id textViewFullNames1
 id textViewLocation
 id textViewLocation1
 id textViewLogin
-id textViewMessage
 id textViewProfile
 id textViewProfileDetails1
-id textViewTimestamp
+id textViewResponse
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3791,6 +3796,9 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userMessageLayout
+id userText
+id userTextView
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3927,6 +3935,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_acaretaker_profile2
+layout activity_chat_adapter
 layout activity_chat_dr
 layout activity_equipment
 layout activity_equipment_sharing
@@ -4071,6 +4080,7 @@ string action_sign_in_short
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string bot
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -4138,6 +4148,7 @@ string indeterminate
 string invalid_password
 string invalid_username
 string item_view_role_description
+string lets_chat
 string livestock_description
 string login_failed
 string m3_exceed_max_badge_text_suffix
@@ -4241,6 +4252,7 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string my_list
+string myprofile_pic
 string navigation_menu
 string not_selected
 string off
@@ -4277,6 +4289,7 @@ string tooltip_label
 string type_of_livestock
 string type_your_message
 string upload_image
+string user
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

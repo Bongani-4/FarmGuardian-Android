@@ -75,8 +75,12 @@ id Urlheading
 id animalcaretaker
 id backHealth
 id backNews
+id backchat
 id backsell
 id backsellEq
+id botMessageLayout
+id botText
+id botTextView
 id bottom_navigation_view
 id btnAgric
 id btnHealth
@@ -122,6 +126,7 @@ id fragment_container
 id fragment_containerR
 id greyBackground
 id heading
+id headingchat
 id hireInProgressSubheading
 id hiredSubheading
 id image1
@@ -146,6 +151,7 @@ id menu_HireAnimalCareteker
 id menu_RequestDetails
 id menu_becomeAnimalCaretaker
 id noInternet
+id process
 id progressBarHealth
 id recyclerViewChat
 id recycler_news
@@ -170,13 +176,16 @@ id textViewFullNames1
 id textViewLocation
 id textViewLocation1
 id textViewLogin
-id textViewMessage
 id textViewProfile
 id textViewProfileDetails1
-id textViewTimestamp
+id textViewResponse
 id title_Detail
 id title_text
+id userMessageLayout
+id userText
+id userTextView
 layout activity_acaretaker_profile2
+layout activity_chat_adapter
 layout activity_chat_dr
 layout activity_equipment
 layout activity_equipment_sharing
@@ -209,6 +218,7 @@ mipmap ic_launcher_round
 string action_sign_in
 string action_sign_in_short
 string app_name
+string bot
 string chat
 string enter_equipment_description
 string enter_equipment_name
@@ -222,9 +232,11 @@ string healthDetailInstruction
 string hello_blank_fragment
 string invalid_password
 string invalid_username
+string lets_chat
 string livestock_description
 string login_failed
 string my_list
+string myprofile_pic
 string project_id
 string prompt_email
 string prompt_password
@@ -237,6 +249,7 @@ string title_activity_login
 string type_of_livestock
 string type_your_message
 string upload_image
+string user
 string welcome
 style AppTheme
 style Base.Theme.FarmGuardian

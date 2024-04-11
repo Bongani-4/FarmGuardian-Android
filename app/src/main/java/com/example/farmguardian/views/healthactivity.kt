@@ -30,7 +30,7 @@ class healthactivity : AppCompatActivity() {
 
     lateinit var context: Context
     lateinit var apiKey: String
-    val coroutineScope = CoroutineScope(Dispatchers.Default)
+    private val coroutineScope = CoroutineScope(Dispatchers.Default)
 
     // Image bitmaps
     lateinit var image1Bitmap: Bitmap

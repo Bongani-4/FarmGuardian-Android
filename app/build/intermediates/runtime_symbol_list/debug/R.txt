@@ -3284,6 +3284,7 @@ int id autoCompleteToEnd 0x7f080070
 int id autoCompleteToStart 0x7f080071
 int id backHealth 0x7f080072
 int id backNews 0x7f080073
+int id backchat 0x7f08028b
 int id backsell 0x7f080074
 int id backsellEq 0x7f08027c
 int id barrier 0x7f080075
@@ -3292,6 +3293,9 @@ int id beginOnFirstDraw 0x7f080077
 int id beginning 0x7f080078
 int id bestChoice 0x7f080079
 int id blocking 0x7f08007a
+int id botMessageLayout 0x7f080285
+int id botText 0x7f080289
+int id botTextView 0x7f080286
 int id bottom 0x7f08007b
 int id bottom_navigation_view 0x7f08007c
 int id bounce 0x7f08007d
@@ -3460,6 +3464,7 @@ int id grouping 0x7f08011c
 int id groups 0x7f08011d
 int id header_title 0x7f08011e
 int id heading 0x7f08011f
+int id headingchat 0x7f08028c
 int id hide_ime_id 0x7f080120
 int id hide_in_inspector_tag 0x7f080121
 int id hideable 0x7f080122
@@ -3635,6 +3640,7 @@ int id pooling_container_listener_holder_tag 0x7f0801cb
 int id position 0x7f0801cc
 int id postLayout 0x7f0801cd
 int id pressed 0x7f0801ce
+int id process 0x7f08028d
 int id progressBarHealth 0x7f0801cf
 int id progress_circular 0x7f0801d0
 int id progress_horizontal 0x7f0801d1
@@ -3754,10 +3760,9 @@ int id textViewFullNames1 0x7f080241
 int id textViewLocation 0x7f080242
 int id textViewLocation1 0x7f080243
 int id textViewLogin 0x7f080244
-int id textViewMessage 0x7f080280
 int id textViewProfile 0x7f080245
 int id textViewProfileDetails1 0x7f080246
-int id textViewTimestamp 0x7f080281
+int id textViewResponse 0x7f080284
 int id text_input_end_icon 0x7f080247
 int id text_input_error_icon 0x7f080248
 int id text_input_start_icon 0x7f080249
@@ -3790,6 +3795,9 @@ int id uniform 0x7f080263
 int id unlabeled 0x7f080264
 int id up 0x7f080265
 int id useLogo 0x7f080266
+int id userMessageLayout 0x7f080287
+int id userText 0x7f08028a
+int id userTextView 0x7f080288
 int id vertical_only 0x7f080267
 int id view_offset_helper 0x7f080268
 int id view_transition 0x7f080269
@@ -3926,6 +3934,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_acaretaker_profile2 0x7f0b001c
+int layout activity_chat_adapter 0x7f0b0088
 int layout activity_chat_dr 0x7f0b0084
 int layout activity_equipment 0x7f0b001d
 int layout activity_equipment_sharing 0x7f0b001e
@@ -4070,6 +4079,7 @@ int string action_sign_in_short 0x7f11001c
 int string androidx_startup 0x7f11001d
 int string app_name 0x7f11001e
 int string appbar_scrolling_view_behavior 0x7f11001f
+int string bot 0x7f1100f0
 int string bottom_sheet_behavior 0x7f110020
 int string bottomsheet_action_collapse 0x7f110021
 int string bottomsheet_action_expand 0x7f110022
@@ -4137,6 +4147,7 @@ int string indeterminate 0x7f11005e
 int string invalid_password 0x7f11005f
 int string invalid_username 0x7f110060
 int string item_view_role_description 0x7f110061
+int string lets_chat 0x7f1100f3
 int string livestock_description 0x7f110062
 int string login_failed 0x7f110063
 int string m3_exceed_max_badge_text_suffix 0x7f110064
@@ -4240,6 +4251,7 @@ int string mtrl_switch_track_path 0x7f1100c5
 int string mtrl_timepicker_cancel 0x7f1100c6
 int string mtrl_timepicker_confirm 0x7f1100c7
 int string my_list 0x7f1100c8
+int string myprofile_pic 0x7f1100f1
 int string navigation_menu 0x7f1100c9
 int string not_selected 0x7f1100ca
 int string off 0x7f1100cb
@@ -4276,6 +4288,7 @@ int string tooltip_label 0x7f1100e8
 int string type_of_livestock 0x7f1100e9
 int string type_your_message 0x7f1100ef
 int string upload_image 0x7f1100ea
+int string user 0x7f1100f2
 int string welcome 0x7f1100eb
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001

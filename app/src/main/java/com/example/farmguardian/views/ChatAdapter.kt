@@ -3,6 +3,7 @@ package com.example.farmguardian.views
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.farmguardian.R
@@ -28,23 +29,41 @@ class ChatAdapter : RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
     // Binds the data to the views in each item view
     override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {
         val (sender, message) = messages[position]
-        holder.bind(sender, message)
+        if (sender == "User") {
+            holder.bindUser(message)
+        } else {
+            holder.bindBot(message)
+        }
     }
+
 
     // Returns the total number of items in the list
     override fun getItemCount(): Int {
         return messages.size
     }
 
+
+
     // ViewHolder class to hold the views for each item in the RecyclerView
     class ChatViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val senderTextView: TextView = itemView.findViewById(R.id.senderTextView)
-        private val messageTextView: TextView = itemView.findViewById(R.id.messageTextView)
+        private val userLayout: LinearLayout = itemView.findViewById(R.id.userMessageLayout)
+        private val botLayout: LinearLayout = itemView.findViewById(R.id.botMessageLayout)
+        private val userTextView: TextView = itemView.findViewById(R.id.userText)
+        private val botTextView: TextView = itemView.findViewById(R.id.botText)
 
-        // Binds the data to the views
-        fun bind(sender: String, message: String) {
-            senderTextView.text = sender
-            messageTextView.text = message
+
+        fun bindUser(message: String) {
+            userLayout.visibility = View.VISIBLE
+            botLayout.visibility = View.GONE
+            userTextView.text = message
+
+        }
+
+        fun bindBot(message: String) {
+            userLayout.visibility = View.GONE
+            botLayout.visibility = View.VISIBLE
+            botTextView.text = message
         }
     }
+
 }
