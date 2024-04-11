@@ -166,7 +166,7 @@
       android:id="@+id/fabCompose"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/dr"
+      android:src="@drawable/aichat"
       android:layout_marginEnd="8dp"
       android:layout_alignParentBottom="true"
       android:backgroundTint="#BBDFBB"

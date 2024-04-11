@@ -30,4 +30,5 @@
     <string name="user">You</string>
     <string name="myprofile_pic">myProfile pic</string>
     <string name="lets_chat">Lets chat</string>
+    <string name="warning">Responses from this model should not replace professional medical advice</string>
 </resources>

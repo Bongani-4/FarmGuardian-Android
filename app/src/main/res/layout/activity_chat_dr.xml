@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".views.ChatDR">
 
+
     <LinearLayout
         android:id="@+id/headingchat"
         android:layout_width="match_parent"
@@ -34,6 +35,14 @@
 
 
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="45dp"
+        android:id="@+id/warn"
+        android:text="@string/warning">
+
+    </TextView>
 
 
     <!-- RecyclerView to display previous chat messages -->
@@ -41,12 +50,12 @@
         android:id="@+id/recyclerViewChat"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/editTextMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/headingchat"
+        app:layout_constraintTop_toBottomOf="@+id/warn"
         tools:listitem="@layout/item_chat_message"/>
 
 
