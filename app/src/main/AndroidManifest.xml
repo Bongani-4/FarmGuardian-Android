@@ -15,6 +15,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".views.ChatAdapter"
+            android:exported="false" />
+        <activity
             android:name=".views.LostLivestock"
             android:exported="false" />
         <activity

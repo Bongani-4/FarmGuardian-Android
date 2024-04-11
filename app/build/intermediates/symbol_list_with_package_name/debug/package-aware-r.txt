@@ -3318,6 +3318,7 @@ id buttonLogin
 id buttonPanel
 id buttonRegister
 id buttonSell
+id buttonSend
 id buttonSetACprofile
 id buttonUploadImage
 id button_process_images
@@ -3411,6 +3412,7 @@ id editTextEquipmentName
 id editTextEquipmentPrice
 id editTextExperiance
 id editTextLocation
+id editTextMessage
 id editTextProfileNames
 id editTextRegusername
 id editTextTextConfirmPassword
@@ -3640,6 +3642,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewChat
 id recycler_news
 id report_drawn
 id result_health
@@ -3752,8 +3755,10 @@ id textViewFullNames1
 id textViewLocation
 id textViewLocation1
 id textViewLogin
+id textViewMessage
 id textViewProfile
 id textViewProfileDetails1
+id textViewTimestamp
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3965,6 +3970,7 @@ layout fragment_hirefragment
 layout headline_list_items
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_chat_message
 layout list_item_acaretaker
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4258,6 +4264,7 @@ string sell
 string sell_your_equipment
 string sell_your_livestock
 string selling_price
+string send
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
@@ -4268,6 +4275,7 @@ string title_activity_login
 string tooltip_description
 string tooltip_label
 string type_of_livestock
+string type_your_message
 string upload_image
 string welcome
 style AlertDialog_AppCompat

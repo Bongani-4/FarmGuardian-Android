@@ -3317,6 +3317,7 @@ int id buttonLogin 0x7f080090
 int id buttonPanel 0x7f080091
 int id buttonRegister 0x7f080092
 int id buttonSell 0x7f080093
+int id buttonSend 0x7f08027d
 int id buttonSetACprofile 0x7f080094
 int id buttonUploadImage 0x7f080095
 int id button_process_images 0x7f080096
@@ -3410,6 +3411,7 @@ int id editTextEquipmentName 0x7f0800ed
 int id editTextEquipmentPrice 0x7f0800ee
 int id editTextExperiance 0x7f0800ef
 int id editTextLocation 0x7f0800f0
+int id editTextMessage 0x7f08027e
 int id editTextProfileNames 0x7f0800f1
 int id editTextRegusername 0x7f0800f2
 int id editTextTextConfirmPassword 0x7f0800f3
@@ -3639,6 +3641,7 @@ int id progress_horizontal 0x7f0801d1
 int id radio 0x7f0801d2
 int id ratio 0x7f0801d3
 int id rectangles 0x7f0801d4
+int id recyclerViewChat 0x7f08027f
 int id recycler_news 0x7f0801d5
 int id report_drawn 0x7f0801d6
 int id result_health 0x7f0801d7
@@ -3751,8 +3754,10 @@ int id textViewFullNames1 0x7f080241
 int id textViewLocation 0x7f080242
 int id textViewLocation1 0x7f080243
 int id textViewLogin 0x7f080244
+int id textViewMessage 0x7f080280
 int id textViewProfile 0x7f080245
 int id textViewProfileDetails1 0x7f080246
+int id textViewTimestamp 0x7f080281
 int id text_input_end_icon 0x7f080247
 int id text_input_error_icon 0x7f080248
 int id text_input_start_icon 0x7f080249
@@ -3964,6 +3969,7 @@ int layout fragment_hirefragment 0x7f0b0041
 int layout headline_list_items 0x7f0b0042
 int layout ime_base_split_test_activity 0x7f0b0043
 int layout ime_secondary_split_test_activity 0x7f0b0044
+int layout item_chat_message 0x7f0b0087
 int layout list_item_acaretaker 0x7f0b0045
 int layout m3_alert_dialog 0x7f0b0046
 int layout m3_alert_dialog_actions 0x7f0b0047
@@ -4257,6 +4263,7 @@ int string sell 0x7f1100dc
 int string sell_your_equipment 0x7f1100dd
 int string sell_your_livestock 0x7f1100de
 int string selling_price 0x7f1100df
+int string send 0x7f1100ee
 int string side_sheet_accessibility_pane_title 0x7f1100e0
 int string side_sheet_behavior 0x7f1100e1
 int string status_bar_notification_info_overflow 0x7f1100e2
@@ -4267,6 +4274,7 @@ int string title_activity_login 0x7f1100e6
 int string tooltip_description 0x7f1100e7
 int string tooltip_label 0x7f1100e8
 int string type_of_livestock 0x7f1100e9
+int string type_your_message 0x7f1100ef
 int string upload_image 0x7f1100ea
 int string welcome 0x7f1100eb
 int style AlertDialog_AppCompat 0x7f120000

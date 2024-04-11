@@ -32,8 +32,10 @@
     <string name="sell_your_equipment">Sell Your Equipment</string>
     <string name="sell_your_livestock">Sell your livestock</string>
     <string name="selling_price">Selling price</string>
+    <string name="send">Send</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="type_of_livestock">Type of livestock</string>
+    <string name="type_your_message">Type your message...</string>
     <string name="upload_image">Upload Image</string>
     <string name="welcome">"Welcome !"</string>
     <style name="AppTheme" parent="Base.Theme.FarmGuardian">
