@@ -21,7 +21,7 @@
 <img src="images/screenshots/Screenshot_20240317_153631.jpg" alt="Equipment services" width="120">
 <img src="images/screenshots/Screenshot_20240401_180231.jpg" alt="Become Animal caretaker" width="120">
 
-(more on "/Screenshot" folder)
+{more on the "/Screenshot" folder}
 
 ## Configuration Setup:
 
