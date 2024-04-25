@@ -66,7 +66,7 @@ See trending agriculture news from ML /AI models and APIs, tips, cautious weathe
 
 ## Contribution
 
-I welcome contributions from the community to enhance FarmGuardian. To contribute, follow these steps:
+I welcome contributions from the community to enhance FarmGuardian. 
 
 For major changes, please open an issue first to discuss potential changes.
 
