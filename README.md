@@ -38,7 +38,7 @@ Build and Run
 
 (FarmGuardian Website and some fearures for this mobile app are still under maintanance.)
 
-FarmGuardian is a mobile application with services:
+FarmGuardian  android is a mobile application with services:
 
 - **_Equipment Purchaces & Sharing(Equipment service)_**:
 
