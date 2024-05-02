@@ -1,4 +1,4 @@
- <img src="images/screenshots/FarmGuardian.png" alt="logo" width="420">
+ <img src="images/screenshots/FarmGuardian.png" alt="logo" width="320">
  
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=for-the-badge&labelColor=lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black&labelColor=FFCA28)](https://firebase.google.com/)
