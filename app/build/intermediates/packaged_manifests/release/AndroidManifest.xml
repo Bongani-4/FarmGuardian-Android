@@ -8,6 +8,10 @@
         android:minSdkVersion="28"
         android:targetSdkVersion="34" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
     <permission
         android:name="com.example.farmguardian.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -18,48 +22,141 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:extractNativeLibs="false"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/fgslogo"
+        android:label="Farm Guardian"
+        android:roundIcon="@drawable/fgslogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FarmGuardian" >
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.farmguardian.ForgotPasswordActivity"
+            android:name="com.example.farmguardian.views.LostLivestock"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.ForgotPasswordActivity"
+            android:name="com.example.farmguardian.views.ChatDR"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.ViewACSetProfile"
+            android:name="com.example.farmguardian.views.SellEquipmentActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.FindACaretaker"
+            android:name="com.example.farmguardian.views.LostAndFoundLivestock"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.ACaretakerProfile2"
+            android:name="com.example.farmguardian.views.TransportLivestock"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.HomeACActivity"
+            android:name="com.example.farmguardian.views.SellLivestockActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.HomeActivity"
+            android:name="com.example.farmguardian.views.healthactivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.RegisterActivity"
+            android:name="com.example.farmguardian.views.NewsDetailsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.farmguardian.LoginActivity"
-            android:exported="false" />
+            android:name="com.example.farmguardian.views.MarketActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.farmguardian.FirstPageActivity"
-            android:exported="true" >
+            android:name="com.example.farmguardian.views.LivestockActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.EquipmentSharingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.NewsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.EquipmentService"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.animalCaretaker"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.farmguardian.views.LoginActivityFirebase"
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="genericidp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="recaptcha" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.farmguardian.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.farmguardian.androidx-startup"
@@ -74,6 +171,11 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"
@@ -94,6 +196,15 @@
                 <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
             </intent-filter>
         </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.farmguardian.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -4,44 +4,75 @@ package com.example.farmguardian.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.farmguardian.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class AniamalCaretakerBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
+
+  @NonNull
+  public final ImageView Animalcaretakerbackhome;
+
+  @NonNull
+  public final ProgressBar Barprogress;
 
   @NonNull
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
-  public final ImageView imageVbackHome;
+  public final RelativeLayout containerLayout;
+
+  @NonNull
+  public final FrameLayout fragmentContainer;
+
+  @NonNull
+  public final TextView heading;
 
   @NonNull
   public final ListView listViewAcaretakers;
 
-  private AniamalCaretakerBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull ImageView imageVbackHome,
-      @NonNull ListView listViewAcaretakers) {
+  @NonNull
+  public final TextView noInternet;
+
+  @NonNull
+  public final SearchBar searchView;
+
+  private AniamalCaretakerBinding(@NonNull RelativeLayout rootView,
+      @NonNull ImageView Animalcaretakerbackhome, @NonNull ProgressBar Barprogress,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull RelativeLayout containerLayout,
+      @NonNull FrameLayout fragmentContainer, @NonNull TextView heading,
+      @NonNull ListView listViewAcaretakers, @NonNull TextView noInternet,
+      @NonNull SearchBar searchView) {
     this.rootView = rootView;
+    this.Animalcaretakerbackhome = Animalcaretakerbackhome;
+    this.Barprogress = Barprogress;
     this.bottomNavigationView = bottomNavigationView;
-    this.imageVbackHome = imageVbackHome;
+    this.containerLayout = containerLayout;
+    this.fragmentContainer = fragmentContainer;
+    this.heading = heading;
     this.listViewAcaretakers = listViewAcaretakers;
+    this.noInternet = noInternet;
+    this.searchView = searchView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -66,15 +97,35 @@ public final class AniamalCaretakerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Animalcaretakerbackhome;
+      ImageView Animalcaretakerbackhome = ViewBindings.findChildViewById(rootView, id);
+      if (Animalcaretakerbackhome == null) {
+        break missingId;
+      }
+
+      id = R.id.Barprogress;
+      ProgressBar Barprogress = ViewBindings.findChildViewById(rootView, id);
+      if (Barprogress == null) {
+        break missingId;
+      }
+
       id = R.id.bottom_navigation_view;
       BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigationView == null) {
         break missingId;
       }
 
-      id = R.id.imageVbackHome;
-      ImageView imageVbackHome = ViewBindings.findChildViewById(rootView, id);
-      if (imageVbackHome == null) {
+      RelativeLayout containerLayout = (RelativeLayout) rootView;
+
+      id = R.id.fragment_container;
+      FrameLayout fragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (fragmentContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.heading;
+      TextView heading = ViewBindings.findChildViewById(rootView, id);
+      if (heading == null) {
         break missingId;
       }
 
@@ -84,8 +135,21 @@ public final class AniamalCaretakerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AniamalCaretakerBinding((ConstraintLayout) rootView, bottomNavigationView,
-          imageVbackHome, listViewAcaretakers);
+      id = R.id.noInternet;
+      TextView noInternet = ViewBindings.findChildViewById(rootView, id);
+      if (noInternet == null) {
+        break missingId;
+      }
+
+      id = R.id.searchView;
+      SearchBar searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
+        break missingId;
+      }
+
+      return new AniamalCaretakerBinding((RelativeLayout) rootView, Animalcaretakerbackhome,
+          Barprogress, bottomNavigationView, containerLayout, fragmentContainer, heading,
+          listViewAcaretakers, noInternet, searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

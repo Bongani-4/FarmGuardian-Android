@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,11 +21,15 @@ public final class ActivityHireAnimalCaretakerBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ProgressBar Barsprogress;
+
+  @NonNull
   public final ListView listViewAcaretakers2;
 
   private ActivityHireAnimalCaretakerBinding(@NonNull RelativeLayout rootView,
-      @NonNull ListView listViewAcaretakers2) {
+      @NonNull ProgressBar Barsprogress, @NonNull ListView listViewAcaretakers2) {
     this.rootView = rootView;
+    this.Barsprogress = Barsprogress;
     this.listViewAcaretakers2 = listViewAcaretakers2;
   }
 
@@ -55,13 +60,19 @@ public final class ActivityHireAnimalCaretakerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Barsprogress;
+      ProgressBar Barsprogress = ViewBindings.findChildViewById(rootView, id);
+      if (Barsprogress == null) {
+        break missingId;
+      }
+
       id = R.id.listViewAcaretakers2;
       ListView listViewAcaretakers2 = ViewBindings.findChildViewById(rootView, id);
       if (listViewAcaretakers2 == null) {
         break missingId;
       }
 
-      return new ActivityHireAnimalCaretakerBinding((RelativeLayout) rootView,
+      return new ActivityHireAnimalCaretakerBinding((RelativeLayout) rootView, Barsprogress,
           listViewAcaretakers2);
     }
     String missingId = rootView.getResources().getResourceName(id);

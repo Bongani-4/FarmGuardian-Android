@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.farmguardian.app-mergeReleaseResources-32:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.example.farmguardian.app-mergeReleaseResources-59:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bongani\\AndroidStudioProjects\\FarmGuardian\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "C:\\Users\\Bongani\\AndroidStudioProjects\\FarmGuardian-Android\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "1",
-                        "startOffsets": "13",
+                        "startOffsets": "14",
                         "endColumns": "54",
-                        "endOffsets": "66"
+                        "endOffsets": "67"
                     },
                     "to": {
                         "startLines": "2",

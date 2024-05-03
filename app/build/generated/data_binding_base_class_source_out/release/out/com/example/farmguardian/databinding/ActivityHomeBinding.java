@@ -21,28 +21,41 @@ public final class ActivityHomeBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final CardView BookingDetails;
+  public final CardView Equipment;
 
   @NonNull
-  public final CardView FindACaretaker;
+  public final CardView LivestockACT;
 
   @NonNull
   public final CardView Logout;
 
   @NonNull
+  public final CardView Market;
+
+  @NonNull
   public final CardView News;
+
+  @NonNull
+  public final CardView animalcaretaker;
+
+  @NonNull
+  public final View greyBackground;
 
   @NonNull
   public final TextView textViewFG;
 
-  private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull CardView BookingDetails,
-      @NonNull CardView FindACaretaker, @NonNull CardView Logout, @NonNull CardView News,
+  private ActivityHomeBinding(@NonNull RelativeLayout rootView, @NonNull CardView Equipment,
+      @NonNull CardView LivestockACT, @NonNull CardView Logout, @NonNull CardView Market,
+      @NonNull CardView News, @NonNull CardView animalcaretaker, @NonNull View greyBackground,
       @NonNull TextView textViewFG) {
     this.rootView = rootView;
-    this.BookingDetails = BookingDetails;
-    this.FindACaretaker = FindACaretaker;
+    this.Equipment = Equipment;
+    this.LivestockACT = LivestockACT;
     this.Logout = Logout;
+    this.Market = Market;
     this.News = News;
+    this.animalcaretaker = animalcaretaker;
+    this.greyBackground = greyBackground;
     this.textViewFG = textViewFG;
   }
 
@@ -73,15 +86,15 @@ public final class ActivityHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.BookingDetails;
-      CardView BookingDetails = ViewBindings.findChildViewById(rootView, id);
-      if (BookingDetails == null) {
+      id = R.id.Equipment;
+      CardView Equipment = ViewBindings.findChildViewById(rootView, id);
+      if (Equipment == null) {
         break missingId;
       }
 
-      id = R.id.FindACaretaker;
-      CardView FindACaretaker = ViewBindings.findChildViewById(rootView, id);
-      if (FindACaretaker == null) {
+      id = R.id.LivestockACT;
+      CardView LivestockACT = ViewBindings.findChildViewById(rootView, id);
+      if (LivestockACT == null) {
         break missingId;
       }
 
@@ -91,9 +104,27 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Market;
+      CardView Market = ViewBindings.findChildViewById(rootView, id);
+      if (Market == null) {
+        break missingId;
+      }
+
       id = R.id.News;
       CardView News = ViewBindings.findChildViewById(rootView, id);
       if (News == null) {
+        break missingId;
+      }
+
+      id = R.id.animalcaretaker;
+      CardView animalcaretaker = ViewBindings.findChildViewById(rootView, id);
+      if (animalcaretaker == null) {
+        break missingId;
+      }
+
+      id = R.id.greyBackground;
+      View greyBackground = ViewBindings.findChildViewById(rootView, id);
+      if (greyBackground == null) {
         break missingId;
       }
 
@@ -103,8 +134,8 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((RelativeLayout) rootView, BookingDetails, FindACaretaker,
-          Logout, News, textViewFG);
+      return new ActivityHomeBinding((RelativeLayout) rootView, Equipment, LivestockACT, Logout,
+          Market, News, animalcaretaker, greyBackground, textViewFG);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

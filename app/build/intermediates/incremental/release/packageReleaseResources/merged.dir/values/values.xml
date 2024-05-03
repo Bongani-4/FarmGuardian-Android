@@ -2,22 +2,53 @@
 <resources>
     <color name="DarkGreen">#006400</color>
     <color name="black">#FF000000</color>
+    <color name="lightgreen">#BF0DF324</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="app_name">FarmGuardian</string>
+    <string name="bot">Dr Bot</string>
+    <string name="chat">chat</string>
+    <string name="enter_equipment_description">Enter Equipment Description</string>
+    <string name="enter_equipment_name">Enter Equipment Name</string>
+    <string name="enter_equipment_price_usd">Enter Equipment Price (USD)</string>
+    <string name="gcm_defaultSenderId" translatable="false">191644480025</string>
+    <string name="google_api_key" translatable="false">AIzaSyAGtxNLHFKG7_gjkQaUHiHh81ou-msZOrc</string>
+    <string name="google_app_id" translatable="false">1:191644480025:android:3cc06534c780826ca27088</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAGtxNLHFKG7_gjkQaUHiHh81ou-msZOrc</string>
+    <string name="google_storage_bucket" translatable="false">android-app-farmguardian.appspot.com</string>
+    <string name="healthDetailInstruction">Upload images for AI diseases analysis, especially of visual livestock symptoms. While AI provides high accurate feedback, avoid complete reliance on it.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
+    <string name="lets_chat">Lets chat</string>
+    <string name="livestock_description">Livestock description</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="my_list">My list</string>
+    <string name="myprofile_pic">myProfile pic</string>
+    <string name="project_id" translatable="false">android-app-farmguardian</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="sell">Sell</string>
+    <string name="sell_your_equipment">Sell Your Equipment</string>
+    <string name="sell_your_livestock">Sell your livestock</string>
+    <string name="selling_price">Selling price</string>
+    <string name="send">Send</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="type_of_livestock">Type of livestock</string>
+    <string name="type_your_message">Hello, how can I help…</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="user">You</string>
+    <string name="warning">Responses from this model should not replace professional medical advice</string>
     <string name="welcome">"Welcome !"</string>
+    <style name="AppTheme" parent="Base.Theme.FarmGuardian">
+
+        <item name="android:statusBarColor">@color/DarkGreen</item>
+    </style>
     <style name="Base.Theme.FarmGuardian" parent="Theme.Material3.DayNight.NoActionBar">
-        
-        
+
     </style>
     <style name="Theme.FarmGuardian" parent="Base.Theme.FarmGuardian"/>
 </resources>
