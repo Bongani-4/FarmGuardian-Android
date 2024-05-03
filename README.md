@@ -1,4 +1,5 @@
- # FarmGuardian
+ <img src="images/screenshots/FarmGuardian.png" alt="logo" width="320">
+ 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=for-the-badge&labelColor=lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black&labelColor=FFCA28)](https://firebase.google.com/)
 [![Gemini AI](https://img.shields.io/badge/Gemini%20AI-000000.svg?style=for-the-badge&logo=gemini&logoColor=white&labelColor=000000)](https://example.com/gemini-ai/)
@@ -6,9 +7,6 @@
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-00557e.svg?style=for-the-badge&logo=android&logoColor=white&labelColor=00557e)](https://developer.android.com/jetpack/compose)
 
 
-
- 
-## UI mockups
 
 <img src="images/screenshots/FG.png" alt="App serviices,Home" width="820">
 
@@ -18,11 +16,12 @@
 
  <img src="images/screenshots/Screenshot_20240329_154609.jpg" alt="App serviices,Home" width="120">
 <img src="images/screenshots/Screenshot_20240329_165057.jpg" alt="App serviices,Home" width="120">
-<img src="images/screenshots/Screenshot_20240409_140749.jpg" alt="Registration" width="120">
+<img src="images/screenshots/Screenshot_20240409_140749.jpg" alt="AI " width="120">
+<img src="images/screenshots/Screenshot_20240411_193102.jpg" alt="AI chat services" width="120">
 <img src="images/screenshots/Screenshot_20240317_153631.jpg" alt="Equipment services" width="120">
 <img src="images/screenshots/Screenshot_20240401_180231.jpg" alt="Become Animal caretaker" width="120">
 
-(or visit the "Screenshot" folder)
+{more on the "/Screenshot" folder}
 
 ## Configuration Setup:
 
@@ -39,7 +38,7 @@ Build and Run
 
 (FarmGuardian Website and some fearures for this mobile app are still under maintanance.)
 
-FarmGuardian is a mobile application with services:
+FarmGuardian  android is a mobile application with services:
 
 - **_Equipment Purchaces & Sharing(Equipment service)_**:
 
@@ -67,7 +66,7 @@ See trending agriculture news from ML /AI models and APIs, tips, cautious weathe
 
 ## Contribution
 
-I welcome contributions from the community to enhance FarmGuardian. To contribute, follow these steps:
+I welcome contributions from the community to enhance FarmGuardian. 
 
 For major changes, please open an issue first to discuss potential changes.
 
@@ -76,7 +75,7 @@ For major changes, please open an issue first to discuss potential changes.
 [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
 
 
-##### Current Project Author: Bongani Njathu
+##### Founder and Author: Bongani Njathu
 
 ##### December 24, 2023
 
