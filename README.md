@@ -1,11 +1,5 @@
  <img src="images/screenshots/FarmGuardian.png" alt="logo" width="320">
  
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=for-the-badge&labelColor=lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black&labelColor=FFCA28)](https://firebase.google.com/)
-[![Gemini AI](https://img.shields.io/badge/Gemini%20AI-000000.svg?style=for-the-badge&logo=gemini&logoColor=white&labelColor=000000)](https://example.com/gemini-ai/)
-[![Kotlin](https://img.shields.io/badge/Kotlin-0095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0095D5)](https://kotlinlang.org/)
-[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-00557e.svg?style=for-the-badge&logo=android&logoColor=white&labelColor=00557e)](https://developer.android.com/jetpack/compose)
-
 
 
 <img src="images/screenshots/FG.png" alt="App serviices,Home" width="820">
@@ -21,22 +15,20 @@
 <img src="images/screenshots/Screenshot_20240317_153631.jpg" alt="Equipment services" width="120">
 <img src="images/screenshots/Screenshot_20240401_180231.jpg" alt="Become Animal caretaker" width="120">
 
-{more on the "/Screenshot" folder}
+more : "/Screenshot" folder
 
-## Configuration Setup:
+## Instal and Run:
 
 
-This project requires certain .json files for configuration purposes. However, to maintain security, these files are not included in the repository. You will need to obtain these files separately and place them in the following locations:
+FG is still under upgrades dev and to be released on aws app store and google play ,meanwhile it can be found here
 
-app/google-services.json: [file can be found from google firebase. After registering this app in your Firebase poject,firebase will generate a google-services.json file specifically configured for this app.],
+https://bongani-4.github.io/FG-Download/
 
-"app/src/main/assets/api.properties" file if there are still some challenges[create an API key (https://newsapi.org/) and (https://ai.google.dev/) and place them seperately here (app/src/main/assets/api.properties)for the variable API_KEY] .
 
-Build and Run
+
 
 ## Description and features
 
-(FarmGuardian Website and some fearures for this mobile app are still under maintanance.)
 
 FarmGuardian  android is a mobile application with services:
 
@@ -64,18 +56,25 @@ See trending agriculture news from ML /AI models and APIs, tips, cautious weathe
 
 
 
-## Contribution
 
-I welcome contributions from the community to enhance FarmGuardian. 
 
-For major changes, please open an issue first to discuss potential changes.
+
 
 ## License
 
 [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE.md).
 
 
+
+
 ##### Founder and Author: Bongani Njathu
 
 ##### December 24, 2023
+
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=for-the-badge&labelColor=lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black&labelColor=FFCA28)](https://firebase.google.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini%20AI-000000.svg?style=for-the-badge&logo=gemini&logoColor=white&labelColor=000000)](https://example.com/gemini-ai/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-0095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0095D5)](https://kotlinlang.org/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-00557e.svg?style=for-the-badge&logo=android&logoColor=white&labelColor=00557e)](https://developer.android.com/jetpack/compose)
 
