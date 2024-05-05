@@ -27,7 +27,7 @@ https://bongani-4.github.io/FG-Download/
 
 
 
-## Description and features
+## Features
 
 
 FarmGuardian  android is a mobile application with services:
