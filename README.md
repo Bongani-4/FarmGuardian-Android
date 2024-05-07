@@ -20,12 +20,10 @@ more : "/Screenshot" folder
 ## Instal and Run:
 
 
-FG is still under upgrades dev and to be released on aws app store and google play ,meanwhile it can be found here
-
-https://bongani-4.github.io/FG-Download/
+FG is still under upgrades dev and to be released on google play ,meanwhile it can be found here on amazon app store and here https://bongani-4.github.io/FG-Download/
 
 
-
+Get FG from the Amazon Appstore. Check it out - https://www.amazon.com/dp/B0D3B8SSBV/ref=apps_sf_sta
 
 ## Features
 
