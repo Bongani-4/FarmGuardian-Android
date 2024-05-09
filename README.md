@@ -34,7 +34,7 @@ FarmGuardian  android is a mobile application with services:
 
 - **_Equipment Purchaces & Sharing(Equipment service)_**:
 
-Facilitate access of agricultural equipment among farmers, Farmers can buy, rent or share equipment, reducing costs for individual farmers.
+Facilitate access of agricultural equipment among farmers, You can buy, rent or share equipment, reducing costs for individual farmers.
 
 - **_Market Access(Market service)_**:
 
