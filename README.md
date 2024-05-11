@@ -17,7 +17,7 @@
 
 more : "/Screenshot" folder
 
-## Instal and Run:
+## Install and Run:
 
 
 FG is still under upgrades dev and to be released on google play ,meanwhile it can be found  here 
