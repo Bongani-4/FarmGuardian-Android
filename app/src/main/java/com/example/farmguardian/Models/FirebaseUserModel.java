@@ -6,7 +6,7 @@ public class FirebaseUserModel {
     private String email;
     private String password;
 
-    // Empty constructor for Firebase
+    // Empty constructor for communication with Firebase
     public FirebaseUserModel() {
     }
 
